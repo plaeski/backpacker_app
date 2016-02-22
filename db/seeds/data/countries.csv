@@ -1,0 +1,116 @@
+country,id,currency
+Antigua and Barbuda,1,XCD
+Argentina,2,ARS
+Aruba,3,AWG
+Australia,4,AUD
+Austria,5,EUR
+Bahamas,6,BSD
+Bahrain,7,BHD
+Bangladesh,8,BDT
+Barbados,9,BBD
+Belgium,10,EUR
+Belize,11,BZD
+Bermuda,12,BMD
+Bolivia,13,BOB
+Bosnia and Herzegowina,14,BAM
+Botswana,15,BWP
+Brazil,16,BRL
+British Virgin Islands,17,USD
+Bulgaria,18,BGN
+Burkina Faso,19,XOF
+Cambodia,20,KHR
+Canada,21,CAD
+Cayman Islands,22,KYD
+Chile,23,CLP
+China,24,CNY
+Colombia,25,COP
+Costa Rica,26,CRC
+Croatia,27,HRK
+Cuba,28,CUP
+Curacao,29,ANG
+Cyprus,30,EUR
+Czech Republic,31,CZK
+Dominica,32,XCD
+Dominican Republic,33,DOP
+Ecuador,34,ECS
+Egypt,35,EGP
+Estonia,36,EUR
+Ethiopia,37,ETB
+Fiji,38,FJD
+Finland,39,EUR
+France,40,EUR
+Germany,41,EUR
+Ghana,42,GHS
+Greece,43,EUR
+Greenland,44,DKK
+Grenada,45,XCD
+Guatemala,46,QTQ
+Honduras,47,HNL
+Hong Kong,48,HKD
+Hungary,49,HUF
+Iceland,50,ISK
+India,51,INR
+Indonesia,52,IDR
+Ireland,53,EUR
+Israel,54,ILS
+Italy,55,EUR
+Jamaica,56,JMD
+Japan,57,JPY
+Jordan,58,JOD
+Kenya,59,KES
+Laos,60,LAK
+Latvia,61,LVL
+Lebanon,62,LBP
+Lithuania,63,LTL
+Luxembourg,64,EUR
+Macao,65,MOP
+Madagascar,66,MGF
+Malaysia,67,MYR
+Mali,68,XOF
+Malta,69,EUR
+Mauritania,70,MRO
+Mexico,71,MXN
+Monaco,72,EUR
+Mongolia,73,MNT
+Morocco,74,MAD
+Myanmar,75,MMK
+Nepal,76,NPR
+Netherlands,77,EUR
+New Zealand,78,NZD
+Nicaragua,79,NIO
+Norway,80,NOK
+Panama,81,PAB
+Peru,82,PEN
+Philippines,83,PHP
+Poland,84,PLN
+Portugal,85,EUR
+Puerto Rico,86,USD
+Romania,87,RON
+Russia,88,RUB
+Rwanda,89,RWF
+Saint Barthelemy,90,
+Saint Kitts and Nevis,91,XCD
+Saint Lucia,92,XCD
+Senegal,93,XOF
+Serbia,94,RSD
+Singapore,95,SGD
+Slovakia,96,EUR
+Slovenia,97,EUR
+South Africa,98,ZAR
+South Korea,99,KRW
+Spain,100,EUR
+Sri Lanka,101,LKR
+Sweden,102,SEK
+Switzerland,103,CHF
+Taiwan,104,TWD
+Tanzania,105,TZS
+Thailand,106,THB
+Turkey,107,TRY
+Turks and Caicos Islands,108,USD
+Uganda,109,UGX
+Ukraine,110,UAH
+United Arab Emirates,111,AED
+United Kingdom,112,GBP
+United States of America,113,USD
+US Virgin Islands,114,USD
+Vietnam,115,VND

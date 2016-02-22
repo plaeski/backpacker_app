@@ -1,0 +1,440 @@
+name,country_id,id
+Saint John's,1,1
+Buenos Aires,2,2
+El Calafate,2,3
+Puerto Iguazu,2,4
+Cafayate,2,5
+Cordoba,2,6
+San Miguel de Tucuman,2,7
+Eagle Beach,3,8
+Sydney,4,9
+Melbourne,4,10
+Alice Springs,4,11
+Cairns,4,12
+Brisbane,4,13
+Adelaide,4,14
+Darwin,4,15
+Airlie Beach,4,16
+Byron Bay,4,17
+Coffs Harbour,4,18
+Newcastle,4,19
+Surfers Paradise,4,20
+Rockhampton,4,21
+Wollongong,4,22
+Uluru National Park (Ayers Rock),4,23
+Whitsundays,4,24
+Canberra,4,25
+Tasmania,4,26
+Western Australia,4,27
+New South Wales,4,28
+Victoria,4,29
+Queensland,4,30
+Northern Territory,4,31
+South Australia,4,32
+Vienna,5,33
+Innsbruck,5,34
+Salzburg,5,35
+Bregenz,5,36
+Graz,5,37
+Nassau,6,38
+Freeport,6,39
+Manama,7,40
+Dhaka,8,41
+Sylhet,8,42
+Holetown,9,43
+Worthing,9,44
+Bridgetown,9,45
+Brussels,10,46
+Antwerp,10,47
+Bruges,10,48
+Belize City,11,49
+San Ignacio,11,50
+Warwick Parish,12,51
+Cochabamba,13,52
+Santa Cruz de la Sierra,13,53
+Sarajevo,14,54
+Mostar,14,55
+Gaborone,15,56
+Maun,15,57
+Kasane,15,58
+Rio de Janeiro,16,59
+Sao Paulo,16,60
+Florianopolis,16,61
+Foz do Iguacu,16,62
+Curitiba,16,63
+Tortola,17,64
+Road Town,17,65
+Virgin Gorda,17,66
+Sofia,18,67
+Varna,18,68
+Ouagadougou,19,69
+Ouahigouya,19,70
+Siem Reap,20,71
+Phnom Penh,20,72
+Calgary,21,73
+Quebec City,21,74
+Montreal,21,75
+Toronto,21,76
+Vancouver,21,77
+Victoria,21,78
+Whistler,21,79
+Edmonton,21,80
+Kamloops,21,81
+Niagara Falls,21,82
+Vernon,21,83
+Hope,21,84
+Jasper,21,85
+Banff,21,86
+Halifax,21,87
+Nova Scotia,21,88
+Prince Edward Island,21,89
+British Columbia,21,90
+New Brunswick,21,91
+Quebec,21,92
+Alberta,21,93
+Ontario,21,94
+Grand Cayman,22,95
+Santiago,23,96
+Valparaiso,23,97
+Punta Arenas,23,98
+Easter Island,23,99
+San Pedro de Atacama,23,100
+Beijing,24,101
+Shanghai,24,102
+Xi'an,24,103
+Chengdu,24,104
+Lhasa,24,105
+Cartagena,25,106
+Pereira,25,107
+La Fortuna,26,108
+Quepos,26,109
+Santa Elena,26,110
+San Jose,26,111
+Jaco,26,112
+Zagreb,27,113
+Dubrovnik,27,114
+Split,27,115
+Rijeka,27,116
+Zadar,27,117
+Havana,28,118
+Willemstad,29,119
+Piscadera Bay,29,120
+Paphos,30,121
+Prague,31,122
+Cesky Krumlov,31,123
+Roseau,32,124
+Portsmouth,32,125
+Calibishie,32,126
+Santo Domingo,33,127
+Punta Cana,33,128
+Amber Cove (Puerto Plata),33,129
+Quito,34,130
+Cairo,35,131
+Dahab,35,132
+Luxor,35,133
+Aswan,35,134
+Alexandria,35,135
+Tallinn,36,136
+Saaremaa,36,137
+Tartu,36,138
+Addis Ababa,37,139
+Lalibela,37,140
+Aksum,37,141
+Nadi (Port Denarau),38,142
+Helsinki,39,143
+Paris,40,144
+Lyon,40,145
+Bordeaux,40,146
+La Rochelle,40,147
+Provence-Alpes-Cote d'Azur,40,148
+Berlin,41,149
+Stuttgart,41,150
+Bremen,41,151
+Frankfurt,41,152
+Hamburg,41,153
+Heidelberg,41,154
+Bonn,41,155
+Bavaria,41,156
+Tamale,42,157
+Takoradi,42,158
+Accra,42,159
+Athens,43,160
+Mykonos,43,161
+Rhodes,43,162
+Santorini,43,163
+Thessaloniki,43,164
+Corinth,43,165
+Ilulissat,44,166
+Grand Anse Beach,45,167
+Saint George's,45,168
+Lance aux Ã‰pines,45,169
+San Pedro La Laguna,46,170
+Antigua Guatemala,46,171
+Panajachel,46,172
+Roatan,47,173
+Copan,47,174
+Budapest,49,175
+Reykjavik,50,176
+Bangalore,51,177
+Mumbai,51,178
+Cochin,51,179
+Jaipur,51,180
+Delhi,51,181
+Agra,51,182
+Kerala,51,183
+Rajasthan,51,184
+Bali,52,185
+Dublin,53,186
+Cork,53,187
+Galway,53,188
+Dingle,53,189
+Kinsale,53,190
+Eilat,54,191
+Haifa,54,192
+Jerusalem,54,193
+Tel Aviv,54,194
+Tiberias,54,195
+Rome,55,196
+Florence,55,197
+Venice,55,198
+Naples,55,199
+Livorno,55,200
+Palermo,55,201
+Sorrento,55,202
+Catania,55,203
+Lucca,55,204
+Volterra,55,205
+Siena,55,206
+Pisa,55,207
+Cefalu,55,208
+Caltagirone,55,209
+Piazza Armerina,55,210
+Positano,55,211
+Tuscany,55,212
+Campania,55,213
+Liguria,55,214
+Sicily,55,215
+Ocho Rios,56,216
+Negril,56,217
+Montego Bay,56,218
+Tokyo,57,219
+Hiroshima,57,220
+Osaka,57,221
+Okinawa,57,222
+Petra,58,223
+Nairobi,59,224
+Luang Prabang,60,225
+Vientiane,60,226
+Riga,61,227
+Cesis,61,228
+Beirut,62,229
+Vilnius,63,230
+Luxembourg,64,231
+Diekirch,64,232
+Antsiranana,66,233
+Kuala Lumpur,67,234
+Tanah Rata,67,235
+Penang,67,236
+Mopti,68,237
+Bamako,68,238
+Djenne,68,239
+Valletta,69,240
+Nouakchott,70,241
+Kiffa,70,242
+Acapulco de Juarez,71,243
+Cancun,71,244
+Cabo San Lucas,71,245
+Mazatlan,71,246
+Cozumel,71,247
+Oaxaca de Juarez,71,248
+Mexico City,71,249
+Isla Mujeres,71,250
+Puerto Vallarta,71,251
+Ensenada,71,252
+Playa del Carmen,71,253
+La Paz,71,254
+Tulum,71,255
+Monaco,72,256
+Monte Carlo,72,257
+Ulaanbaatar,73,258
+Marrakech,74,259
+Fez,74,260
+Chefchaouen,74,261
+Essaouira,74,262
+Casablanca,74,263
+Asilah,74,264
+Meknes,74,265
+Ait Ben Haddou,74,266
+Agadir,74,267
+Ouarzazate,74,268
+Rabat,74,269
+Tangier,74,270
+Merzouga,74,271
+Rangoon,75,272
+Pagan,75,273
+Mandalay,75,274
+Kathmandu,76,275
+Pokhara,76,276
+Royal Chitwan National Park,76,277
+Amsterdam,77,278
+Rotterdam,77,279
+Lisse,77,280
+Delft,77,281
+Auckland,78,282
+Christchurch,78,283
+Rotorua,78,284
+Queenstown,78,285
+Wellington,78,286
+Managua,79,287
+Granada,79,288
+San Juan del Sur,79,289
+Isla de Ometepe,79,290
+Leon,79,291
+Oslo,80,292
+Bergen,80,293
+Lillehammer,80,294
+Gjovik,80,295
+Panama City,81,296
+David,81,297
+Bocas del Toro,81,298
+Pedasi,81,299
+Lima,82,300
+Cusco,82,301
+Aguas Calientes,82,302
+Cajamarca,82,303
+Arequipa,82,304
+Manila,83,305
+Puerto Princesa,83,306
+El Nido,83,307
+Wroclaw,84,308
+Krakow,84,309
+Warsaw,84,310
+Gdansk,84,311
+Lisbon,85,312
+Braga,85,313
+Sintra,85,314
+Porto,85,315
+Funchal,85,316
+Coimbra,85,317
+Ponce,86,318
+San Juan,86,319
+Bucharest,87,320
+Saint Petersburg,88,321
+Moscow,88,322
+Nizhny Novgorod,88,323
+Kigali,89,324
+Ruhengeri,89,325
+Gustavia,90,326
+Quartier de Lorient,90,327
+Corossol,90,328
+Basseterre,91,329
+Newcastle,91,330
+Gingerland,91,331
+Soufriere,92,332
+Canaries,92,333
+Gros Islet,92,334
+Dakar,93,335
+Saint-Louis,93,336
+Tambacounda,93,337
+Belgrade,94,338
+Novi Sad,94,339
+Bratislava,96,340
+Ljubljana,97,341
+Bled,97,342
+Maribor,97,343
+Johannesburg,98,344
+Durban,98,345
+Cape Town,98,346
+Seoul,99,347
+Barcelona,100,348
+Seville,100,349
+Madrid,100,350
+Catalonia,100,351
+Weligama,101,352
+Colombo,101,353
+Kandy,101,354
+Stockholm,102,355
+Gothenburg,102,356
+Linkoping,102,357
+Lulea,102,358
+Malmo,102,359
+Lucerne,103,360
+Zurich,103,361
+Geneva,103,362
+Bern,103,363
+Basel,103,364
+Interlaken,103,365
+Taipei,104,366
+Zanzibar,105,367
+Bangkok,106,368
+Northern Thailand,106,369
+Southern Thailand,106,370
+Istanbul,107,371
+Fethiye,107,372
+Ephesus,107,373
+Cappadocia,107,374
+Pamukkale,107,375
+Antalya,107,376
+Providenciales,108,377
+Jinja,109,378
+Kampala,109,379
+Entebbe,109,380
+Kiev,110,381
+Dubai,111,382
+Abu Dhabi,111,383
+England,112,384
+Scotland,112,385
+Wales,112,386
+Northern Ireland,112,387
+Saint Augustine,113,388
+Denali National Park,113,389
+San Francisco,113,390
+Las Vegas,113,391
+Boston,113,392
+Grand Canyon National Park,113,393
+Orlando,113,394
+Miami,113,395
+Key West,113,396
+Washington,113,397
+Austin,113,398
+Chicago,113,399
+Hilo,113,400
+Seattle,113,401
+Myrtle Beach,113,402
+New York City,113,403
+Portland,113,404
+San Diego,113,405
+Baltimore,113,406
+Yellowstone National Park,113,407
+Charleston,113,408
+Tampa,113,409
+Los Angeles,113,410
+Honolulu,113,411
+San Antonio,113,412
+Napa Valley,113,413
+Denver,113,414
+Dallas,113,415
+Monterey,113,416
+Atlanta,113,417
+Cocoa Beach,113,418
+New Orleans,113,419
+Yosemite National Park,113,420
+Fort Lauderdale,113,421
+Santa Barbara,113,422
+Big Island of Hawaii,113,423
+Kauai,113,424
+Maui,113,425
+Oahu,113,426
+Nashville,113,427
+Bryce Canyon National Park,113,428
+Daytona Beach,113,429
+Zion National Park,113,430
+Saint Thomas,114,431
+Saint John,114,432
+Saint Croix,114,433
+Hanoi,115,434
+Ho Chi Minh City,115,435
+Hue,115,436
+Hoi An,115,437
+Sapa,115,438
+Nha Trang,115,439
