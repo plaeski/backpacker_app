@@ -24,6 +24,7 @@ en:
       unlock_instructions:
         subject: "Unlock instructions"
     omniauth_callbacks:
+      email_exists: "Account already exists with associated email address."
       failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
       success: "Successfully authenticated from %{kind} account."
     passwords:

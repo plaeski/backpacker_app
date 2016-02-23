@@ -43,24 +43,34 @@ ActiveRecord::Schema.define(version: 20160223192931) do
 
   add_index "country_expenses", ["country_id"], name: "index_country_expenses_on_country_id", using: :btree
 
+  create_table "identities", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "provider"
+    t.string   "uid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "identities", ["user_id"], name: "index_identities_on_user_id", using: :btree
+
   create_table "routes", force: :cascade do |t|
     t.json     "route"
-    t.integer  "trip_id"
+    t.integer  "trip_id_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_index "routes", ["trip_id"], name: "index_routes_on_trip_id", using: :btree
+  add_index "routes", ["trip_id_id"], name: "index_routes_on_trip_id_id", using: :btree
 
   create_table "trip_members", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "trip_id"
+    t.integer  "user_id_id"
+    t.integer  "trip_id_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_index "trip_members", ["trip_id"], name: "index_trip_members_on_trip_id", using: :btree
-  add_index "trip_members", ["user_id"], name: "index_trip_members_on_user_id", using: :btree
+  add_index "trip_members", ["trip_id_id"], name: "index_trip_members_on_trip_id_id", using: :btree
+  add_index "trip_members", ["user_id_id"], name: "index_trip_members_on_user_id_id", using: :btree
 
   create_table "trips", force: :cascade do |t|
     t.string   "name"
@@ -82,9 +92,12 @@ ActiveRecord::Schema.define(version: 20160223192931) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
+    t.string   "provider"
+    t.string   "uid"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "identities", "users"
 end
