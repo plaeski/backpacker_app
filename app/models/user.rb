@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
       user.email = auth.info.email
       user.password = Devise.friendly_token[0,20]
       user.name = auth.extra.raw_info.name
-      user.save!
+      user.save
     end
 	end
 
@@ -25,9 +25,9 @@ class User < ActiveRecord::Base
       user.provider = auth.provider
       user.uid = auth.uid
       user.email = auth.info.nickname+"@twitter.com"
-      user.username = auth.info.nickname
+      user.name = auth.info.nickname
       user.password = Devise.friendly_token[0,20]
-      user.save!
+      user.save
     end
 	end
 
