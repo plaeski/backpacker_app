@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160222003019) do
+ActiveRecord::Schema.define(version: 20160223192931) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,31 @@ ActiveRecord::Schema.define(version: 20160222003019) do
   end
 
   add_index "country_expenses", ["country_id"], name: "index_country_expenses_on_country_id", using: :btree
+
+  create_table "routes", force: :cascade do |t|
+    t.json     "route"
+    t.integer  "trip_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "routes", ["trip_id"], name: "index_routes_on_trip_id", using: :btree
+
+  create_table "trip_members", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "trip_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "trip_members", ["trip_id"], name: "index_trip_members_on_trip_id", using: :btree
+  add_index "trip_members", ["user_id"], name: "index_trip_members_on_user_id", using: :btree
+
+  create_table "trips", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

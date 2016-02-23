@@ -8,6 +8,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'superseeder'
 gem 'pg'
+gem 'react-rails', '~> 1.6.0'
+gem 'gmaps-rails'
+gem 'babel-transpiler'
 group :development, :test do
   gem 'byebug'
 end
