@@ -18,6 +18,9 @@ end
 gem 'foundation-rails', '~> 5.5'
 gem 'devise'
 gem 'high_voltage'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 group :development do
   gem 'better_errors'
   gem 'quiet_assets'
