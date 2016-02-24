@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
   
+  has_many :trip_memberships
+  has_many :trips, through: :trip_memberships
+
   TEMP_EMAIL_PREFIX = 'change@me'
   TEMP_EMAIL_REGEX = /\Achange@me/
   # Include default devise modules. Others available are:
@@ -8,6 +11,10 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable
 
+
+  def self.join_trip
+    @user = current_user
+  end
 
 	def self.find_for_facebook_oauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|

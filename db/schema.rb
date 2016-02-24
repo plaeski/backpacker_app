@@ -53,24 +53,24 @@ ActiveRecord::Schema.define(version: 20160223192931) do
 
   add_index "identities", ["user_id"], name: "index_identities_on_user_id", using: :btree
 
-  create_table "routes", force: :cascade do |t|
-    t.json     "route"
-    t.integer  "trip_id_id"
+  create_table "trip_memberships", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "trip_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_index "routes", ["trip_id_id"], name: "index_routes_on_trip_id_id", using: :btree
+  add_index "trip_memberships", ["trip_id"], name: "index_trip_memberships_on_trip_id", using: :btree
+  add_index "trip_memberships", ["user_id"], name: "index_trip_memberships_on_user_id", using: :btree
 
-  create_table "trip_members", force: :cascade do |t|
-    t.integer  "user_id_id"
-    t.integer  "trip_id_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "trip_routes", force: :cascade do |t|
+    t.json     "route_details"
+    t.integer  "trip_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
-  add_index "trip_members", ["trip_id_id"], name: "index_trip_members_on_trip_id_id", using: :btree
-  add_index "trip_members", ["user_id_id"], name: "index_trip_members_on_user_id_id", using: :btree
+  add_index "trip_routes", ["trip_id"], name: "index_trip_routes_on_trip_id", using: :btree
 
   create_table "trips", force: :cascade do |t|
     t.string   "name"
