@@ -46,12 +46,30 @@ var TripPlanner = React.createClass({
   componentWillMount: function() {
     this.loadCitiesFromServer();
   },
+  removeCity: function(e) {
+    var id = e.target.id
+    var listData = this.state.data
+    listData.item_id = id
+    $.ajax({
+      url: '/trip_route/stop/delete',
+      dataType: 'json',
+      type: 'POST',
+      data: listData,
+      success: function(data) {
+        this.setState({data:data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        this.setState({data: locations});
+        console.error(this.props.url,status,err,toString());
+      }.bind(this)
+    });
+  },
   render: function() {
     return (
       <div className="tripPlanner">
         <h1>Cities</h1>
         <MapBox data={this.state.data.route_details} />
-        <CityList data={this.state.data.route_details} />
+        <CityList data={this.state.data} removeCity={this.removeCity}/>
         <CityForm onCommentSubmit={this.handleCitySubmit} />
       </div>
     );
@@ -68,7 +86,7 @@ var MapBox = React.createClass({
       width: '750px',
       height: '500px',
       zoom: 5
-    });
+      });
       var coordinates = cities.map(function(city) {
         return [city.lat, city.lng]
       })
@@ -106,18 +124,19 @@ var MapBox = React.createClass({
 
 var CityList = React.createClass({
   render: function() {
-    if (this.props.data) {
-      var cityNodes = this.props.data.map(function(city) {
+    if (this.props.data.route_details) {
+      var that = this
+      var cityNodes = this.props.data.route_details.map(function(city, i) {
         return (
           <Comment key={city.id}>
-            {city.text}
+            {city.text} <div id={i} onClick={that.props.removeCity}>x</div> 
           </Comment>
         );
       });
-  }
+    }
     return (
       <div className="cityList">
-        {cityNodes}
+        {cityNodes} 
       </div>
     );
   }

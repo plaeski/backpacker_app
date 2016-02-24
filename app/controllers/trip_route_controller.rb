@@ -25,4 +25,13 @@ class TripRouteController < ApplicationController
     end
   end
 
+  def edit
+    @route = TripRoute.find params[:id]
+    list_item = params[:item_id]
+    current_list = @route.route_details
+    current_list.delete_at(list_item.to_i)
+    @route.route_details = current_list
+    @route.save
+    render json: @route
+  end
 end
