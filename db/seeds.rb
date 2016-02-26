@@ -10,10 +10,10 @@ require_relative 'itineraries'
 # user = CreateAdminService.new.call
 # puts 'CREATED ADMIN USER: ' << user.email
 
-# include Superseeder
-# seed :countries
-# seed :cities
-# seed :country_expenses
+include Superseeder
+seed :countries
+seed :cities
+seed :country_expenses
 
 country_data = [[["Arrive Athens", "Athens to Olympia", "Olympia to Delphi", "Delphi to Athens", "Athens and sail to Istanbul", "Istanbul", "Cruising to Kusadasi", "Santorini", "Crete", "Simi via Rhodes", "Cruising to Mykonos via Chios", "Arrival into Athens"],["Greece", "Turkey"],"Europe"],
 [["Arrive Athens", "Athens to Olympia", "Olympia to Delphi", "Delphi to Athens", "Athens to Mykonos", "Cruising to Patmos via Kusadasi", "Cruising to Santorini via Crete", "Arrival into Athens"],["Greece", "Turkey"],"Europe"],
