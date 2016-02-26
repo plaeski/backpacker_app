@@ -1,0 +1,872 @@
+[
+  {
+    "cities":"{\"Arrive Athens\", \"Athens to Olympia\", \"Olympia to Delphi\", \"Delphi to Athens\", \"Athens and sail to Istanbul\", \"Istanbul\", \"Cruising to Kusadasi\", \"Santorini\", \"Crete\", \"Simi via Rhodes\", \"Cruising to Mykonos via Chios\", \"Arrival into Athens\"}",
+    "countries":"{\"Greece”, “Turkey\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Athens\", \"Athens to Olympia\", \"Olympia to Delphi\", \"Delphi to Athens\", \"Athens to Mykonos\", \"Cruising to Patmos via Kusadasi\", \"Cruising to Santorini via Crete\", \"Arrival into Athens\"}",
+    "countries":"{\"Greece”, “Turkey\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Athens\", \"Athens to Olympia\", \"Olympia to Delphi\", \"Delphi to Athens\", \"Athens to Mykonos\", \"Cruising to Samos via Kusadasi\", \"Milos\", \"Cruising Athens to Syros\", \"Cesme\", \"Kos\", \"Cruising to Santorini via Ios\", \"Arrival into Athens\"}",
+    "countries":"{\"Greece”}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Athens\", \"Athens\", \"Athens to Mykonos\", \"Mykonos\", \"Mykonos to Santorini\", \"Santorini\", \"Santorini to Ios\", \"Ios\", \"Ios to Athens\", \"Depart Athens\"}",
+    "countries":"{\"Greece”}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Berlin\", \"Berlin to Copenhagen\", \"Copenhagen\", \"Copenhagen to Oslo\", \"Oslo\", \"Oslo to Voss\", \"Voss to Geiranger Fjord\", \"Geiranger Fjord to Gjovik\", \"Gjovik to Stockholm\", \"Stockholm\", \"Stockholm & sail to Helsinki\", \"Helsinki\", \"Depart Helsinki\"}",
+    "countries":"{\"Germany  \", \" Denmark\", \" Norway\", \" Sweden\", \" Finland\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Berlin\", \"Berlin to Copenhagen\", \"Copenhagen\", \"Copenhagen to Oslo\", \"Oslo\", \"Oslo to Voss\", \"Voss to Geiranger Fjord\", \"Geiranger Fjord to Gjovik\", \"Gjovik to Stockholm\", \"Stockholm\"}",
+    "countries":"{\"Germany  \", \" Denmark\", \" Norway\", \" Sweden\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Budapest\", \"Budapest to Ljubljana\", \"Ljubljana to Plitvice Lakes\", \"Plitvice to Split\", \"Split\", \"Split to Dubrovnik\", \"Dubrovnik\", \"Dubrovnik to Budva\", \"Budva\", \"Budva to Sarajavo via Mostar\", \"Sarajevo\", \"Sarajevo to Belgrade via Srebrenica\", \"Belgrade to Timisoara\", \"Budapest\", \"Timisoara to Budapest\", \"Depart Budapest\"}",
+    "countries":"{\"Hungary\", \" Slovenia\", \" Croatia\", \" Montenegro\", \" Bosnia & Herzegovina\", \" Serbia”, “Romania\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Cairo\", \"Cairo to Aswan\", \"Nile Cruise - Aswan\", \"Nile Cruise - Aswan to Edfu\", \"Nile Cruise - Edfu to Luxor\", \"Luxor to Hurghada\", \"Hurghada to Cairo\", \"Depart Cairo\"}",
+    "countries":"{\"Egypt\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Dublin\", \"Dublin to Cork\", \"Cork to Galway\", \"Galway\", \"Galway to Londonderry\", \"Londonderry to Belfast\", \"Belfast to Dublin\", \"Depart Dublin\"}",
+    "countries":"{\"Ireland & Northern Ireland\", \" including Dublin\", \" Londonderry\", \" Galway\", \" Cork & Kilkenny\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Dublin\", \"Dublin to Cork\", \"Cork to Galway\", \"Galway\", \"Galway to Londonderry\", \"Londonderry to Belfast\", \"Belfast to Dublin\", \"Depart Dublin\"}",
+    "countries":"{\"Ireland & Northern Ireland\", \" including Dublin\", \" Londonderry\", \" Galway\", \" Cork & Kilkenny\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Edinburgh\", \"Edinburgh\", \"Edinburgh to Scottish Highlands\", \"Scottish Highlands to West Highlands\", \"West Highlands to Glasgow\", \"Glasgow to Dublin\", \"Dublin to Londonderry\", \"Londonderry to Galway\", \"Galway\", \"Galway to Cork\", \"Cork to Kilkenny\", \"Kilkenny to Dublin\", \"Depart Dublin\"}",
+    "countries":"{\"Scotland\", \" Northern Ireland & Ireland\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Helsinki\", \"Helsinki to St. Petersburg\", \"St. Petersburg\", \"St. Petersburg to Novgorod\", \"Novgorod to Moscow\", \"Moscow\", \"Moscow to Minsk\", \"Minsk to Warsaw\", \"Warsaw\", \"Depart Warsaw/Berlin\"}",
+    "countries":"{\"Finland\", \" Russia\", \" Belarus\", \" Poland\", \" Germany  \"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Istanbul\", \"Istanbul\", \"Istanbul to Canakkale\", \"Canakkale to Izmir\", \"Izmir to Pamukkale\", \"Pamukkale to Kusadasi\", \"Kusadasi to Rhodes\", \"Rhodes\", \"Cruising to Santorini via Crete\", \"Arrival into Athens\"}",
+    "countries":"{\"Turkey & Greece\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Amsterdam\", \"Amsterdam to Rhine Valley\", \"Rhine Valley to Munich\", \"Munich to Austrian Tyrol\", \"Austrian Tyrol to Venice\", \"Venice to Rome\", \"Rome\", \"Rome to Florence\", \"Florence to Lucerne\", \"Lucerne to Paris\", \"Paris\", \"Depart Paris\"}",
+    "countries":"{\"England\",  \" Netherlands\", \" Germany\", \" Austria\", \" Italy\", \" Vatican City\", \" Switzerland\", \" France\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Amsterdam\", \"Amsterdam to Rhine Valley\", \"Rhine Valley to Munich\", \"Munich to Austrian Tyrol\", \"Austrian Tyrol to Venice\", \"Venice to Swiss Alps\", \"Swiss Alps\", \"Swiss Alps to Paris\", \"Paris\", \"Depart Paris\"}",
+    "countries":"{  \" Netherlands\", \" Germany\", \" Austria\", \" Italy\", \" Switzerland\", \" France\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Amsterdam\", \"Amsterdam to Rhine Valley\", \"Rhine Valley to Munich\", \"Munich to Venice\", \"Venice\", \"Venice to Lucerne\", \"Lucerne to Paris\", \"Paris\", \"Depart Paris\"}",
+    "countries":"{  \" Netherlands\", \" Germany\", \" Austria\", \" Italy\", \" Switzerland\", \" France\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Amsterdam\", \"Amsterdam\", \"Amsterdam to Berlin\", \"Berlin\", \"Berlin to Prague\", \"Prague\", \"Prague to Munich\", \"Munich to Austrian Tyrol\", \"Austrian Tyrol to Venice\", \"Venice\", \"Venice to Rome\", \"Rome\", \"Rome to Florence\", \"Florence to Swiss Alps\", \"Swiss Alps\", \"Swiss Alps to Paris\", \"Paris\", \"Depart Paris\"}",
+    "countries":"{  \" Netherlands\", \" Germany\", \" Czech Republic\", \" Austria\", \" Italy\", \" Vatican City\", \" Switzerland\", \" France\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Amsterdam\", \"Amsterdam\", \"Amsterdam to Berlin\", \"Berlin\", \"Berlin to Prague\", \"Prague\", \"Prague to Munich\", \"Munich\", \"Munich to Venice\", \"Venice\", \"Venice to Rome\", \"Rome\", \"Rome to Florence\", \"Florence\", \"Florence to Lucerne\", \"Lucerne\", \"Lucerne to Paris\", \"Paris\", \"Depart Paris\"}",
+    "countries":"{  \" Netherlands\", \" Germany\", \" Czech Republic\", \" Austria\", \" Italy\", \" Vatican City\", \" Switzerland\", \" France\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Liverpool\", \"Liverpool to York\", \"York to Edinburgh\", \"Edinburgh\", \"Edinburgh to Scottish Highlands\", \"Scottish Highlands to Glasgow\", \"Glasgow to Lake District\", \"Lake District to London\"}",
+    "countries":"{\"England”, “Scotland\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Liverpool\", \"Liverpool to York\", \"York to Lake District\", \"Lake District to Edinburgh\", \"Edinburgh\", \"Edinburgh to Scottish Highlands\", \"Scottish Highlands to West Highlands\", \"West Highlands to Glasgow\", \"Glasgow to Dublin\", \"Dublin to Cork\", \"Cork to Galway\", \"Galway\", \"Galway to Londonderry\", \"Londonderry to Belfast\", \"Belfast to Dublin\", \"Dublin to London\"}",
+    "countries":"{\"England\", \" Scotland\", \" Northern Ireland & Ireland\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Paris\", \"Paris\", \"Paris to Beaujolais Wine Region\", \"Beaujolais Wine Region to French Riviera\", \"French Riviera\", \"French Riviera to Florence\", \"Florence to Rome\", \"Rome\", \"Rome to Venice\", \"Venice to Munich\", \"Munich to Rhine Valley\", \"Rhine Valley to Amsterdam\", \"Amsterdam\", \"Depart Amsterdam\"}",
+    "countries":"{\"France\", \" Monaco\", \" Italy\", \" Vatican City\", \" Germany\", \" Netherlands\" }",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Paris\", \"Paris\", \"Paris to Beaujolais Wine Region\", \"Beaujolais Wine Region\", \"Beaujolais Wine Region to Barcelona\", \"Barcelona\", \"Barcelona to French Riviera\", \"French Riviera\", \"French Riviera to Florence\", \"Florence\", \"Florence to Rome\", \"Rome\", \"Rome to Venice\", \"Venice\", \"Venice to Vienna\", \"Vienna\", \"Vienna to Munich\", \"Munich to Austrian Tyrol\", \"Austrian Tyrol to Swiss Alps\", \"Austrian Tyrol\", \"Swiss Alps\", \"Swiss Alps to Rhine Valley\", \"Rhine Valley to Amsterdam\", \"Amsterdam\", \"Depart Amsterdam\"}",
+    "countries":"{\"France\", \" Spain\", \" Monaco\", \" Italy\", \" Vatican City\", \" Austria\", \" Germany\", \" Liechtenstein\", \" Switzerland\", \" Netherlands\" }",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Paris\", \"Paris\", \"Paris to Beaujolais Wine Region\", \"Beaujolais Wine Region\", \"Beaujolais Wine Region to French Riviera\", \"French Riviera to Florence\", \"Florence\", \"Florence to Rome\", \"Rome\", \"Rome to Venice\", \"Venice\", \"Venice to Austrian Tyrol\", \"Austrian Tyrol\", \"Austrian Tyrol to Munich\", \"Munich to Swiss Alps\", \"Swiss Alps\", \"Swiss Alps to Rhine Valley\", \"Rhine Valley to Amsterdam\", \"Amsterdam\", \"Depart Amsterdam\"}",
+    "countries":"{\"France\", \" Monaco\", \" Italy\", \" Vatican City\", \" Austria\", \" Germany\", \" Liechtenstein\", \" Switzerland\", \" Netherlands\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Paris\", \"Paris\", \"Paris to Beaujolais Wine Region\", \"Beaujolais Wine Region\", \"Beaujolais Wine Region to French Riviera\", \"French Riviera\", \"French Riviera to Florence\", \"Florence\", \"Florence to Rome\", \"Rome\", \"Rome to Corfu\", \"Corfu\", \"Corfu to Italy\", \"Arrive Venice\", \"Venice\", \"Venice to Vienna\", \"Vienna\", \"Vienna to Prague\", \"Prague\", \"Prague to Munich\", \"Munich to Austrian Tyrol\", \"Austrian Tyrol to Swiss Alps\", \"Swiss Alps\", \"Swiss Alps to Rhine Valley\", \"Rhine Valley to Amsterdam\", \"Amsterdam\", \"Depart Amsterdam\"}",
+    "countries":"{\"France\", \" Monaco\", \" Italy\", \" Vatican City\", \" Greece\", \" Austria\", \" Czech Republic\", \" Germany\", \" Liechtenstein\", \" Switzerland\", \" Netherlands\" }",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Paris\", \"Paris\", \"Paris to Lucerne\", \"Lucerne\", \"Lucerne to French Riviera\", \"French Riviera\", \"French Riviera to Florence\", \"Florence to Rome\", \"Rome\", \"Rome to Venice\", \"Venice\", \"Venice to Austrian Tyrol\", \"Austrian Tyrol\", \"Austrian Tyrol to Munich\", \"Munich to Vienna\", \"Vienna to Prague\", \"Prague\", \"Prague to Rhine Valley\", \"Rhine Valley to Amsterdam\", \"Amsterdam\", \"Depart Amsterdam\"}",
+    "countries":"{\"France\", \" Switzerland\", \" Monaco\", \" Italy\", \" Vatican City\", \" Austria\", \" Germany\", \" Czech Republic\", \" Netherlands\" }",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London\", \"London to Paris\", \"Paris\", \"Depart Paris\"}",
+    "countries":"{\"England, “France\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London\", \"London to Paris\", \"Paris\", \"Depart Paris\"}",
+    "countries":"{\"England, “France\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London\", \"London to Paris\", \"Paris\", \"Paris to Rome\", \"Rome\", \"Depart Rome\"}",
+    "countries":"{\"England\", \" France”, “Italy\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London\", \"Paris\", \"London to Paris\", \"Paris to Amsterdam\", \"Depart Amsterdam\"}",
+    "countries":"{\"England\", \" France\", “Netherlands\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Madrid\", \"Madrid\", \"Madrid to Barcelona\", \"Barcelona\", \"Barcelona to Avignon\", \"Avignon to French Riviera\", \"French Riviera\", \"French Riviera to Pisa\", \"Pisa to Florence\", \"Florence\", \"Florence to Rome\", \"Rome\", \"Depart Rome\"}",
+    "countries":"{\"Spain\", \" France\", \" Monaco\", \" Italy\", \" Vatican City\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Madrid\", \"Madrid\", \"Madrid to Bilbao\", \"Bilbao to Pamplona\", \"Pamplona to Barcelona\", \"Barcelona\", \"Barcelona to Ibiza\", \"Ibiza\", \"Ibiza to Granada\", \"Granada\", \"Granada to Fez\", \"Fez\", \"Marrakech\", \"Fez to Marrakech\", \"Marrakech to Tangier\", \"Tangier to Seville\", \"Seville\", \"Seville to Lisbon\", \"Lisbon\", \"Lisbon to Madrid\", \"Depart Madrid\"}",
+    "countries":"{\"Spain\", \"Morocco” , “Portugal\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Madrid\", \"Madrid\", \"Madrid to Bilbao\", \"Bilbao to Pamplona\", \"Pamplona to Barcelona\", \"Barcelona\", \"Barcelona to Valencia\", \"Valencia to Granada\", \"Granada\", \"Granada to Fez\", \"Fez\", \"Fez to Marrakech\", \"Marrakech\", \"Marrakech to Tangier\", \"Tangier to Seville\", \"Seville\", \"Seville to Lisbon\", \"Lisbon\", \"Lisbon to Madrid\", \"Depart Madrid\"}",
+    "countries":"{\"Spain\", \"Morocco” , “Portugal\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Madrid\", \"Madrid\", \"Madrid to Granada\", \"Granada\", \"Granada to Fez\", \"Fez\", \"Fez to Marrakech\", \"Marrakech\", \"Marrakech to Tangier\", \"Tangier to Seville\", \"Seville\", \"Seville to Lisbon\", \"Lisbon\", \"Lisbon to Madrid\", \"Depart Madrid\"}",
+    "countries":"{\"Spain\", \"Morocco” , “Portugal\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Rome\", \"Rome to Sorrento\", \"Capri Excursion\", \"Sorrento to Florence\", \"Florence\", \"Florence to Venice\", \"Venice\", \"Venice to Milan\", \"Milan to La Spezia\", \"La Spezia to Rome\", \"Rome\", \"Depart Rome\"}",
+    "countries":"{\"Italy\", “Vatican City\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Rome\", \"Rome\", \"Rome to Florence\", \"Florence\", \"Florence\", \"Florence to Venice\", \"Venice\", \"Depart Venice / Rome\"}",
+    "countries":"{\"Italy\", “Vatican City\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Stockholm\", \"Stockholm & sail to Helsinki\", \"Helsinki\", \"Helsinki to St. Petersburg\", \"St. Petersburg\", \"St. Petersburg to Novgorod\", \"Novgorod to Moscow\", \"Moscow\", \"Moscow to Minsk\", \"Minsk to Warsaw\", \"Warsaw\", \"Depart Warsaw/Berlin\"}",
+    "countries":"{\"Sweden\", \" Finland\", \" Russia\", \" Belarus\", \" Poland\", \" Germany  \"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Split\", \"Split to Dubrovnik\", \"Dubrovnik\", \"Dubrovnik to Budva\", \"Budva\", \"Budva to Sarajavo via Mostar\", \"Sarajevo\", \"Sarajevo to Belgrade via Srebrenica\", \"Belgrade to Timisoara\", \"Timisoara to Budapest\", \"Budapest\", \"Budapest to Ljubljana\", \"Ljubljana to Plitvice Lakes\", \"Plitvice to Split\", \"Depart Split\"}",
+    "countries":"{\"Croatia\", \" Montenegro\", \" Bosnia & Herzegovina\", \" Serbia\", \" Romania\", \" Hungary & Slovenia\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Paris\", \"Paris\", \"Paris to Beaujolais Wine Region\", \"Beaujolais Wine Region to French Riviera\", \"French Riviera\", \"French Riviera to Florence\", \"Florence to Rome\", \"Rome\", \"Rome to Venice\", \"Venice to Munich\", \"Munich to Rhine Valley\", \"Rhine Valley to Amsterdam\", \"Amsterdam\", \"Depart Amsterdam\"}",
+    "countries":"{\"France\", \" Monaco\", \" Italy\", \" Vatican City\", \" Germany\", \" Netherlands\", }",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Paris\", \"Paris\", \"Paris to Beaujolais Wine Region\", \"Beaujolais Wine Region\", \"Beaujolais Wine Region to Barcelona\", \"Barcelona\", \"Barcelona to French Riviera\", \"French Riviera\", \"French Riviera to Florence\", \"Florence\", \"Florence to Rome\", \"Rome\", \"Rome to Venice\", \"Venice\", \"Venice to Vienna\", \"Vienna\", \"Vienna to Munich\", \"Munich to Austrian Tyrol\", \"Austrian Tyrol to Swiss Alps\", \"Austrian Tyrol\", \"Swiss Alps\", \"Swiss Alps to Rhine Valley\", \"Rhine Valley to Amsterdam\", \"Amsterdam\", \"Depart Amsterdam\"}",
+    "countries":"{\"France\", \" Spain\", \" Monaco\", \" Italy\", \" Vatican City\", \" Austria\", \" Germany\", \" Liechtenstein\", \" Switzerland\", \" Netherlands\", }",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Paris\", \"Paris\", \"Paris to Beaujolais Wine Region\", \"Beaujolais Wine Region\", \"Beaujolais Wine Region to French Riviera\", \"French Riviera to Florence\", \"Florence\", \"Florence to Rome\", \"Rome\", \"Rome to Venice\", \"Venice\", \"Venice to Austrian Tyrol\", \"Austrian Tyrol\", \"Austrian Tyrol to Munich\", \"Munich to Swiss Alps\", \"Swiss Alps\", \"Swiss Alps to Rhine Valley\", \"Rhine Valley to Amsterdam\", \"Amsterdam\", \"Depart Amsterdam\"}",
+    "countries":"{\"France\", \" Monaco\", \" Italy\", \" Vatican City\", \" Austria\", \" Germany\", \" Liechtenstein\", \" Switzerland\", \" Netherlands\", }",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Amsterdam\", \"Amsterdam\", \"Amsterdam to Berlin\", \"Berlin\", \"Berlin to Prague\", \"Prague\", \"Prague to Munich\", \"Munich to Austrian Tyrol\", \"Austrian Tyrol to Venice\", \"Venice\", \"Venice to Rome\", \"Rome\", \"Rome to Florence\", \"Florence to Swiss Alps\", \"Swiss Alps\", \"Swiss Alps to Paris\", \"Paris\", \"Depart Paris\"}",
+    "countries":"{  \" Netherlands\", \" Germany\", \" Czech Republic\", \" Austria\", \" Italy\", \" Vatican City\", \" Switzerland\", \" France\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Paris\", \"Paris\", \"Paris to Beaujolais Wine Region\", \"Beaujolais Wine Region\", \"Beaujolais Wine Region to French Riviera\", \"French Riviera\", \"French Riviera to Florence\", \"Florence\", \"Florence to Rome\", \"Rome\", \"Rome to Corfu\", \"Corfu\", \"Corfu to Italy\", \"Arrive Venice\", \"Venice\", \"Venice to Vienna\", \"Vienna\", \"Vienna to Prague\", \"Prague\", \"Prague to Munich\", \"Munich to Austrian Tyrol\", \"Austrian Tyrol to Swiss Alps\", \"Swiss Alps\", \"Swiss Alps to Rhine Valley\", \"Rhine Valley to Amsterdam\", \"Amsterdam\", \"Depart Amsterdam\"}",
+    "countries":"{\"France\", \" Monaco\", \" Italy\", \" Vatican City\", \" Greece\", \" Austria\", \" Czech Republic\", \" Germany\", \" Liechtenstein\", \" Switzerland\", \" Netherlands\", }",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Amsterdam\", \"Amsterdam to Rhine Valley\", \"Rhine Valley to Munich\", \"Munich to Austrian Tyrol\", \"Austrian Tyrol to Venice\", \"Venice to Swiss Alps\", \"Swiss Alps\", \"Swiss Alps to Paris\", \"Paris\", \"Depart Paris\"}",
+    "countries":"{  \" Netherlands\", \" Germany\", \" Austria\", \" Italy\", \" Switzerland\", \" France\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Paris\", \"Paris\", \"Paris to Beaujolais Wine Region\", \"Beaujolais Wine Region\", \"Beaujolais Wine Region to Barcelona\", \"Barcelona\", \"Barcelona to French Riviera\", \"French Riviera\", \"French Riviera to Venice\", \"Venice\", \"Venice to Florence\", \"Florence\", \"Florence to Rome\", \"Rome\", \"Rome to Athens\", \"To Athens\", \"Athens to Mykonos\", \"Mykonos\", \"Mykonos to Preveza\", \"Preveza to Tirana\", \"Tirana to Dubrovnik\", \"Dubrovnik\", \"Dubrovnik to Zadar\", \"Zadar to Ljubljana\", \"Ljubljana to Vienna\", \"Vienna\", \"Vienna to Austrian Tyrol\", \"Austrian Tyrol\", \"Austrian Tyrol to Munich\", \"Munich to Swiss Alps\", \"Swiss Alps\", \"Swiss Alps to Rhine Valley\", \"Rhine Valley to Amsterdam\", \"Amsterdam\", \"Depart Amsterdam\"}",
+    "countries":"{\"France\", \" Spain\", \" Monaco\", \" Italy\", \" Vatican City\", \" Greece\", \" Albania\", \" Croatia\", \" Slovenia\", \" Austria\", \" Germany\", \" Liechtenstein\", \" Switzerland\", \" Netherlands\" }",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Paris\", \"Paris\", \"Paris to Beaujolais Wine Region\", \"Beaujolais Wine Region\", \"Beaujolais Wine Region to Barcelona\", \"Barcelona\", \"Barcelona to French Riviera\", \"French Riviera\", \"French Riviera to Venice\", \"Venice\", \"Venice to Florence\", \"Florence\", \"Florence to Rome\", \"Rome\", \"Rome to Corfu\", \"Corfu\", \"Corfu to Athens\", \"Depart Athens\"}",
+    "countries":"{\"France\", \" Spain\", \" Monaco\", \" Italy\", \" Vatican City\", \" Greece\"}",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Paris\", \"Paris\", \"Paris to Beaujolais Wine Region\", \"Beaujolais Wine Region\", \"Beaujolais Wine Region to Barcelona\", \"Barcelona\", \"Barcelona to French Riviera\", \"French Riviera\", \"French Riviera to Venice\", \"Venice\", \"Venice to Florence\", \"Florence\", \"Florence to Rome\", \"Rome\", \"Rome to Corfu\", \"Corfu\", \"Corfu to Athens\", \"Athens to Ios\", \"Ios\", \"Ios to Santorini\", \"Santorini\", \"Santorini to Athens\", \"Athens to Kavala\", \"Kavala to Canakkale\", \"Canakkale to Istanbul\", \"Istanbul\", \"Istanbul to Sofia\", \"Sofia to Belgrade\", \"Belgrade to Budapest\", \"Budapest\", \"Budapest to Vienna\", \"Vienna to Austrian Tyrol\", \"Austrian Tyrol\", \"Austrian Tyrol to Munich\", \"Munich to Swiss Alps\", \"Swiss Alps\", \"Swiss Alps to Rhine Valley\", \"Rhine Valley to Amsterdam\", \"Amsterdam\", \"Depart Amsterdam\"}",
+    "countries":"{\"France\", \" Spain\", \" Monaco\", \" Italy\", \" Vatican City\", \" Greece\", \" Turkey\", \" Bulgaria\", \" Serbia\", \" Hungary\", \" Austria\", \" Germany\", \" Liechtenstein\", \" Switzerland\", \" Netherlands\", }",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive London\", \"London to Paris\", \"Paris\", \"Paris to Beaujolais Wine Region\", \"Beaujolais Wine Region\", \"Beaujolais Wine Region to Barcelona\", \"Barcelona\", \"Barcelona to French Riviera\", \"French Riviera\", \"French Riviera to Venice\", \"Venice\", \"Venice to Florence\", \"Florence\", \"Florence to Rome\", \"Rome\", \"Rome to Corfu\", \"Corfu\", \"Corfu to Athens\", \"Athens to Cairo\", \"Cairo Sightseeing - Overnight train to Aswan\", \"Aswan\", \"Aswan to Luxor\", \"Luxor to Red Sea\", \"Red Sea to Cairo\", \"Cairo to Athens\", \"Athens to Kavala\", \"Kavala to Canakkale\", \"Canakkale to Istanbul\", \"Istanbul\", \"Istanbul to Sofia\", \"Sofia to Belgrade\", \"Belgrade to Budapest\", \"Budapest\", \"Budapest to Vienna\", \"Vienna to Austrian Tyrol\", \"Austrian Tyrol\", \"Austrian Tyrol to Munich\", \"Munich to Swiss Alps\", \"Swiss Alps\", \"Swiss Alps to Rhine Valley\", \"Rhine Valley to Amsterdam\", \"Amsterdam\", \"Depart Amsterdam\"}",
+    "countries":"{\"France\", \" Spain\", \" Monaco\", \" Italy\", \" Vatican City\", \" Greece\", \" Egypt\", \" Turkey\", \" Bulgaria\", \" Serbia\", \" Hungary\", \" Austria\", \" Germany\", \" Liechtenstein\", \" Switzerland\", \" Netherlands\", }",
+    "area":"Europe"
+  },
+  {
+    "cities":"{\"Arrive Bangkok\", \"Bangkok to Chiang Mai\", \"Chiang Mai\", \"Chiang Mai to Chiang Rai\", \"Chiang Rai to Pakbeng\", \"Pakbeng to Luang Prabang\", \"Luang Prabang\", \"Luang Prabang to Vang Vieng\", \"Vang Vieng\", \"Vang Vieng to Vientiane\", \"Vientiane to Phnom Penh\", \"Phnom Penh to Siem Reap\", \"Siem Reap\", \"Depart Siem Reap\"}",
+    "countries":"{“Thailand”, “Laos”, “Cambodia”}",
+    "area":"Asia"
+  },
+  {
+    "cities":"{\"Arrive Ho Chi Minh City\", \"Ho Chi Minh City to Mekong Delta\", \"Mekong Delta to Ho Chi Minh City\", \"Ho Chi Minh City to Nha Trang\", \"Nha Trang\", \"Nha Trang to Hoi An\", \"Hoi An to Hue\", \"Hoi An\", \"Hue to Hanoi\", \"Hanoi to Halong Bay\", \"Halong Bay to Hanoi\", \"Depart Hanoi\"}",
+    "countries":"{“Vietnam”}",
+    "area":"Asia"
+  },
+  {
+    "cities":"{\"Arrive Ho Chi Minh City\", \"Ho Chi Minh City to Nha Trang\", \"Nha Trang\", \"Nha Trang to Hoi An\", \"Hoi An\", \"Hoi An to Hue\", \"Hue to Hanoi\", \"Hanoi to Halong Bay\", \"Halong Bay to Hanoi\", \"Depart Hanoi\"}",
+    "countries":"{“Vietnam”}",
+    "area":"Asia"
+  },
+  {
+    "cities":"{\"Arrive Koh Samui\", \"Koh Samui\", \"Koh Samui to Koh Tao\", \"Koh Tao\", \"Koh Tao to Koh Pha Ngan\", \"Koh Pha Ngan\", \"Koh Pha Ngan to Koh Samui\"}",
+    "countries":"{“Thailand”}",
+    "area":"Asia"
+  },
+  {
+    "cities":"{\"Arrive Phuket\", \"Phuket\", \"Phuket to Koh Phi Phi\", \"Koh Phi Phi\", \"Koh Phi Phi to Krabi (Ao Nang)\", \"Krabi (Ao Nang)\", \"Krabi (Ao Nang) to Phuket\"}",
+    "countries":"{“Thailand”}",
+    "area":"Asia"
+  },
+  {
+    "cities":"{\"Arrive Beijing\", \"Beijing\", \"Beijing\", \"Beijing to Xi'an\", \"Xi'an\", \"Xi'an to Shanghai\", \"Shanghai\", \"Shanghai to Yangshuo\", \"Yangshuo\", \"Yangshuo to Hong Kong\", \"Hong Kong\", \"Depart Hong Kong\"}",
+    "countries":"{“China”}",
+    "area":"Asia"
+  },
+  {
+    "cities":"{\"Arrive Tokyo\", \"Tokyo\", \"Tokyo\", \"Tokyo to Hakone\", \"Hakone to Takayama\", \"Takayama\", \"Takayama to Hiroshima\", \"Hiroshima\", \"Hiroshima to Kyoto\", \"Kyoto\", \"Kyoto to Wakayama\", \"Wakayama to Osaka\", \"Depart Osaka\"}",
+    "countries":"{“Japan”}",
+    "area":"Asia"
+  },
+  {
+    "cities":"{\"Arrive Seminyak\", \"Seminyak to Gilli Trawangan\", \"Gili Trawangan\", \"Gili Trawangan to Senggigi\", \"Senggigi\", \"Senggigi to Seminyak\", \"Depart Seminyak\"}",
+    "countries":"{\"Bali\", \" the Gilli Islands\", \" Lombok\"}",
+    "area":"Asia"
+  },
+  {
+    "cities":"{\"Arrive Bangkok\", \"Bangkok to Chiang Mai\", \"Chiang Mai\", \"Chiang Mai to Chiang Rai\", \"Chiang Rai to Pakbeng\", \"Pakbeng to Luang Prabang\", \"Luang Prabang to Vang Vieng\", \"Luang Prabang\", \"Vang Vieng\", \"Vang Vieng to Vientiane\", \"Vientiane to Phnom Penh\", \"Phnom Penh to Siem Reap\", \"Siem Reap\", \"Siem Reap to Ho Chi Minh City\", \"Ho Chi Minh City to Mekong Delta\", \"Mekong Delta to Ho Chi Minh City\", \"Ho Chi Minh City to Nha Trang\", \"Nha Trang\", \"Nha Trang to Hoi An\", \"Hoi An\", \"Hoi An to Hue\", \"Hue to Hanoi\", \"Hanoi to Halong Bay\", \"Halong Bay to Hanoi\", \"Depart Hanoi\"}",
+    "countries":"{“Thailand”, “Laos”, “Cambodia”, “Vietnam”}",
+    "area":"Asia"
+  },
+  {
+    "cities":"{\"Mexico City to Guanajuato\", \"Guanajuato to Guadalajara\", \"Guadalajara to Puerto Vallarta\", \"Puerto Vallarta\", \"Puerto Vallarta\", \"Puerto Vallarta to Tequila\", \"Tequila to Mexico City\", \"Mexico City\", \"Mexico City to Merida\", \"Merida to Cancun via Chichen Itza\", \"Cancun & Playa del Carmen\", \"Cancun\", \"Cancun to Caye Caulker\", \"Caye Caulker\", \"Caye Caulker to Guatemalan Rainforest\", \"Guatemalan Rainforest to Santa Elena (Flores)\", \"Santa Elena to Antigua\", \"Antigua\", \"Antigua to Lago Atitlan\", \"Lago Atitlan to San Cristobal de las Casas\", \"San Cristobal de las Casas\", \"Chiapas to Tehuantepec\", \"Tehuantepec to Oaxaca\", \"Oaxaca\", \"Oaxaca to Mexico City\"}",
+    "countries":"{\"Mexico\", “Belize”, “Guatemala\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Cancun\", \"Cancun to Caye Caulker\", \"Caye Caulker\", \"Caye Caulker to Guatemalan Rainforest\", \"Guatemalan Rainforest to Santa Elena (Flores)\", \"Santa Elena to Antigua\", \"Antigua\", \"Antigua to Lago Atitlan\", \"Lago Atitlan to San Cristobal de las Casas\", \"San Cristobal de las Casas\", \"Chiapas to Tehuantepec\", \"Tehuantepec to Oaxaca\", \"Oaxaca\", \"Oaxaca to Mexico City\"}",
+    "countries":"{\"Mexico\", “Belize”, “Guatemala\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Mexico City to Guanajuato\", \"Guanajuato to Guadalajara\", \"Guadalajara to Puerto Vallarta\", \"Puerto Vallarta\", \"Puerto Vallarta\", \"Puerto Vallarta to Tequila\", \"Tequila to Mexico City\", \"Mexico City\", \"Depart Mexico City\"}",
+    "countries":"{\"Mexico\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Mexico City to Guanajuato\", \"Guanajuato to Guadalajara\", \"Guadalajara to Puerto Vallarta\", \"Puerto Vallarta\", \"Puerto Vallarta\", \"Puerto Vallarta to Tequila\", \"Tequila to Mexico City\", \"Mexico City\", \"Mexico City to Merida\", \"Merida to Cancun via Chichen Itza\", \"Cancun & Playa del Carmen\", \"Cancun\", \"Depart Cancun\"}",
+    "countries":"{\"Mexico\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Quito\", \"Quito to Tena\", \"Tena\", \"Tena to Baños\", \"Baños\", \"Baños to Guayaquil\", \"Guayaquil to Isabela Island\", \"Isabela Island\", \"Isabela Island to Santa Cruz Island\", \"Santa Cruz Island to San Cristobal Island\", \"San Cristobal Island\", \"San Cristobal Island to Guayaquil\"}",
+    "countries":"{\"Galapagos Islands”, “Ecuador\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Quito\", \"Quito to Tena\", \"Tena\", \"Tena to Baños\", \"Baños\", \"Baños to Guayaquil\", \"Guayaquil to Isabela Island\", \"Isabela Island\", \"Isabela Island to Santa Cruz Island\", \"Santa Cruz Island to San Cristobal Island\", \"San Cristobal Island\", \"San Cristobal Island to Lima\", \"Lima\", \"Lima to Arequipa\", \"Arequipa to Colca Canyon\", \"Colca Canyon to Puno\", \"Puno\", \"Puno to Cusco\", \"Cusco\", \"Cusco to Sacred Valley\", \"Train to Aguas Calientes or trek the Inca Trail\", \"Aguas Calientes (Machu Picchu) to Cusco\", \"Cusco\", \"Cusco to Jungle Lodge\", \"Jungle Lodge to Puerto Maldonado\", \"Puerto Maldonado to Lima\", \"Lima to Buenos Aires\", \"Buenos Aires\", \"Buenos Aires\", \"Buenos Aires to Iguassu Falls\", \"Iguassu Falls\", \"Iguassu Falls to Rio de Janeiro\", \"Rio de Janeiro\", \"Rio de Janeiro\", \"Depart Rio de Janeiro\"}",
+    "countries":"{\"Galapagos Islands\", \" Ecuador\", \" Peru\", \" Argentina”, “Brazil”}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Guayaquil to Isabela Island\", \"Isabela Island\", \"Isabela Island to Santa Cruz Island\", \"Santa Cruz Island to San Cristobal Island\", \"San Cristobal Island\", \"San Cristobal Island to Guayaquil\"}",
+    "countries":"{\"Galapagos Islands\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Cancun\", \"Cancun to Caye Caulker\", \"Caye Caulker\", \"Caye Caulker to Guatemalan Rainforest\", \"Guatemalan Rainforest to Santa Elena (Flores)\", \"Santa Elena to Antigua\", \"Depart Antigua\"}",
+    "countries":"{\"Mexico\", “Belize”, “Guatemala\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Cusco\", \"Cusco to Sacred Valley\", \"Train to Aguas Calientes or trek the Inca Trail\", \"Aguas Calientes (Machu Picchu) to Cusco\", \"Cusco\", \"Cusco to Jungle Lodge\", \"Jungle Lodge to Puerto Maldonado\", \"Puerto Maldonado to Lima\", \"Lima to Buenos Aires\", \"Buenos Aires\", \"Buenos Aires\", \"Buenos Aires to Iguassu Falls\", \"Iguassu Falls\", \"Iguassu Falls to Rio de Janeiro\", \"Rio de Janeiro\", \"Rio de Janeiro\", \"Depart Rio de Janeiro\"}",
+    "countries":"{\"Peru\", \" Argentina”, “Brazil\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Mexico City\", \"Mexico City to Merida\", \"Merida to Cancun via Chichen Itza\", \"Cancun & Playa del Carmen\", \"Cancun\", \"Cancun to Caye Caulker\", \"Caye Caulker\", \"Caye Caulker to Guatemalan Rainforest\", \"Guatemalan Rainforest to Santa Elena (Flores)\", \"Santa Elena to Antigua\", \"Antigua\", \"Antigua to Lago Atitlan\", \"Lago Atitlan to San Cristobal de las Casas\", \"San Cristobal de las Casas\", \"Chiapas to Tehuantepec\", \"Tehuantepec to Oaxaca\", \"Oaxaca\", \"Oaxaca to Mexico City\"}",
+    "countries":"{\"Mexico\", “Belize”, “Guatemala\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Mexico City\", \"Mexico City to Merida\", \"Merida to Cancun via Chichen Itza\", \"Cancun & Playa del Carmen\", \"Cancun\", \"Depart Cancun\"}",
+    "countries":"{\"Mexico\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Mexico City\", \"Mexico City to Merida\", \"Merida to Cancun via Chichen Itza\", \"Cancun & Playa del Carmen\", \"Cancun\", \"Cancun to Caye Caulker\", \"Caye Caulker\", \"Caye Caulker to Guatemalan Rainforest\", \"Guatemalan Rainforest to Santa Elena (Flores)\", \"Santa Elena to Antigua\", \"Depart Antigua\"}",
+    "countries":"{\"Mexico\", “Belize”, “Guatemala\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Quito\", \"Quito to Tena\", \"Tena\", \"Tena to Baños\", \"Baños\", \"Baños to Guayaquil\", \"Guayaquil to Isabela Island\", \"Isabela Island\", \"Isabela Island to Santa Cruz Island\", \"Santa Cruz Island to San Cristobal Island\", \"San Cristobal Island\", \"San Cristobal Island to Lima\", \"Lima\", \"Lima to Arequipa\", \"Arequipa to Colca Canyon\", \"Colca Canyon to Puno\", \"Puno\", \"Puno to Cusco\", \"Cusco\", \"Cusco to Sacred Valley\", \"Train to Aguas Calientes or trek the Inca Trail\", \"Aguas Calientes (Machu Picchu) to Cusco\", \"Cusco\", \"Cusco to Jungle Lodge\", \"Jungle Lodge to Puerto Maldonado\", \"Puerto Maldonado to Lima\"}",
+    "countries":"{\"Galapagos Islands\", \" Ecuador\", \" Peru\"”}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Cusco\", \"Cusco to Sacred Valley\", \"Train to Aguas Calientes or trek the Inca Trail\", \"Aguas Calientes (Machu Picchu) to Cusco\", \"Cusco\", \"Cusco to Jungle Lodge\", \"Jungle Lodge to Puerto Maldonado\", \"Puerto Maldonado to Lima\"}",
+    "countries":"{\"Peru\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Buenos Aires\", \"Buenos Aires\", \"Buenos Aires to Iguassu Falls\", \"Iguassu Falls\", \"Iguassu Falls to Rio de Janeiro\", \"Rio de Janeiro\", \"Rio de Janeiro\", \"Depart Rio de Janeiro\"}",
+    "countries":"{\"Argentina”, “Brazil\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Lima\", \"Lima to Arequipa\", \"Arequipa to Colca Canyon\", \"Colca Canyon to Puno\", \"Puno\", \"Puno to Cusco\", \"Cusco\", \"Cusco to Sacred Valley\", \"Train to Aguas Calientes or trek the Inca Trail\", \"Aguas Calientes (Machu Picchu) to Cusco\", \"Cusco\", \"Cusco to Jungle Lodge\", \"Jungle Lodge to Puerto Maldonado\", \"Puerto Maldonado to Lima\", \"Lima to Buenos Aires\", \"Buenos Aires\", \"Buenos Aires\", \"Buenos Aires to Iguassu Falls\", \"Iguassu Falls\", \"Iguassu Falls to Rio de Janeiro\", \"Rio de Janeiro\", \"Rio de Janeiro\", \"Depart Rio de Janeiro\"}",
+    "countries":"{\"Peru\", \" Argentina”, “Brazil\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive San José\", \"San Jose to Sarapiqui\", \"Sarapiqui to Arenal/La Fortuna\", \"Arenal/La Fortuna\", \"Arenal/La Foruna to Playa Tamarindo\", \"Playa Tamarindo\", \"Playa Tamarindo to Monteverde\", \"Monteverde\", \"Monteverde to Manuel Antonio\", \"Manuel Antonio\", \"Manuel Antonio\", \"Manuel Antonio to San José\", \"San José to Tortuguero\", \"Tortuguero\", \"Tortuguero to San Jose\"}",
+    "countries":"{\"Costa Rica\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive San José\", \"San Jose to Sarapiqui\", \"Sarapiqui to Arenal/La Fortuna\", \"Arenal/La Fortuna\", \"Arenal/La Foruna to Playa Tamarindo\", \"Playa Tamarindo\", \"Playa Tamarindo to Monteverde\", \"Monteverde\", \"Monteverde to Manuel Antonio\", \"Manuel Antonio\", \"Manuel Antonio\", \"Manuel Antonio to San José\"}",
+    "countries":"{\"Costa Rica\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Antigua\", \"Antigua to Lago Atitlan\", \"Lago Atitlan to San Cristobal de las Casas\", \"San Cristobal de las Casas\", \"Chiapas to Tehuantepec\", \"Tehuantepec to Oaxaca\", \"Oaxaca\", \"Oaxaca to Mexico City\"}",
+    "countries":"{\"Mexico\", “Guatemala\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Cusco\", \"Cusco to Sacred Valley\", \"Inca Trail Trek\", \"Inca Trail Trek\", \"Inca Trail Trek\", \"Machu Picchu to Sacred Valley\", \"Sacred Valley to Cusco\", \"Cusco\"}",
+    "countries":"{\"Peru\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Lima\", \"Lima to Arequipa\", \"Arequipa to Colca Canyon\", \"Colca Canyon to Puno\", \"Puno\", \"Puno to Cusco\", \"Cusco\", \"Cusco to Sacred Valley\", \"Train to Aguas Calientes or trek the Inca Trail\", \"Aguas Calientes (Machu Picchu) to Cusco\", \"Depart Cusco\"}",
+    "countries":"{\"Peru\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Lima\", \"Lima to Arequipa\", \"Arequipa to Colca Canyon\", \"Colca Canyon to Puno\", \"Puno\", \"Puno to Cusco\", \"Cusco\", \"Cusco to Sacred Valley\", \"Train to Aguas Calientes or trek the Inca Trail\", \"Aguas Calientes (Machu Picchu) to Cusco\", \"Cusco\", \"Cusco to Jungle Lodge\", \"Jungle Lodge to Puerto Maldonado\", \"Puerto Maldonado to Lima\"}",
+    "countries":"{\"Peru\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Cusco\", \"Cusco to Jungle Lodge\", \"Jungle Lodge\", \"Jungle Lodge to Cusco\", \"Cusco to Sacred Valley\", \"Sacred Valley to Aguas Calientes\", \"Machu Picchu to Cusco\", \"Depart Cusco\"}",
+    "countries":"{\"Peru\"}",
+    "area":"Central/South America"
+  },
+  {
+    "cities":"{\"Arrive Los Angeles\", \"Los Angeles\", \"Los Angeles to San Francisco\", \"San Francisco\", \"San Francisco to Las Vegas\", \"Las Vegas\", \"Las Vegas to New York\", \"Hello Big Apple!\", \"New York, New York\", \"More of Manhattan\", \"Depart New York City\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Arrive New York City\", \"Hello Big Apple!\", \"New York, New York\", \"More of Manhattan\", \"New York City to Las Vegas\", \"Las Vegas\", \"Las Vegas to San Francisco\", \"San Francisco\", \"San Francisco to Los Angeles\", \"Los Angeles\", \"Depart Los Angeles\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Arrive Los Angeles\", \"Los Angeles\", \"Depart Los Angeles\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Arrive Los Angeles\", \"Los Angeles\", \"Depart Los Angeles\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Vancouver\", \"Vancouver to Whistler\", \"Whistler\", \"Whistler to Banff\", \"Banff\", \"Banff to Calgary\"}",
+    "countries":"{\"Canada\"}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Boston\", \"Boston\", \"Boston to New York City\", \"New York City\", \"New York City to Philadelphia\", \"Philadelphia to Washington D.C.\", \"Washington D.C.\", \"Washington D.C.\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Washington D.C. to Pittsburgh\", \"Pittsburgh to Niagara Falls\", \"Niagara Falls to Toronto\", \"Toronto\", \"Toronto to Montreal\", \"Montreal\", \"Montreal to Boston\"}",
+    "countries":"{“Canada”, “USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Boston\", \"Boston\", \"Boston to New York City\", \"New York City\", \"New York City to Philadelphia\", \"Philadelphia to Washington D.C.\", \"Washington D.C.\", \"Washington D.C. to Pittsburgh\", \"Pittsburgh to Niagara Falls\", \"Niagara Falls to Toronto\", \"Toronto\", \"Toronto to Montreal\", \"Montreal\", \"Montreal to Boston\"}",
+    "countries":"{“Canada”, “USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Arrive San Francisco\", \"San Francisco to Bass Lake\", \"Bass Lake to Las Vegas\", \"Las Vegas\", \"Las Vegas to the Grand Canyon\", \"Grand Canyon National Park\", \"Grand Canyon to Phoenix\", \"Phoenix to San Diego\", \"San Diego\", \"San Diego to Los Angeles\", \"Los Angeles\", \"Depart Los Angeles\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Arrive Las Vegas\", \"Las Vegas to Bass Lake\", \"Yosemite National Park\", \"Bass Lake to San Francisco\", \"San Francisco\", \"San Francisco to Carpinteria via Santa Barbara\", \"Carpinteria to Los Angeles\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Los Angeles to Las Vegas\", \"Las Vegas\", \"Las Vegas to the Grand Canyon\", \"Grand Canyon National Park\", \"Grand Canyon to Durango via Monument Valley\", \"Durango to Albuquerque\", \"Albuquerque to Amarillo\", \"Amarillo to Dallas\", \"Dallas\", \"Dallas to Memphis\", \"Memphis\", \"Memphis to New Orleans\", \"Depart New Orleans\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Arrive Las Vegas\", \"Las Vegas to Lake Tahoe\", \"Lake Tahoe\", \"Lake Tahoe to San Francisco\", \"San Francisco\", \"San Francisco to Carpinteria via Santa Barbara\", \"Carpinteria to Los Angeles\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"New York to Boston\", \"Boston\", \"Boston to Quebec City\", \"Quebec City\", \"Quebec City to Montreal\", \"Montreal\", \"Montreal to Toronto\", \"Toronto\", \"Toronto and Niagara Falls\", \"Toronto to Cleveland\", \"Cleveland to Chicago\", \"Chicago\", \"Chicago to Madison\", \"Madison to Sioux Falls\", \"Sioux Falls to Mt. Rushmore\", \"Mt. Rushmore\", \"Mt. Rushmore to Cody\", \"Yellowstone\", \"Cody to Jackson Hole\", \"Jackson Hole to Park City\", \"Park City to Kanab via Bryce Canyon National Park\", \"Grand Canyon National Park\", \"Kanab to Las Vegas via Zion National Park\", \"Las Vegas\", \"Las Vegas to Los Angeles\"}",
+    "countries":"{“Canada”, “USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Arrive Los Angeles\", \"Los Angeles to San Diego\", \"San Diego\", \"San Diego to Phoenix\", \"Phoenix to the Grand Canyon\", \"Grand Canyon National Park\", \"Grand Canyon to Las Vegas\", \"Las Vegas\", \"Las Vegas to Bass Lake\", \"Yosemite National Park\", \"Bass Lake to San Francisco\", \"Depart San Francisco\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Arrive New Orleans\", \"New Orleans to Memphis\", \"Memphis\", \"Memphis to Dallas\", \"Dallas\", \"Dallas to Amarillo\", \"Amarillo to Albuquerque\", \"Albuquerque to Durango\", \"Durango to Grand Canyon via Monument Valley\", \"Grand Canyon National Park\", \"Grand Canyon to Las Vegas\", \"Las Vegas\", \"Las Vegas to Los Angeles\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Chicago to Madison\", \"Madison to Sioux Falls\", \"Sioux Falls to Mt. Rushmore\", \"Mt. Rushmore\", \"Mt. Rushmore to Cody\", \"Yellowstone\", \"Cody to Jackson Hole\", \"Jackson Hole to Park City\", \"Salt Lake City to Kanab via Bryce Canyon National Park\", \"Grand Canyon National Park\", \"Kanab to Las Vegas via Zion National Park\", \"Las Vegas\", \"Las Vegas to Los Angeles\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Los Angeles to Las Vegas\", \"Las Vegas\", \"Las Vegas to the Grand Canyon\", \"Grand Canyon National Park\", \"Grand Canyon to Durango via Monument Valley\", \"Durango to Albuquerque\", \"Albuquerque to Amarillo\", \"Amarillo to Dallas\", \"Dallas\", \"Dallas to Memphis\", \"Memphis\", \"Memphis to New Orleans\", \"New Orleans\", \"New Orleans to Panama City Beach\", \"Panama City Beach to Orlando\", \"Orlando\", \"Orlando to Miami\", \"Miami\", \"Miami to Daytona Beach\", \"Daytona beach to St. Augustine via Kennedy Space Center\", \"St. Augustine to Savannah\", \"Charleston\", \"Savannah to Raleigh\", \"Raleigh to Washington D.C.\", \"Washington D.C.\", \"Washington D.C. to New York\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"New York to Boston\", \"Boston\", \"Boston to Quebec City\", \"Quebec City\", \"Quebec City to Montreal\", \"Montreal\", \"Montreal to Toronto\", \"Toronto\", \"Toronto and Niagara Falls\", \"Toronto to Cleveland\", \"Cleveland to Chicago\", \"Chicago\", \"Depart Chicago\"}",
+    "countries":"{“Canada”, “USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"New York to Washington D.C.\", \"Washington D.C.\", \"Washington D.C. to Raleigh\", \"Raleigh to Savannah\", \"Charleston\", \"Savannah to St. Augustine\", \"St. Augustine to Daytona Beach\", \"Daytona Beach to Miami via Kennedy Space Center\", \"Miami\", \"Miami to Orlando\", \"Orlando\", \"Orlando to Tallahassee\", \"Tallahassee to New Orleans\", \"Depart New Orleans\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Hello Big Apple!\", \"New York, New York\", \"More of Manhattan\", \"Depart New York City\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Arrive Las Vegas\", \"New Year's Eve in Las Vegas\", \"Las Vegas\", \"Depart Las Vegas\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"New York to Washington D.C.\", \"Washington D.C.\", \"Washington D.C. to Raleigh\", \"Raleigh to Savannah\", \"Charleston\", \"Savannah to St. Augustine\", \"St. Augustine to Daytona Beach\", \"Daytona Beach to Miami via Kennedy Space Center\", \"Miami\", \"Miami to Orlando\", \"Orlando\", \"Orlando to Tallahassee\", \"Tallahassee to New Orleans\", \"New Orleans\", \"New Orleans to Memphis\", \"Memphis\", \"Memphis to Dallas\", \"Dallas\", \"Dallas to Amarillo\", \"Amarillo to Albuquerque\", \"Albuquerque to Cortez via Durango\", \"Cortez to the Grand Canyon via Monument Valley\", \"Grand Canyon National Park\", \"Grand Canyon to Las Vegas\", \"Las Vegas\", \"Las Vegas to Los Angeles\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Vancouver to Whistler\", \"Whistler\", \"Whistler to Kamloops\", \"Kamloops to Jasper\", \"Jasper\", \"Jasper to Banff\", \"Banff\", \"Banff to Vernon\", \"Vernon to Vancouver\", \"Vancouver\", \"Depart Vancouver\"}",
+    "countries":"{\"Canada\"}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Arrive San Francisco\", \"San Francisco to Bass Lake\", \"Bass Lake to Las Vegas\", \"Las Vegas\", \"Las Vegas to the Grand Canyon\", \"Grand Canyon National Park\", \"Grand Canyon to Phoenix\", \"Phoenix to San Diego\", \"San Diego\", \"San Diego to Los Angeles\", \"Los Angeles to Vancouver\", \"Vancouver to Whistler\", \"Whistler\", \"Whistler to Kamloops\", \"Kamloops to Jasper\", \"Jasper\", \"Jasper to Banff\", \"Banff\", \"Banff to Vernon\", \"Vernon to Vancouver\", \"Vancouver\", \"Depart Vancouver\"}",
+    "countries":"{“Canada”, “USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Los Angeles to San Diego\", \"San Diego\", \"San Diego to Phoenix\", \"Phoenix to the Grand Canyon\", \"Grand Canyon National Park\", \"Grand Canyon to Las Vegas\", \"Las Vegas\", \"Depart Las Vegas\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Hello Big Apple!\", \"New Year's Eve in New York\", \"New York City\", \"Depart New York City\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Arrive New Orleans\", \"New Orleans to Panama City Beach\", \"Panama City Beach to Orlando\", \"Orlando\", \"Orlando to Miami\", \"Miami\", \"Miami to Daytona Beach\", \"Daytona beach to St. Augustine via Kennedy Space Center\", \"St. Augustine to Savannah\", \"Charleston\", \"Savannah to Raleigh\", \"Raleigh to Washington D.C.\", \"Washington D.C.\", \"Washington D.C. to New York\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Los Angeles to San Diego\", \"San Diego\", \"San Diego to Phoenix\", \"Phoenix to the Grand Canyon\", \"Grand Canyon National Park\", \"Grand Canyon to Las Vegas\", \"Las Vegas\", \"Las Vegas to Lake Tahoe\", \"Lake Tahoe\", \"Lake Tahoe to San Francisco\", \"Depart San Francisco\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Arrive Los Angeles\", \"Los Angeles to San Diego\", \"San Diego\", \"San Diego to Phoenix\", \"Phoenix to the Grand Canyon\", \"Grand Canyon National Park\", \"Grand Canyon to Las Vegas\", \"Las Vegas\", \"Las Vegas to Bass Lake\", \"Yosemite National Park\", \"Bass Lake to San Francisco\", \"San Francisco\", \"San Francisco\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Los Angeles to Las Vegas\", \"Las Vegas\", \"Las Vegas to the Grand Canyon\", \"Grand Canyon National Park\", \"Grand Canyon to Durango via Monument Valley\", \"Durango to Albuquerque\", \"Albuquerque to Amarillo\", \"Amarillo to Dallas\", \"Dallas\", \"Dallas to Memphis\", \"Memphis\", \"Memphis to New Orleans\", \"New Orleans\", \"New Orleans to Panama City Beach\", \"Panama City Beach to Orlando\", \"Orlando\", \"Orlando to Miami\", \"Miami\", \"Miami to Daytona Beach via Kennedy Space Center\", \"Daytona Beach to St. Augustine\", \"St. Augustine to Savannah\", \"Charleston\", \"Savannah to Raleigh\", \"Raleigh to Washington D.C.\", \"Washington D.C.\", \"Washington D.C. to New York\", \"Hello Big Apple!\", \"New York, New York\", \"More of Manhattan\", \"New York to Boston\", \"Boston\", \"Boston to Quebec City\", \"Quebec City\", \"Quebec City to Montreal\", \"Montreal\", \"Montreal to Toronto\", \"Toronto\", \"Toronto and Niagara Falls\", \"Toronto to Cleveland\", \"Cleveland to Chicago\", \"Chicago\", \"Chicago to Madison\", \"Madison to Sioux Falls\", \"Sioux Falls to Mt. Rushmore\", \"Mt. Rushmore\", \"Mt. Rushmore to Cody\", \"Yellowstone\", \"Cody to Jackson Hole\", \"Jackson Hole to Park City\", \"Park City to Kanab via Bryce Canyon National Park\", \"Grand Canyon National Park\", \"Kanab to Las Vegas via Zion National Park\", \"Las Vegas\", \"Las Vegas to Los Angeles\"}",
+    "countries":"{“Canada”, “USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Los Angeles to San Diego\", \"San Diego\", \"San Diego to Phoenix\", \"Phoenix to the Grand Canyon\", \"Grand Canyon National Park\", \"Grand Canyon to Las Vegas\", \"Las Vegas\", \"Las Vegas to Lake Tahoe\", \"Lake Tahoe\", \"Lake Tahoe to San Francisco\", \"San Francisco\", \"San Francisco to Carpinteria via Santa Barbara\", \"Carpinteria to Los Angeles\"}",
+    "countries":"{“USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"New York to Boston\", \"Boston\", \"Boston to Quebec City\", \"Quebec City\", \"Quebec City to Montreal\", \"Montreal\", \"Montreal to Toronto\", \"Toronto\", \"Toronto and Niagara Falls\", \"Toronto to Whistler via Vancouver\", \"Whistler\", \"Whistler to Kamloops\", \"Kamloops to Jasper\", \"Jasper\", \"Jasper to Banff\", \"Banff\", \"Banff to Vernon\", \"Vernon to Vancouver\", \"Vancouver\", \"Depart Vancouver\"}",
+    "countries":"{“Canada”, “USA”}",
+    "area":"North America"
+  },
+  {
+    "cities":"{\"Cairns to Cape Tribulation\", \"Cape Tribulation to Cairns\", \"Cairns\", \"Cairns to the Whitsundays\", \"The Whitsundays to Farmstay\", \"Farmstay to Fraser Island\", \"Fraser Island to Noosa\", \"Noosa to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Byron Bay\", \"Byron Bay to Coffs Harbour\", \"Coffs Harbour to Sydney\", \"Sydney\", \"Sydney\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Sydney\", \"Sydney\", \"Sydney to Coffs Harbour\", \"Coffs Harbour to Byron Bay\", \"Byron Bay to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Noosa\", \"Noosa\", \"Noosa to Farmstay\", \"Farmstay to the Whitsundays\", \"The Whitsundays to Cairns\", \"Cairns\", \"Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Sydney\", \"Sydney\", \"Sydney to Coffs Harbour\", \"Coffs Harbour to Byron Bay\", \"Byron Bay to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Noosa\", \"Noosa\", \"Noosa to Farmstay\", \"Farmstay to the Whitsundays\", \"The Whitsundays\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Darwin\", \"Darwin to Kakadu National Park\", \"Kakadu National Park\", \"Kakadu National Park to Katherine\", \"Katherine to Tennant Creek\", \"Tennant Creek to Alice Springs\", \"Alice Springs to Kings Creek Station\", \"Kings Creek Station to Uluru\", \"Uluru\", \"Uluru to Alice Springs\", \"Alice Springs\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Noosa\", \"Noosa\", \"Noosa to Farmstay\", \"Farmstay to the Whitsundays\", \"The Whitsundays to Cairns\", \"Cairns\", \"Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns\", \"Cairns\", \"Cairns to the Whitsundays\", \"The Whitsundays\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Sydney\", \"Sydney\", \"Sydney to Coffs Harbour\", \"Coffs Harbour to Byron Bay\", \"Byron Bay to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Noosa\", \"Noosa\", \"Noosa to Farmstay\", \"Farmstay to Whitsundays Sailing\", \"The Whitsundays to Cairns\", \"Cairns\", \"Cairns to Alice Springs\", \"Alice Springs to Kings Creek Station\", \"Kings Creek Station to Uluru\", \"Uluru\", \"Uluru to Alice Springs\", \"Alice Springs to Tennant Creek\", \"Tennant Creek to Katherine\", \"Katherine to Kakadu National Park\", \"Kakadu National Park\", \"Kakadu National Park to Darwin\", \"Darwin\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns\", \"Cairns\", \"Cairns to the Whitsundays\", \"The Whitsundays to Farmstay\", \"Farmstay to Fraser Island\", \"Fraser Island to Noosa\", \"Noosa to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Byron Bay\", \"Byron Bay to Coffs Harbour\", \"Coffs Harbour to Sydney\", \"Sydney\", \"Sydney\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"The Whitsundays\", \"The Whitsundays to Farmstay\", \"Farmstay to Fraser Island\", \"Fraser Island to Noosa\", \"Noosa to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Byron Bay\", \"Byron Bay to Coffs Harbour\", \"Coffs Harbour to Sydney\", \"Sydney\", \"Sydney\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns\", \"Cairns\", \"Cairns to the Whitsundays\", \"The Whitsundays to Farmstay\", \"Farmstay to Fraser Island\", \"Fraser Island to Noosa\", \"Noosa to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns to Cape Tribulation\", \"Cape Tribulation to Cairns\", \"Cairns\", \"Cairns to Whitsundays Sailing\", \"The Whitsundays\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Alice Springs\", \"Alice Springs to Kings Creek Station\", \"Kings Creek Station to Uluru\", \"Uluru\", \"Uluru to Alice Springs\", \"Alice Springs\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns to Cape Tribulation\", \"Cape Tribulation to Cairns\", \"Cairns\", \"Cairns to Whitsundays Sailing\", \"The Whitsundays to Farmstay\", \"Farmstay to Fraser Island\", \"Fraser Island to Noosa\", \"Noosa to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Byron Bay\", \"Byron Bay to Coffs Harbour\", \"Coffs Harbour to Sydney\", \"Sydney\", \"Sydney\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Sydney\", \"Sydney\", \"Sydney to Coffs Harbour\", \"Coffs Harbour to Byron Bay\", \"Byron Bay to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Noosa\", \"Noosa\", \"Noosa to Farmstay\", \"Farmstay to Whitsundays Sailing\", \"The Whitsundays to Cairns\", \"Cairns\", \"Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"The Whitsundays\", \"The Whitsundays to Cairns\", \"Cairns\", \"Cairns to Cape Tribulation\", \"Cape Tribulation to Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Whitsundays Sailing\", \"The Whitsundays to Cairns\", \"Cairns\", \"Cairns to Cape Tribulation\", \"Cape Tribulation to Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Alice Springs\", \"Alice Springs to Kings Creek Station\", \"Kings Creek Station to Uluru\", \"Uluru\", \"Uluru to Alice Springs\", \"Alice Springs\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns\", \"Cairns\", \"Cairns to Whitsundays Sailing\", \"The Whitsundays\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Darwin\", \"Darwin to Kakadu National Park\", \"Kakadu National Park\", \"Kakadu National Park to Katherine\", \"Katherine to Tennant Creek\", \"Tennant Creek to Alice Springs\", \"Alice Springs to Kings Creek Station\", \"Kings Creek Station to Uluru\", \"Uluru\", \"Uluru to Cairns\", \"Cairns\", \"Cairns to the Whitsundays\", \"The Whitsundays to Farmstay\", \"Farmstay to Fraser Island\", \"Fraser Island to Noosa\", \"Noosa to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Byron Bay\", \"Byron Bay to Coffs Harbour\", \"Coffs Harbour to Sydney\", \"Sydney\", \"Sydney\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Darwin\", \"Darwin to Kakadu National Park\", \"Kakadu National Park\", \"Kakadu National Park to Katherine\", \"Katherine to Tennant Creek\", \"Tennant Creek to Alice Springs\", \"Alice Springs to Kings Creek Station\", \"Kings Creek Station to Uluru\", \"Uluru\", \"Uluru to Cairns\", \"Cairns\", \"Cairns to Whitsundays Sailing\", \"The Whitsundays to Farmstay\", \"Farmstay to Fraser Island\", \"Fraser Island to Noosa\", \"Noosa to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Byron Bay\", \"Byron Bay to Coffs Harbour\", \"Coffs Harbour to Sydney\", \"Sydney\", \"Sydney\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Sydney\", \"Sydney\", \"Sydney to Coffs Harbour\", \"Coffs Harbour to Byron Bay\", \"Byron Bay to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Noosa\", \"Noosa\", \"Noosa to Farmstay\", \"Farmstay to Whitsundays Sailing\", \"The Whitsundays to Cairns\", \"Cairns\", \"Cairns to Cape Tribulation\", \"Cape Tribulation to Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns\", \"Cairns\", \"Cairns to Whitsundays Sailing\", \"The Whitsundays to Farmstay\", \"Farmstay to Fraser Island\", \"Fraser Island to Noosa\", \"Noosa to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Byron Bay\", \"Byron Bay to Coffs Harbour\", \"Coffs Harbour to Sydney\", \"Sydney\", \"Sydney\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Whitsundays Sailing\", \"The Whitsundays to Farmstay\", \"Farmstay to Fraser Island\", \"Fraser Island to Noosa\", \"Noosa to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Byron Bay\", \"Byron Bay to Coffs Harbour\", \"Coffs Harbour to Sydney\", \"Sydney\", \"Sydney\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Alice Springs\", \"Alice Springs to Kings Creek Station\", \"Kings Creek Station to Uluru\", \"Uluru\", \"Uluru to Alice Springs\", \"Alice Springs to Tennant Creek\", \"Tennant Creek to Katherine\", \"Katherine to Kakadu National Park\", \"Kakadu National Park\", \"Kakadu National Park to Darwin\", \"Darwin\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns\", \"Cairns\", \"Cairns to Whitsundays Sailing\", \"The Whitsundays to Farmstay\", \"Farmstay to Fraser Island\", \"Fraser Island to Noosa\", \"Noosa to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Melbourne\", \"Melbourne\", \"Melbourne\", \"Melbourne\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Sydney\", \"Sydney\", \"Sydney to Coffs Harbour\", \"Coffs Harbour to Byron Bay\", \"Byron Bay to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Noosa\", \"Noosa\", \"Noosa to Farmstay\", \"Farmstay to the Whitsundays\", \"The Whitsundays to Cairns\", \"Cairns\", \"Cairns to Alice Springs\", \"Alice Springs to Kings Creek Station\", \"Kings Creek Station to Uluru\", \"Uluru\", \"Uluru to Alice Springs\", \"Alice Springs to Tennant Creek\", \"Tennant Creek to Katherine\", \"Katherine to Kakadu National Park\", \"Kakadu National Park\", \"Kakadu National Park to Darwin\", \"Darwin\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Sydney\", \"Sydney\", \"Sydney to Coffs Harbour\", \"Coffs Harbour to Byron Bay\", \"Byron Bay to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Noosa\", \"Noosa\", \"Noosa to Farmstay\", \"Farmstay to the Whitsundays\", \"The Whitsundays to Cairns\", \"Cairns\", \"Cairns to Cape Tribulation\", \"Cape Tribulation to Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Sydney\", \"Sydney\", \"Sydney to Coffs Harbour\", \"Coffs Harbour to Byron Bay\", \"Byron Bay to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Noosa\", \"Noosa\", \"Noosa to Farmstay\", \"Farmstay to Whitsundays Sailing\", \"The Whitsundays\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise to Noosa\", \"Noosa\", \"Noosa to Farmstay\", \"Farmstay to Whitsundays Sailing\", \"The Whitsundays to Cairns\", \"Cairns\", \"Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Sydney\", \"Sydney\", \"Sydney to Coffs Harbour\", \"Coffs Harbour to Byron Bay\", \"Byron Bay to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns to Cape Tribulation\", \"Cape Tribulation to Cairns\", \"Cairns\", \"Cairns to the Whitsundays\", \"The Whitsundays\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Alice Springs to Tennant Creek\", \"Tennant Creek to Katherine\", \"Katherine to Kakadu National Park\", \"Kakadu National Park\", \"Kakadu National Park to Darwin\", \"Darwin\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Darwin\", \"Darwin to Kakadu National Park\", \"Kakadu National Park\", \"Kakadu National Park to Katherine\", \"Katherine to Tennant Creek\", \"Tennant Creek to Alice Springs\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns\", \"Cairns to Dive Boat\", \"Dive Boat to Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns to Dive Boat\", \"Dive Boat\", \"Dive Boat to Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns to Boat\", \"Boat\", \"Boat to Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Sydney\", \"Sydney\", \"Sydney to Coffs Harbour\", \"Coffs Harbour to Byron Bay\", \"Byron Bay to Surfers Paradise\", \"Surfers Paradise\", \"Surfers Paradise\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns to Cape Tribulation\", \"Cape Tribulation to Cairns\", \"Cairns\", \"Cairns to the Whitsundays\", \"The Whitsundays\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Alice Springs to Tennant Creek\", \"Tennant Creek to Katherine\", \"Katherine to Kakadu National Park\", \"Kakadu National Park\", \"Kakadu National Park to Darwin\", \"Darwin\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Darwin\", \"Darwin to Kakadu National Park\", \"Kakadu National Park\", \"Kakadu National Park to Katherine\", \"Katherine to Tennant Creek\", \"Tennant Creek to Alice Springs\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns\", \"Cairns to Dive Boat\", \"Dive Boat to Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns to Dive Boat\", \"Dive Boat\", \"Dive Boat to Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Cairns to Boat\", \"Boat\", \"Boat to Cairns\"}",
+    "countries":"{“Australia”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Auckland to Paihia\", \"Paihia\", \"Paihia to Auckland\", \"Auckland to Waitomo\", \"Waitomo to Rotorua\", \"Rotorua\", \"Rotorua to Lake Taupo\", \"Lake Taupo to Wellington\", \"Wellington\", \"Wellington to Christchurch\", \"Christchurch to Franz Josef Glacier\", \"Franz Josef Glacier\", \"Franz Josef Glacier to Queenstown\", \"Queenstown\", \"Queenstown\", \"Finish Queenstown\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Arrive Queenstown\", \"Queenstown\", \"Queenstown\", \"Queenstown to Franz Josef Glacier\", \"Franz Josef Glacier\", \"Franz Josef Glacier to Christchurch\", \"Christchurch to Wellington\", \"Wellington\", \"Wellington to Lake Taupo\", \"Lake Taupo to Rotorua\", \"Rotorua\", \"Rotorua to Waitomo\", \"Waitomo to Auckland\", \"Auckland to Paihia\", \"Paihia\", \"Paihia to Auckland\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Auckland to Waitomo\", \"Waitomo to Rotorua\", \"Rotorua\", \"Rotorua to Lake Taupo\", \"Lake Taupo to Wellington\", \"Wellington\", \"Wellington to Christchurch\", \"Christchurch to Franz Josef Glacier\", \"Franz Josef Glacier\", \"Franz Josef Glacier to Queenstown\", \"Queenstown\", \"Queenstown\", \"Finish Queenstown\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Auckland to Paihia\", \"Paihia\", \"Paihia to Auckland\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Christchurch to Lake Ohau\", \"Lake Ohau to Dunedin\", \"Dunedin to Queenstown\", \"Queenstown\", \"Queenstown\", \"Queenstown to Franz Josef Glacier\", \"Franz Josef Glacier\", \"Franz Josef Glacier to Christchurch\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Arrive Queenstown\", \"Queenstown\", \"Finish Queenstown\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Christchurch to Wellington\", \"Wellington\", \"Wellington to Lake Taupo\", \"Lake Taupo to Rotorua\", \"Rotorua\", \"Rotorua to Waitomo\", \"Waitomo to Auckland\", \"Auckland to Paihia\", \"Paihia\", \"Paihia to Auckland\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Wellington to Christchurch\", \"Christchurch to Franz Josef Glacier\", \"Franz Josef Glacier\", \"Franz Josef Glacier to Queenstown\", \"Queenstown\", \"Queenstown\", \"Queenstown to Dunedin\", \"Dunedin to Lake Ohau\", \"Lake Ohau to Christchurch\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Christchurch to Lake Ohau\", \"Lake Ohau to Dunedin\", \"Dunedin to Queenstown\", \"Queenstown\", \"Queenstown\", \"Queenstown to Franz Josef Glacier\", \"Franz Josef Glacier\", \"Franz Josef Glacier to Christchurch\", \"Christchurch to Wellington\", \"Wellington\", \"Wellington to Lake Taupo\", \"Lake Taupo to Rotorua\", \"Rotorua\", \"Rotorua to Waitomo\", \"Waitomo to Auckland\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Auckland to Paihia\", \"Paihia\", \"Paihia to Auckland\", \"Auckland to Waitomo\", \"Waitomo to Rotorua\", \"Rotorua\", \"Rotorua to Lake Taupo\", \"Lake Taupo to Wellington\", \"Wellington\", \"Wellington to Christchurch\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Auckland to Paihia\", \"Paihia\", \"Paihia to Auckland\", \"Auckland to Waitomo\", \"Waitomo to Rotorua\", \"Rotorua\", \"Rotorua to Lake Taupo\", \"Lake Taupo to Wellington\", \"Wellington\", \"Finish Wellington\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Arrive Wellington\", \"Wellington\", \"Wellington to Lake Taupo\", \"Taupo to Rotorua\", \"Rotorua\", \"Rotorua to Waitomo\", \"Waitomo to Auckland\", \"Auckland to Paihia\", \"Paihia\", \"Paihia to Auckland\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Christchurch to Franz Josef Glacier\", \"Franz Josef Glacier\", \"Franz Josef Glacier to Queenstown\", \"Queenstown\", \"Queenstown\", \"Queenstown to Dunedin\", \"Dunedin to Lake Ohau\", \"Lake Ohau to Christchurch\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Auckland to Paihia\", \"Paihia\", \"Paihia to Auckland\", \"Auckland to Waitomo\", \"Waitomo to Rotorua\", \"Rotorua\", \"Rotorua to Auckland\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Auckland to Paihia\", \"Paihia\", \"Paihia to Auckland\", \"Auckland to Waitomo\", \"Waitomo to Rotorua\", \"Rotorua\", \"Rotorua to Lake Taupo\", \"Lake Taupo to Wellington\", \"Wellington\", \"Wellington to Christchurch\", \"Christchurch to Franz Josef Glacier\", \"Franz Josef Glacier\", \"Franz Josef Glacier to Queenstown\", \"Queenstown\", \"Queenstown\", \"Queenstown to Dunedin\", \"Dunedin to Lake Ohau\", \"Lake Ohau to Christchurch\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Christchurch to Lake Ohau\", \"Lake Ohau to Dunedin\", \"Dunedin to Queenstown\", \"Queenstown\", \"Queenstown\", \"Queenstown to Franz Josef Glacier\", \"Franz Josef Glacier\", \"Franz Josef Glacier to Christchurch\", \"Christchurch to Wellington\", \"Wellington\", \"Wellington to Lake Taupo\", \"Lake Taupo to Rotorua\", \"Rotorua\", \"Rotorua to Waitomo\", \"Waitomo to Auckland\", \"Auckland to Paihia\", \"Paihia\", \"Paihia to Auckland\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Auckland to Waitomo\", \"Waitomo to Rotorua\", \"Rotorua\", \"Rotorua to Lake Taupo\", \"Lake Taupo to Wellington\", \"Wellington\", \"Wellington to Christchurch\", \"Christchurch to Franz Josef Glacier\", \"Franz Josef Glacier\", \"Franz Josef Glacier to Queenstown\", \"Queenstown\", \"Queenstown\", \"Queenstown to Dunedin\", \"Dunedin to Lake Ohau\", \"Lake Ohau to Christchurch\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Arrive Queenstown\", \"Queenstown\", \"Queenstown\", \"Queenstown to Franz Josef Glacier\", \"Franz Josef Glacier\", \"Franz Josef Glacier to Christchurch\", \"Christchurch to Wellington\", \"Wellington\", \"Wellington to Lake Taupo\", \"Lake Taupo to Rotorua\", \"Rotorua\", \"Rotorua to Waitomo\", \"Waitomo to Auckland\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  },
+  {
+    "cities":"{\"Christchurch to Lake Ohau\", \"Lake Ohau to Dunedin\", \"Dunedin to Queenstown\", \"Queenstown\", \"Queenstown\", \"Queenstown to Franz Josef Glacier\", \"Franz Josef Glacier\", \"Franz Josef Glacier to Christchurch\", \"Christchurch to Wellington\"}",
+    "countries":"{“New Zealand”}",
+    "area":"Australia/New Zealand"
+  }
+]
