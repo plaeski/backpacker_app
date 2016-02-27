@@ -8,6 +8,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'superseeder'
 gem 'pg'
+gem 'google_currency'
+gem 'monetize'
 group :development, :test do
   gem 'byebug'
 end
