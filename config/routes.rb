@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
   resources :trip, except: :index do
   	resources :trip_route, only: [:show]
+    resources :comments, only: [:create]
+
   end
   
   match '/trip_route/update', to: 'trip_route#update', via: [:post], constraints: { format: 'json' }
