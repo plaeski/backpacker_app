@@ -1,59 +1,82 @@
-var CommentBox = React.createClass({
-  loadCommentsFromServer: function() {
+var TripPlanner = React.createClass({
+  loadCitiesFromServer: function() {
     $.ajax({
       url: this.props.url,
       dataType: 'json',
       cache: false,
       success: function(data) {
-        this.setState({data: data});
+          this.setState({data: data});
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
       }.bind(this)
     });
   },
-  handleCommentSubmit: function(comment) {
-    var comments = this.state.data;
-    var city = this.state.data.map(function(city) {
-      return (city.text)
-    });
-    comment.id = Date.now();
-    var newComments = comments.concat([comment]);
-    this.setState({data: newComments});
-    $.ajax({
-      url: this.props.url,
-      dataType: 'json',
-      type: 'POST',
-      data: comment,
-      success: function(data) {
-        this.setState({data:data});
-      }.bind(this),
-      error: function(xhr, status, err) {
-        this.setState({data: comments});
-        console.error(this.props.url,status,err,toString());
-      }.bind(this)
-    });
+  handleCitySubmit: function(comment) {
+    if (this.state.data){
+      var locations = this.state.data;
+      if (locations.route_details) {
+        var city = locations.route_details.map(function(city) {
+          return (city.text)
+        });
+        var newLocation = locations.route_details.concat([comment]);
+        locations.route_details = newLocation
+      } else {
+        var newLocation = comment
+        locations.route_details = [newLocation]
+      }
+      this.setState({data: locations });
+      $.ajax({
+        url: '/trip_route/update',
+        dataType: 'json',
+        type: 'POST',
+        data: locations,
+        success: function(data) {
+          this.setState({data:data});
+        }.bind(this),
+        error: function(xhr, status, err) {
+          this.setState({data: locations});
+          console.error(this.props.url,status,err,toString());
+        }.bind(this)
+      });
+    }
   },
   getInitialState: function() {
     return {data: []};
   },
   componentWillMount: function() {
-    this.loadCommentsFromServer();
+    this.loadCitiesFromServer();
+  },
+  removeCity: function(e) {
+    var id = e.target.id
+    var listData = this.state.data
+    listData.item_id = id
+    $.ajax({
+      url: '/trip_route/stop/delete',
+      dataType: 'json',
+      type: 'POST',
+      data: listData,
+      success: function(data) {
+        this.setState({data:data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        this.setState({data: locations});
+        console.error(this.props.url,status,err,toString());
+      }.bind(this)
+    });
   },
   render: function() {
     return (
-      <div className="commentBox">
+      <div className="tripPlanner">
         <h1>Cities</h1>
-        <MapBox data={this.state.data} />
-        <CommentList data={this.state.data} />
-        <CommentForm onCommentSubmit={this.handleCommentSubmit} />
+        <MapBox data={this.state.data.route_details} />
+        <CityList data={this.state.data} removeCity={this.removeCity}/>
+        <CityForm onCommentSubmit={this.handleCitySubmit} />
       </div>
     );
   }
 });
-
 var MapBox = React.createClass({
-
   createMap: function (cities) {
     var map = new GMaps({
       div: '#map',
@@ -63,11 +86,9 @@ var MapBox = React.createClass({
       height: '500px',
       zoom: 5
     });
-    
     var coordinates = cities.map(function(city) {
       return [city.lat, city.lng]
     })
-
     for (var i = 0; i<coordinates.length; i++) {
       map.addMarker({
         lat: coordinates[i][0],
@@ -81,13 +102,25 @@ var MapBox = React.createClass({
       strokeColor: '#131540',
       strokeOpacity: 0.6,
       strokeWeight: 5
-    });  
+    });
   },
   componentDidUpdate: function() {
-    var cities = this.props.data.map(function(city) {
-      return city
+    if (this.props.data){
+      var cities = this.props.data.map(function(city) {
+        return city
+      });
+      this.createMap(cities);
+    }
+  },
+  componentDidMount: function() {
+    var map = new GMaps({
+      div: '#map',
+      lat: 41.9000,
+      lng: 0.4000,
+      width: '750px',
+      height: '500px',
+      zoom: 2
     });
-    this.createMap(cities);
   },
   render: function() {
     return (
@@ -96,30 +129,28 @@ var MapBox = React.createClass({
     );
   }
 });
-
-var CommentList = React.createClass({
+var CityList = React.createClass({
   render: function() {
-    var commentNodes = this.props.data.map(function(comment) {
-      return (
-        <Comment key={comment.id}>
-          {comment.text}
-        </Comment>
-      );
-    });
+    if (this.props.data.route_details) {
+      var that = this
+      var cityNodes = this.props.data.route_details.map(function(city, i) {
+        return (
+          <City key={city.id}>
+            {city.text} <div id={i} onClick={that.props.removeCity}>x</div> 
+          </City>
+        );
+      });
+    }
     return (
-      <div className="commentList">
-        {commentNodes}
+      <div className="cityList">
+        {cityNodes} 
       </div>
     );
   }
 });
-
-var CommentForm = React.createClass({
+var CityForm = React.createClass({
   getInitialState: function(){
     return {text: ''};
-  },
-  handleAuthorChange: function(e) {
-    this.setState({author: e.target.value});
   },
   handleTextChange: function(e) {
     this.setState({text: e.target.value});
@@ -147,11 +178,11 @@ var CommentForm = React.createClass({
   },
   render: function() {
     return (
-      <div className="commentForm">
-        <form className="commentForm" onSubmit={this.handleSubmit}>
+      <div className="CityForm">
+        <form className="CityForm" onSubmit={this.handleSubmit}>
           <input 
             type="text" 
-            placeholder="Say something..."
+            placeholder="Enter City Name"
             value={this.state.text}
             onChange={this.handleTextChange}
           />
@@ -161,16 +192,16 @@ var CommentForm = React.createClass({
     );
   }
 });
-
-var Comment = React.createClass({
+var City = React.createClass({
   render: function() {
     return (
       <div className="comment">
         <ul className="comment-body">
-          <li>{this.props.children}</li>
+          <li>
+            {this.props.children}
+          </li>
         </ul>
       </div>
     );
   }
 });
-

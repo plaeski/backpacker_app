@@ -5,11 +5,7 @@ var TripPlanner = React.createClass({
       dataType: 'json',
       cache: false,
       success: function(data) {
-        if ($.isEmptyObject(data.route_details)) {
-          this.setState({data: []});
-        } else {
           this.setState({data: data});
-        }
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
@@ -19,11 +15,16 @@ var TripPlanner = React.createClass({
   handleCitySubmit: function(comment) {
     if (this.state.data){
       var locations = this.state.data;
-      var city = locations.route_details.map(function(city) {
-        return (city.text)
-      });
-      var newLocation = locations.route_details.concat([comment]);
-      locations.route_details = newLocation
+      if (locations.route_details) {
+        var city = locations.route_details.map(function(city) {
+          return (city.text)
+        });
+        var newLocation = locations.route_details.concat([comment]);
+        locations.route_details = newLocation
+      } else {
+        var newLocation = comment
+        locations.route_details = [newLocation]
+      }
       this.setState({data: locations });
       $.ajax({
         url: '/trip_route/update',
@@ -75,9 +76,7 @@ var TripPlanner = React.createClass({
     );
   }
 });
-
 var MapBox = React.createClass({
-
   createMap: function (cities) {
     var map = new GMaps({
       div: '#map',
@@ -86,25 +85,24 @@ var MapBox = React.createClass({
       width: '750px',
       height: '500px',
       zoom: 5
+    });
+    var coordinates = cities.map(function(city) {
+      return [city.lat, city.lng]
+    })
+    for (var i = 0; i<coordinates.length; i++) {
+      map.addMarker({
+        lat: coordinates[i][0],
+        lng: coordinates[i][1]
       });
-      var coordinates = cities.map(function(city) {
-        return [city.lat, city.lng]
-      })
-
-      for (var i = 0; i<coordinates.length; i++) {
-        map.addMarker({
-          lat: coordinates[i][0],
-          lng: coordinates[i][1]
-        });
-        map.setCenter(coordinates[i][0], coordinates[i][1]);
-      }
-      
-      map.drawPolyline({
-        path: coordinates,
-        strokeColor: '#131540',
-        strokeOpacity: 0.6,
-        strokeWeight: 5
-      }); 
+      map.setCenter(coordinates[i][0], coordinates[i][1]);
+    }
+    
+    map.drawPolyline({
+      path: coordinates,
+      strokeColor: '#131540',
+      strokeOpacity: 0.6,
+      strokeWeight: 5
+    });
   },
   componentDidUpdate: function() {
     if (this.props.data){
@@ -114,6 +112,16 @@ var MapBox = React.createClass({
       this.createMap(cities);
     }
   },
+  componentDidMount: function() {
+    var map = new GMaps({
+      div: '#map',
+      lat: 41.9000,
+      lng: 0.4000,
+      width: '750px',
+      height: '500px',
+      zoom: 2
+    });
+  },
   render: function() {
     return (
       <div id="map">
@@ -121,16 +129,15 @@ var MapBox = React.createClass({
     );
   }
 });
-
 var CityList = React.createClass({
   render: function() {
     if (this.props.data.route_details) {
       var that = this
       var cityNodes = this.props.data.route_details.map(function(city, i) {
         return (
-          <Comment key={city.id}>
+          <City key={city.id}>
             {city.text} <div id={i} onClick={that.props.removeCity}>x</div> 
-          </Comment>
+          </City>
         );
       });
     }
@@ -141,7 +148,6 @@ var CityList = React.createClass({
     );
   }
 });
-
 var CityForm = React.createClass({
   getInitialState: function(){
     return {text: ''};
@@ -176,7 +182,7 @@ var CityForm = React.createClass({
         <form className="CityForm" onSubmit={this.handleSubmit}>
           <input 
             type="text" 
-            placeholder="Say something..."
+            placeholder="Enter City Name"
             value={this.state.text}
             onChange={this.handleTextChange}
           />
@@ -186,8 +192,7 @@ var CityForm = React.createClass({
     );
   }
 });
-
-var Comment = React.createClass({
+var City = React.createClass({
   render: function() {
     return (
       <div className="comment">
