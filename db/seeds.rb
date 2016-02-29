@@ -207,9 +207,6 @@ country_data.each do |x|
 		area: x[2])
 end
 
-
-=======
-
 ##########################################
 ##  Change this numbers to generate things as much as you want
 
