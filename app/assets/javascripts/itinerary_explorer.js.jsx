@@ -29,7 +29,6 @@ var ItineraryExplorer = React.createClass({
     var changedState = {
       excluded: this.state.excluded,
     };
-
     if (e.target.checked == false) {
       changedState.excluded.push(e.target.value)
     } else if (e.target.checked == true){
@@ -53,6 +52,9 @@ var ItineraryExplorer = React.createClass({
       return result 
     }
     var newResults = this.state.data.filter(excludeCountry)
+    var invalidDuration = this.state.excludedByDuration
+    newResults = newResults.diff(invalidDuration)
+    debugger;
     changedState.results = newResults
     changedState.current = newResults[0]
     this.setState(changedState)
@@ -73,13 +75,8 @@ var ItineraryExplorer = React.createClass({
       for (var i=0; i<durations.length; i++) {
         itineraries[i].duration = durations[i]
       }
-      
-      var filteredOut = itineraries.filter(durationCheck)
-      var currentResults = itineraries.diff(filteredOut)
-      this.setState({
-        results: currentResults,
-        excludedByDuration: filteredOut
-      })
+      var excludedItineraries = itineraries.filter(durationCheck)
+      var currentResults = itineraries.diff(excludedItineraries)
     } 
     else if (element.target.checked == true){
       var currentResults = this.state.results
@@ -89,11 +86,11 @@ var ItineraryExplorer = React.createClass({
       for (var i = 0; i<reinclude.length; i++){
         currentResults.push(reinclude[i])
       }
-      this.setState({
-        results: currentResults,
-        excludedByDuration: excludedItineraries
-      })
     }
+    this.setState({
+      results: currentResults,
+      excludedByDuration: excludedItineraries
+    })
   },
   changeCurrent: function(e) {
     var num = e.target.id
