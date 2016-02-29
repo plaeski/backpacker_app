@@ -1,3 +1,7 @@
+Array.prototype.diff = function(a) {
+    return this.filter(function(i) {return a.indexOf(i) < 0;});
+};
+
 var ItineraryExplorer = React.createClass({
   loadCitiesFromServer: function() {
     $.ajax({
@@ -16,12 +20,12 @@ var ItineraryExplorer = React.createClass({
     });
   },
   getInitialState: function() {
-    return {results: [], data: [], excluded:[]};
+    return {results: [], data: [], excluded:[], excludedByDuration: []};
   },
   componentWillMount: function() {
     this.loadCitiesFromServer();
   },
-  filterResults: function(e) {
+  filterCountries: function(e) {
     var changedState = {
       excluded: this.state.excluded,
     };
@@ -50,9 +54,46 @@ var ItineraryExplorer = React.createClass({
     }
     var newResults = this.state.data.filter(excludeCountry)
     changedState.results = newResults
-    debugger;
     changedState.current = newResults[0]
     this.setState(changedState)
+  },
+  filterDurations: function(startPoint, endPoint, element) {
+    function durationCheck (itinerary){
+      if (itinerary.duration >= startPoint && itinerary.duration <=endPoint){
+        return true
+      } else {
+        return false
+      } 
+    }
+    if (element.target.checked == false) {
+      var itineraries = this.state.results
+      var durations = itineraries.map(function(itinerary){
+        return itinerary.cities.length
+      })
+      for (var i=0; i<durations.length; i++) {
+        itineraries[i].duration = durations[i]
+      }
+      
+      var filteredOut = itineraries.filter(durationCheck)
+      var currentResults = itineraries.diff(filteredOut)
+      this.setState({
+        results: currentResults,
+        excludedByDuration: filteredOut
+      })
+    } 
+    else if (element.target.checked == true){
+      var currentResults = this.state.results
+      var excludedItineraries = this.state.excludedByDuration
+      var reinclude = excludedItineraries.filter(durationCheck)
+      excludedItineraries = excludedItineraries.diff(reinclude)
+      for (var i = 0; i<reinclude.length; i++){
+        currentResults.push(reinclude[i])
+      }
+      this.setState({
+        results: currentResults,
+        excludedByDuration: excludedItineraries
+      })
+    }
   },
   changeCurrent: function(e) {
     var num = e.target.id
@@ -67,7 +108,7 @@ var ItineraryExplorer = React.createClass({
         <h1>Itineraries</h1>
         <div className="row">
           <div className="large-3 columns">
-            <ItinFilters data={this.state.data} filterResults={this.filterResults}/>
+            <ItinFilters data={this.state.data} filterCountries={this.filterCountries} filterDurations={this.filterDurations}/>
           </div>
           <div className="large-3 columns itin-list">
             <ItinList data={this.state.results} changeCurrent={this.changeCurrent} />
@@ -182,8 +223,13 @@ var ItinCountryDetails = React.createClass({
 })
 
 var ItinFilters = React.createClass({
-  onChange: function(e) {
-    this.props.filterResults(e);
+  onChange: function(e, f, g) {
+    debugger;
+    if (f){
+      this.props.filterDurations(e, f, g);
+    } else {
+      this.props.filterCountries(e);
+    }
   },
   render: function() {
     var countries = []
@@ -207,11 +253,10 @@ var ItinFilters = React.createClass({
           <h3>Countries</h3>
           {country_list}
           <h3>Duration</h3>
-          <input value="7" type="checkbox" onChange={this.onChange} defaultChecked /><label for="7">One Week</label><br />
-          <input value="14" type="checkbox" onChange={this.onChange} defaultChecked/><label for="14">Two Weeks</label><br />
-          <input value="21" type="checkbox" onChange={this.onChange} defaultChecked/><label for="21">Three Weeks</label><br />
-          <input value="28" type="checkbox" defaultChecked onChange={this.onChange}/><label for="28">Four Weeks +</label>
-          <input type="submit" value="Filter Results" className="button"/>
+          <input type="checkbox" onChange={this.onChange.bind(this, 1, 7)} defaultChecked /><label for="7">One Week</label><br />
+          <input type="checkbox"  onChange={this.onChange.bind(this, 8, 14)} defaultChecked/><label for="14">Two Weeks</label><br />
+          <input type="checkbox"  onChange={this.onChange.bind(this, 15, 21)} defaultChecked/><label for="21">Three Weeks</label><br />
+          <input type="checkbox" defaultChecked  onChange={this.onChange.bind(this, 22, 100)}/><label for="28">Four Weeks +</label>
         </form>
       </div>
     )
