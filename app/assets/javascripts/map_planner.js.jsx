@@ -82,9 +82,7 @@ var TripPlanner = React.createClass({
     );
   }
 });
-
 var MapBox = React.createClass({
-
   createMap: function (cities) {
     var map = new GMaps({
       div: '#map',
@@ -94,11 +92,9 @@ var MapBox = React.createClass({
       height: '500px',
       zoom: 5
     });
-
     var coordinates = cities.map(function(city) {
       return [city.lat, city.lng]
     })
-
     for (var i = 0; i<coordinates.length; i++) {
       map.addMarker({
         lat: coordinates[i][0],
@@ -159,7 +155,6 @@ var CityList = React.createClass({
     );
   }
 });
-
 var CityForm = React.createClass({
   getInitialState: function(){
     return {text: ''};
