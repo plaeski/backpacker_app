@@ -76,9 +76,7 @@ var TripPlanner = React.createClass({
     );
   }
 });
-
 var MapBox = React.createClass({
-
   createMap: function (cities) {
     var map = new GMaps({
       div: '#map',
@@ -88,11 +86,9 @@ var MapBox = React.createClass({
       height: '500px',
       zoom: 5
     });
-
     var coordinates = cities.map(function(city) {
       return [city.lat, city.lng]
     })
-
     for (var i = 0; i<coordinates.length; i++) {
       map.addMarker({
         lat: coordinates[i][0],
@@ -140,9 +136,9 @@ var CityList = React.createClass({
       var that = this
       var cityNodes = this.props.data.route_details.map(function(city, i) {
         return (
-          <Comment key={city.id}>
+          <City key={city.id}>
             {city.text} <div id={i} onClick={that.props.removeCity}>x</div> 
-          </Comment>
+          </City>
         );
       });
     }
@@ -153,7 +149,6 @@ var CityList = React.createClass({
     );
   }
 });
-
 var CityForm = React.createClass({
   getInitialState: function(){
     return {text: ''};
@@ -198,8 +193,7 @@ var CityForm = React.createClass({
     );
   }
 });
-
-var Comment = React.createClass({
+var City = React.createClass({
   render: function() {
     return (
       <div className="comment">
