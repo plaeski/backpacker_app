@@ -20,6 +20,9 @@
       <%= f.label :password_confirmation %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
     </div>
+    <% if request.fullpath.include?("join") %>
+      <%= hidden_field_tag :trip_id, value = params[:id] %>
+    <% end %>
      <%= f.submit 'Sign up', :class => 'button right' %>
   <% end %>
 </div>
