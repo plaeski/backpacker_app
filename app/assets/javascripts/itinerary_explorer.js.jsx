@@ -12,10 +12,26 @@ var ItineraryExplorer = React.createClass({
         this.setState({
           data: data,
           results: data,
+          current: data[0]
         });
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+  },
+  handleItinerarySave: function(itinerary) {
+    $.ajax({
+      url: '/trip/update',
+      dataType: 'json',
+      type: 'POST',
+      data: itinerary,
+      success: function(data) {
+        this.setState({data:data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        this.setState({data: locations});
+        console.error(this.props.url,status,err,toString());
       }.bind(this)
     });
   },

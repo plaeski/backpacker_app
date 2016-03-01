@@ -1,1 +1,2 @@
-<%= react_component('ItineraryExplorer', {url: "/itineraries/#{@area}"}) %>
+<% byebug %>
+<%= react_component('ItineraryExplorer', {url: "/trip/#{params[:trip_id]}/itineraries/#{@area}"}) %>
