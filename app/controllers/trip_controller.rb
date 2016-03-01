@@ -5,7 +5,6 @@ class TripController < ApplicationController
     # show last 10 most recent comments in the trip
     @comments = Comment.where(trip: @trip)
   	@route = @trip.trip_route.id
-    byebug
   end
 
   def new
