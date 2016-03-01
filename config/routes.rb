@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks", 
     :registrations => "registrations" }
   devise_scope :user do
-    get '/trip_preview/join/:id', :to => 'registrations#new'
+    get '/trip_preview/join/:id', :as=> 'trip_preview_join', :to => 'registrations#new'
   end
   
   get 'info_map/index'

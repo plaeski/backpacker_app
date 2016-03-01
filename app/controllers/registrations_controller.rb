@@ -2,7 +2,7 @@ class RegistrationsController < Devise::RegistrationsController
   def new
   	super
   	if params[:id]
-  		@trip_id = params[:id]
+  		@trip_code = params[:id]
   	end
   end
 
@@ -10,10 +10,11 @@ class RegistrationsController < Devise::RegistrationsController
     super
     if params[:trip_id]
     	user = @user.id
-    	trip = params[:trip_id]
+    	trip = Trip.find_by(trip_code: params[:trip_id])
+      byebug
     	TripMembership.create(
     		user_id: user,
-    		trip_id: trip
+    		trip_id: trip.id
     		)
     end
   end
