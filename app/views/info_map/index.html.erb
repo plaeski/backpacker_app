@@ -16,7 +16,7 @@
     
   </head> -->
   <body>
-    <div id="container" style="position: relative; width: 1000px; height: 562px;"></div>
+    <div id="container" style="position: relative;"></div>
     <script>
       // DATA 
       var countries_data = [
@@ -1059,10 +1059,24 @@
       // create new data map
       // type of scope and projection 
       // default fills and highlights
+
+
       var world = new Datamap({
+        setProjection: function(element) {
+          var projection = d3.geo.mercator()
+            .center([-1, 28])
+            .scale(165)
+            .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+          var path = d3.geo.path()
+            .projection(projection);
+
+          return {path: path, projection: projection};
+        },
         scope: "world",
         element: document.getElementById("container"),
-        projection: 'mercator',
+        width: 1000,
+        height: 700,
+        responsive: true,      
         fills: {
               defaultFill: "#BDB69C"
         },
@@ -1075,7 +1089,7 @@
             var country_data = countries_data.find(x => x.id === geography.id);
             // console.log(country_data);
             return `
-              <div style="background-color: white; padding: 1rem">
+              <div style="background-color: white; padding: 1rem; font-size: .80em">
                 ${country_data.name}<br/>
                 Currency: ${country_data.currency}<br/>
                 Daily Cost: ${country_data.daily_cost}<br/>
@@ -1088,11 +1102,12 @@
           },          
         },
         // zoom function
+        // var svg = d3.geo.mercator().scale(0.7051489802421953).translate([199.83564269603607, 145.48209008634268]);
         done: function(datamap) {
            datamap.svg.call(d3.behavior.zoom().on("zoom", redraw));
 
            function redraw() {
-                datamap.svg.selectAll("g").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+              datamap.svg.selectAll("g").attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
            }
         }
       });

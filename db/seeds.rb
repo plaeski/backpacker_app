@@ -217,7 +217,8 @@ NUMBER_OF_COMMENTS = 11
 NUMBER_OF_COMMENTS.times do
   Comment.create!(
     content: Faker::Lorem.sentence,
-    user_id: Faker::Number.between(1, NUMBER_OF_COMMENTS)
+    user_id: Faker::Number.between(1, NUMBER_OF_COMMENTS),
+    trip: Trip.create(name: "string")
   )
 end
 
