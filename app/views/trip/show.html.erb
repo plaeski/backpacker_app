@@ -5,9 +5,16 @@
 	<a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/trip_preview/<%=@trip.trip_code %>" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i>Share on Facebook</a>
 	</div>
 
-	<a href="/trip/<%=@trip.id%>/trip_route/<%=@route%>"> View Trip Route
+	<a href="/trip/<%=@trip.id%>/trip_route/<%=@route%>"> View Trip Route </a>
+	<% if @trip.itinerary_id %>
+		<h2>Saved Itinerary</h2>
+		<ol>	
+			<% @trip.itinerary.cities.each do |stop| %>
+			<li> <%= stop %> </li>
+			<% end %>
+		</ol>
+	<% end %>
 	
-
 	<h4>Need Some Inspiration?</h4>
 
 	<%= link_to "Europe", trip_itinerary_path(@trip.id, "Europe") %>

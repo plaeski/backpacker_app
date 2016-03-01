@@ -27,4 +27,18 @@ class TripController < ApplicationController
 			flash[:failure] = "Please enter a name!"
 		end
 	end
+
+  def update
+    respond_to do |format|
+      format.json {
+        @trip = Trip.find params[:id]
+        @trip.itinerary_id = params[:trip_id]
+        if @trip.save
+          data = {}
+          data["redirect"] = "/trip/#{@trip.id}"
+          render json: data
+        end
+      }
+    end
+  end
 end

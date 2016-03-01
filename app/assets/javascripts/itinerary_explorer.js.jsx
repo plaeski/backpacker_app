@@ -20,19 +20,23 @@ var ItineraryExplorer = React.createClass({
       }.bind(this)
     });
   },
-  handleItinerarySave: function(itinerary) {
+  handleItinerarySave: function() {
+    var data = this.state.current
+    var itinId = this.state.current.id
+    data.trip_id = itinId
+    var tripId = this.props.trip
+    var url = "/trip/" + tripId 
     $.ajax({
-      url: '/trip/update',
+      url: url,
       dataType: 'json',
-      type: 'POST',
-      data: itinerary,
+      type: 'PATCH',
+      data: this.state.current,
       success: function(data) {
-        this.setState({data:data});
-      }.bind(this),
+        window.location.href = data.redirect;
+      },
       error: function(xhr, status, err) {
-        this.setState({data: locations});
         console.error(this.props.url,status,err,toString());
-      }.bind(this)
+      }
     });
   },
   getInitialState: function() {
@@ -70,7 +74,6 @@ var ItineraryExplorer = React.createClass({
     var newResults = this.state.data.filter(excludeCountry)
     var invalidDuration = this.state.excludedByDuration
     newResults = newResults.diff(invalidDuration)
-    debugger;
     changedState.results = newResults
     changedState.current = newResults[0]
     this.setState(changedState)
@@ -127,7 +130,7 @@ var ItineraryExplorer = React.createClass({
             <ItinList data={this.state.results} changeCurrent={this.changeCurrent} />
           </div>
           <div className="large-6 columns">
-            <ItinDetails data={this.state.current}/>
+            <ItinDetails data={this.state.current} handleItinerarySave={this.handleItinerarySave}/>
           </div>
         </div>
       </div>
@@ -167,12 +170,13 @@ var ItinDetails = React.createClass({
         <Itinerary key={itin.id}>
             <h2>Details</h2>
               <ItinCityDetails data={itin}/>
+              <a href="#" onClick={this.props.handleItinerarySave} className="button info round">Save Itinerary</a> 
           </Itinerary>
       );
     }
     return (
       <div className="cityList">
-        {itin} 
+        {itin}
       </div>
     );
   }
@@ -237,7 +241,6 @@ var ItinCountryDetails = React.createClass({
 
 var ItinFilters = React.createClass({
   onChange: function(e, f, g) {
-    debugger;
     if (f){
       this.props.filterDurations(e, f, g);
     } else {

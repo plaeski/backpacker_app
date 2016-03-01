@@ -123,7 +123,7 @@ var MapBox = React.createClass({
       div: '#map',
       lat: 41.9000,
       lng: 0.4000,
-      width: '750px',
+      width: '600x',
       height: '500px',
       zoom: 2
     });
