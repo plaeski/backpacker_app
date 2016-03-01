@@ -1,6 +1,13 @@
 <div>
 	<h1>This is where the trip page is going to go!</h1>
+	
+	<div>
+	<a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/trip_preview/<%=@trip.trip_code %>" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i>Share on Facebook</a>
+	</div>
+
 	<a href="/trip/<%=@trip.id%>/trip_route/<%=@route%>"> View Trip Route
+	
+
 	<h4>Need Some Inspiration?</h4>
 
 	<%= link_to "Europe", itinerary_path("Europe") %>
