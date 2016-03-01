@@ -69,15 +69,9 @@ var TripPlanner = React.createClass({
     return (
       <div className="tripPlanner">
         <h1>Cities</h1>
-        <div className = "row">
-          <div className = "large-8 column">
-            <MapBox className="map-route" data={this.state.data.route_details} />
-          </div>
-          <div className = "large-4 column">
-            <CityList data={this.state.data} removeCity={this.removeCity}/>
-            <CityForm onCommentSubmit={this.handleCitySubmit} />
-          </div>
-        </div>
+        <MapBox data={this.state.data.route_details} />
+        <CityList data={this.state.data} removeCity={this.removeCity}/>
+        <CityForm onCommentSubmit={this.handleCitySubmit} />
       </div>
     );
   }
@@ -88,7 +82,7 @@ var MapBox = React.createClass({
       div: '#map',
       lat: 41.9000,
       lng: 0.4000,
-      width: '600px',
+      width: '750px',
       height: '500px',
       zoom: 5
     });
@@ -135,7 +129,6 @@ var MapBox = React.createClass({
     );
   }
 });
-
 var CityList = React.createClass({
   render: function() {
     if (this.props.data.route_details) {
@@ -193,13 +186,12 @@ var CityForm = React.createClass({
             value={this.state.text}
             onChange={this.handleTextChange}
           />
-          <input type="submit" className="button small" value="Post" />
+          <input type="submit" value="Post" />
         </form>
       </div>
     );
   }
 });
-
 var City = React.createClass({
   render: function() {
     return (

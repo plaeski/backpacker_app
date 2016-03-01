@@ -14,9 +14,11 @@
 //= require jquery_ujs
 //= require foundation
 
+//= require foundation
 //= require gmaps
 //= require react
 //= require react_ujs
 //= require components
 //= require_tree .
 
+//= require_tree ./info_maps

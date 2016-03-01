@@ -2,6 +2,8 @@ class TripController < ApplicationController
 
   def show
   	@trip = Trip.find params[:id]
+    # show last 10 most recent comments in the trip
+    @comments = Comment.where(trip: @trip)
   	@route = @trip.trip_route.id
     byebug
   end
