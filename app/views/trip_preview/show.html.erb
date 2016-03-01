@@ -1,0 +1,10 @@
+<h1><%= @trip.name %></h1>
+You've been invited to join <%= @trip.users[0].name%>'s trip!
+Here's what they've got so far!
+
+# Stops
+# Days
+Countries List
+Approx Budget
+
+<%= link_to "Join Backpackers Now!", trip_preview_join_path(@trip.trip_code) %>
