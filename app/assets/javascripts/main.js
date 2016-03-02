@@ -79,6 +79,15 @@ function downTrigger() {
   }
 }
 
+function signInUpTrigger() {
+    currentSlideNumber++;
+    nextItem(); 
+    currentSlideNumber++; 
+    nextItem();   
+    currentSlideNumber++;
+    nextItem();   
+}
+
 // ------------- LAST PAGE SIGN-IN AND SIGN-UP FORM ------------- //
 $(function(){
   $('.form').find('input, textarea').on('keyup blur focus', function (e) {
