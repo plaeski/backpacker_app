@@ -27,6 +27,10 @@ $normal: 400;
 $bold: 600;
 $br: 4px;
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 html {
   overflow: hidden;
   overflow-y: scroll; 
@@ -99,9 +103,14 @@ html {
   }
   &-title {
     font-size: 12vh;
-    line-height: 1.4;
-    padding: 120px;
+    line-height: 1.1;
+    padding: 150px;
   }
+}
+
+.content-subtitle {
+  font-size: 2rem;
+  margin-bottom: 100px;
 }
 
 // ------------- SET TRANSFORM VALUES ------------- //
@@ -131,6 +140,7 @@ html {
       }
   }
 }
+/* FORM GROUP */
 
 body {
   background:$body-bg;
@@ -147,9 +157,10 @@ a {
 }
 
 .form {
-  background:rgba($form-bg,.6);
+  background:rgba($form-bg,.7);
   padding: 40px;
-  max-width:600px;
+  width:600px;
+  height: 605px;
   /*margin:40px auto;*/
   align-self: flex-end;
   border-radius:$br;
