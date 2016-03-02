@@ -12,8 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
-
+//= require lib/underscore-min
 //= require foundation
 //= require gmaps
 //= require react
@@ -22,3 +21,4 @@
 //= require_tree .
 
 //= require_tree ./info_maps
+
