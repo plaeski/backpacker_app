@@ -1064,8 +1064,8 @@
       var world = new Datamap({
         setProjection: function(element) {
           var projection = d3.geo.mercator()
-            .center([-1, 28])
-            .scale(165)
+            .center([0, 40])
+            .scale(175)
             .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
           var path = d3.geo.path()
             .projection(projection);
@@ -1089,7 +1089,7 @@
             var country_data = countries_data.find(x => x.id === geography.id);
             // console.log(country_data);
             return `
-              <div style="background-color: white; padding: 1rem; font-size: .80em">
+              <div style="background-color: white; padding: 1rem; font-size: 1.1em">
                 ${country_data.name}<br/>
                 Currency: ${country_data.currency}<br/>
                 Daily Cost: ${country_data.daily_cost}<br/>
