@@ -27,3 +27,25 @@
 .itin-body {
 	list-style-type: none;
 }
+
+
+.inspiration-countries {
+	max-width: 90em;
+}
+
+.trip-banner {
+	background-image: url("trip-banner.png");
+	background-size: 100%;
+	height: 16em;
+}
+
+.trip-banner-container {
+	max-width: 84em;
+}
+
+.trip-banner-header {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 8em
+}

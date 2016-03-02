@@ -1,6 +1,9 @@
 <div>
-	<h1>This is where the trip page is going to go!</h1>
-	
+	<div class="row trip-banner-container">
+		<div class="xlarge-12 columns trip-banner">
+			<h1 class="trip-banner-header"><%= @trip.name.upcase %></h1>
+		</div>
+	</div>
 	<div>
 	<a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/trip_preview/<%=@trip.trip_code %>" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i>Share on Facebook</a>
 	</div>
@@ -14,14 +17,35 @@
 			<% end %>
 		</ol>
 	<% end %>
-	
+
 	<h4>Need Some Inspiration?</h4>
 
+	
+<div class="row inspiration-countries">
+
+  <div class="small-12 large-2 large-offset-1 columns">   
+    <%= link_to image_tag('europe.png'), trip_itinerary_path(@trip.id, "Europe") %>
+  </div>
+  <div class="small-12 large-2 columns">   
+    <%= link_to image_tag('asia.png'), trip_itinerary_path(@trip.id, "Asia") %>
+  </div>
+  <div class="small-12 large-2 columns">   
+    <%= link_to image_tag('south-central-america.png'), trip_itinerary_path(@trip.id,"Central%2FSouth America") %>
+  </div>
+  <div class="small-12 large-2 columns">   
+    <%= link_to image_tag('north-america.png'), trip_itinerary_path(@trip.id,"North America") %>
+  </div>
+  <div class="small-12 large-2 columns end">   
+    <%= link_to image_tag('australia-nz.png'), trip_itinerary_path(@trip.id,"Australia%2FNew Zealand") %>
+  </div>
+</div>
+<!-- </div>
 	<%= link_to "Europe", trip_itinerary_path(@trip.id, "Europe") %>
 	<%= link_to "Asia", trip_itinerary_path(@trip.id, "Asia") %>
 	<%= link_to "Central / South America", trip_itinerary_path(@trip.id,"Central%2FSouth America") %>
 	<%= link_to "North America", trip_itinerary_path(@trip.id,"North America") %>
 	<%= link_to "Austraila / New Zealand", trip_itinerary_path(@trip.id,"Australia%2FNew Zealand") %>
-</div>
+</div> -->
 
 <%= render :partial => "shared/comments", :locals => {:comments => @comments} %>
+

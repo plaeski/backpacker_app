@@ -259,7 +259,7 @@ var ItinFilters = React.createClass({
     var country_list = unique.map(function(country){
       return (
         <div>
-          <input value={country} type="checkbox" onChange={that.onChange} defaultChecked /><label for={country}>{country}</label><br />
+          <input value={country} type="checkbox" className="checkbox-custom" onChange={that.onChange} defaultChecked /><label for={country}>{country}</label><br />
         </div>
       )
     })
@@ -269,10 +269,10 @@ var ItinFilters = React.createClass({
           <h3>Countries</h3>
           {country_list}
           <h3>Duration</h3>
-          <input type="checkbox" onChange={this.onChange.bind(this, 1, 7)} defaultChecked /><label for="7">One Week</label><br />
-          <input type="checkbox"  onChange={this.onChange.bind(this, 8, 14)} defaultChecked/><label for="14">Two Weeks</label><br />
-          <input type="checkbox"  onChange={this.onChange.bind(this, 15, 21)} defaultChecked/><label for="21">Three Weeks</label><br />
-          <input type="checkbox" defaultChecked  onChange={this.onChange.bind(this, 22, 100)}/><label for="28">Four Weeks +</label>
+          <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 1, 7)} defaultChecked /><label for="7">One Week</label><br />
+          <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 8, 14)} defaultChecked/><label for="14">Two Weeks</label><br />
+          <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 15, 21)} defaultChecked/><label for="21">Three Weeks</label><br />
+          <input type="checkbox" className="checkbox-custom" defaultChecked  onChange={this.onChange.bind(this, 22, 100)}/><label for="28">Four Weeks +</label>
         </form>
       </div>
     )

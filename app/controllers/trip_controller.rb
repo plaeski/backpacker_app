@@ -7,8 +7,8 @@ class TripController < ApplicationController
   	@route = @trip.trip_route.id
   end
 
-  def new
-  	@trip = Trip.new
+  def new 
+ 	  @trip = Trip.new
 	end
 
 	def create
@@ -18,7 +18,6 @@ class TripController < ApplicationController
       trip_code: prng.rand(100000...1000000)
     )
 		if @trip.save
-
   		TripMembership.create(user_id: current_user.id, trip_id: @trip.id)
   		TripRoute.create(trip_id: @trip.id)
   		flash[:success] = "Trip created successfully!"
