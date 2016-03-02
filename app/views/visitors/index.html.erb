@@ -7,6 +7,30 @@
   </div>
 </section> -->
 <main role="main">
+
+<!-- NAVIGATION SECTION -->
+<section>
+  <div class="logo">
+   <div class="text">Backpackers</div>
+  </div>
+  <div class="nav">
+    <nav role='navigation'>
+      <ul><div class="parent"><a href="#">Itinerary</a></div></ul>
+      <ul><div class="parent"><a href="#">Budget</a></div></ul>
+      <ul><div class="parent"><a href="http://localhost:3000/info_map">Country Daily Average</a></div></ul>
+      <ul><div class="parent"><a onclick="contactTrigger()">Contact</a></div></ul>
+      <ul><div class="parent"><a onclick="signInUpTrigger()">Sign-In / Sign-Up</a></div></ul>  
+      
+    </nav>
+  </div>
+  <div class="menu-button">
+    <div class="menu-icn"></div>
+    <div class="menu-icn"></div>
+    <div class="menu-icn"></div>
+  </div>
+</section>
+
+<!-- MAIN IMAGES SECTION -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <div class="container">
@@ -36,7 +60,7 @@
                  margin: -30px -30px;">
         </i>
       </a></p>
-      <p class="content-subtitle"><a onclick="downTrigger()">
+      <p class="icon"><a onclick="downTrigger()">
         <i class="fa fa-chevron-circle-down" 
            style="font-size:3.2rem; 
                   color: lightgray; 
@@ -59,7 +83,7 @@
                  margin: -30px -30px;">
         </i>
       </a></p>
-      <p class="content-subtitle"><a onclick="downTrigger()">
+      <p class="icon"><a onclick="downTrigger()">
         <i class="fa fa-chevron-circle-down" 
            style="font-size:3.2rem; 
                   color: lightgray; 
@@ -70,6 +94,53 @@
     </div>
   </section>
   <!-- Image BG 4 -->
+  <section class="background">
+    <div class="content-wrapper">
+      <!-- <p class="contact-title">.</p> -->
+      <section id="hire" style="margin-top: 200px;">
+          <h1>We would love to hear from you</h1>
+          
+          <form>
+              <div class="field name-box">
+                  <input type="text" id="name" placeholder="Who Are You?"/>
+                  <!-- <label for="name">Name</label> -->
+                  <!-- <span class="ss-icon">check</span> -->
+              </div>
+
+              <div class="field email-box">
+                  <input type="text" id="email" placeholder="name@email.com"/>
+                  <!-- <label for="email">Email</label> -->
+                  <!-- <span class="ss-icon">check</span> -->
+              </div>
+
+              <div class="field msg-box">
+                  <textarea style="color: black" id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+                  <!-- <label for="msg">Msg</label> -->
+                  <!-- <span class="ss-icon">check</span> -->
+              </div>
+
+              <input class="button" type="submit" value="Send" style="margin-top: 10px;" href=""/>
+        </form>
+      </section>
+      <p class="icon"><a onclick="upTrigger()">
+        <i class="fa fa-chevron-circle-up" 
+           style="font-size:3.2rem;
+                 color: lightgray;
+                 float: left;
+                 margin: 100px -30px;">
+        </i>
+      </a></p>
+      <p class="icon"><a onclick="downTrigger()">
+        <i class="fa fa-chevron-circle-down" 
+           style="font-size:3.2rem; 
+                  color: lightgray; 
+                  float: left;
+                  margin: -100px -30px;">
+        </i>
+      </a></p>
+    </div>
+  </section> 
+  <!-- Image BG 5 -->
   <section class="background">     
     <div class="content-wrapper">
       <p class="icon"><a onclick="upTrigger()">
@@ -77,7 +148,7 @@
              style="font-size:3.2rem;
                    color: lightgray;
                    float: left;
-                   margin: 0px -30px;">
+                   margin: 10px -30px;">
           </i>
       </a></p>
     <div class="about">
@@ -139,10 +210,20 @@
             <!-- Sign-In Button -->
             <button class="button button-block"/>Log In</button>          
           </form>
-        </div>        
-      </div><!-- tab-content -->      
-    </div> <!-- /form -->
+        </div><!-- login -->            
+      </div><!-- tab-content -->   
+      <div class="copyright">&copy; LCSquared 2016</div> 
+      <div class="social-links">
+        <ul>
+          <li class="social-icon"><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+          <li class="social-icon"><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+          <li class="social-icon"><a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></li>
+          <li class="social-icon"><a href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>  
+    </div> <!-- /form -->   
   </section>
 </div>
+
 </main>
 
