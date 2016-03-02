@@ -140,6 +140,29 @@ html {
       }
   }
 }
+
+
+/* ABOUT GROUP */
+
+div.about {
+  width: 50%;
+}
+h1.about-title {
+  font-weight: bold;
+  font-size: 2em;
+  text-align: left;
+  text-transform: uppercase;
+  margin: auto;
+  display: inline-block;
+  float: left;
+}
+p.about-desc {
+  float: left;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  clear: left;
+}
+
 /* FORM GROUP */
 
 body {
@@ -161,10 +184,11 @@ a {
   padding: 40px;
   width:600px;
   height: 605px;
-  /*margin:40px auto;*/
+  margin-top: -315px;
   align-self: flex-end;
   border-radius:$br;
   box-shadow:0 4px 10px 4px rgba($form-bg,.3);
+  clear: right;
 }
 
 .tab-group {
