@@ -110,7 +110,7 @@ $(function(){
 
   });
 
-  $('.tab a').on('click', function (e) {
+  $('.tab a').on('click', function (e) { 
     e.preventDefault();
     
     $(this).parent().addClass('active');
@@ -123,5 +123,18 @@ $(function(){
     $(target).fadeIn(600);
     
   });
-
 })
+
+// NAVIGATION GROUP 
+$(function(){
+  $(".menu-button").click(function(e) { 
+    e.preventDefault();
+    e.stopPropagation();
+    $(".nav").toggleClass("displayblock", 1000);
+  });
+})
+
+
+
+
+
