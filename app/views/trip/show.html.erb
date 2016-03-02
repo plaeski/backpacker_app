@@ -5,19 +5,28 @@
 		</div>
 	</div>
 	<div>
-	<a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/trip_preview/<%=@trip.trip_code %>" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i>Share on Facebook</a>
+	
 	</div>
-
-	<a href="/trip/<%=@trip.id%>/trip_route/<%=@route%>"> View Trip Route </a>
-	<% if @trip.itinerary_id %>
-		<h2>Saved Itinerary</h2>
-		<ol>	
-			<% @trip.itinerary.cities.each do |stop| %>
-			<li> <%= stop %> </li>
+	<div class="row">
+		<div class="large-4 columns">
+			<%= link_to image_tag('route-map.jpg', class: "route-link"), trip_trip_route_path(@trip.id, @route) %>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/trip_preview/<%=@trip.trip_code %>" title="Share on Facebook" target="_blank" class="btn btn-facebook"><%= link_to image_tag('facebook.png', class: "facebook-share-link")%></a>
+		</div>
+		<div class="large-4 columns">
+			<% if @trip.itinerary_id %>
+				<h2>Saved Itinerary</h2>
+				<ol>	
+					<% @trip.itinerary.cities.each do |stop| %>
+					<li> <%= stop %> </li>
+				<% end %>
+			</ol>
 			<% end %>
-		</ol>
-	<% end %>
-
+		</div>
+		<div class="large-4 columns trip-chat-box">
+			<%= render :partial => "shared/comments", :locals => {:comments => @comments} %>
+		</div>
+	</div>
+	
 	<h4>Need Some Inspiration?</h4>
 
 	
@@ -39,13 +48,5 @@
     <%= link_to image_tag('australia-nz.png'), trip_itinerary_path(@trip.id,"Australia%2FNew Zealand") %>
   </div>
 </div>
-<!-- </div>
-	<%= link_to "Europe", trip_itinerary_path(@trip.id, "Europe") %>
-	<%= link_to "Asia", trip_itinerary_path(@trip.id, "Asia") %>
-	<%= link_to "Central / South America", trip_itinerary_path(@trip.id,"Central%2FSouth America") %>
-	<%= link_to "North America", trip_itinerary_path(@trip.id,"North America") %>
-	<%= link_to "Austraila / New Zealand", trip_itinerary_path(@trip.id,"Australia%2FNew Zealand") %>
-</div> -->
 
-<%= render :partial => "shared/comments", :locals => {:comments => @comments} %>
 
