@@ -16,9 +16,10 @@
     <nav role='navigation'>
       <ul><div class="parent"><a href="#">Itinerary</a></div></ul>
       <ul><div class="parent"><a href="#">Budget</a></div></ul>
-      <ul><div class="parent"><a href="#">Country Daily Average</a></div></ul>
+      <ul><div class="parent"><a href="http://localhost:3000/info_map">Country Daily Average</a></div></ul>
+      <ul><div class="parent"><a onclick="contactTrigger()">Contact</a></div></ul>
       <ul><div class="parent"><a onclick="signInUpTrigger()">Sign-In / Sign-Up</a></div></ul>  
-      <ul><div class="parent"><a href="#">Contact</a></div></ul>
+      
     </nav>
   </div>
   <div class="menu-button">
@@ -58,7 +59,7 @@
                  margin: -30px -30px;">
         </i>
       </a></p>
-      <p class="content-subtitle"><a onclick="downTrigger()">
+      <p class="icon"><a onclick="downTrigger()">
         <i class="fa fa-chevron-circle-down" 
            style="font-size:3.2rem; 
                   color: lightgray; 
@@ -81,7 +82,7 @@
                  margin: -30px -30px;">
         </i>
       </a></p>
-      <p class="content-subtitle"><a onclick="downTrigger()">
+      <p class="icon"><a onclick="downTrigger()">
         <i class="fa fa-chevron-circle-down" 
            style="font-size:3.2rem; 
                   color: lightgray; 
@@ -92,6 +93,53 @@
     </div>
   </section>
   <!-- Image BG 4 -->
+  <section class="background">
+    <div class="content-wrapper">
+      <!-- <p class="contact-title">.</p> -->
+      <section id="hire" style="margin-top: 200px;">
+          <h1>We would love to hear from you</h1>
+          
+          <form>
+              <div class="field name-box">
+                  <input type="text" id="name" placeholder="Who Are You?"/>
+                  <!-- <label for="name">Name</label> -->
+                  <!-- <span class="ss-icon">check</span> -->
+              </div>
+
+              <div class="field email-box">
+                  <input type="text" id="email" placeholder="name@email.com"/>
+                  <!-- <label for="email">Email</label> -->
+                  <!-- <span class="ss-icon">check</span> -->
+              </div>
+
+              <div class="field msg-box">
+                  <textarea style="color: black" id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+                  <!-- <label for="msg">Msg</label> -->
+                  <!-- <span class="ss-icon">check</span> -->
+              </div>
+
+              <input class="button" type="submit" value="Send" style="margin-top: 10px;" href=""/>
+        </form>
+      </section>
+      <p class="icon"><a onclick="upTrigger()">
+        <i class="fa fa-chevron-circle-up" 
+           style="font-size:3.2rem;
+                 color: lightgray;
+                 float: left;
+                 margin: 100px -30px;">
+        </i>
+      </a></p>
+      <p class="icon"><a onclick="downTrigger()">
+        <i class="fa fa-chevron-circle-down" 
+           style="font-size:3.2rem; 
+                  color: lightgray; 
+                  float: left;
+                  margin: -100px -30px;">
+        </i>
+      </a></p>
+    </div>
+  </section> 
+  <!-- Image BG 5 -->
   <section class="background">     
     <div class="content-wrapper">
       <p class="icon"><a onclick="upTrigger()">
@@ -172,8 +220,7 @@
           <li class="social-icon"><a href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
         </ul>
       </div>  
-    </div> <!-- /form -->    
+    </div> <!-- /form -->   
   </section>
-
 </div>
 

@@ -75,6 +75,10 @@ html {
     background-image: url(https://pixabay.com/static/uploads/photo/2015/04/16/00/40/environment-724904_960_720.jpg);
   }
   &:nth-child(4) {
+    background-image: url(https://pixabay.com/static/uploads/photo/2015/09/04/21/29/yosemite-922757_960_720.jpg);
+    /*opacity: 0.7;*/
+  }
+  &:nth-child(5) {
     background-image: url(https://pixabay.com/static/uploads/photo/2015/03/26/10/39/hiking-691738_960_720.jpg);
     /*opacity: 0.7;*/
   }
@@ -492,6 +496,13 @@ textarea {
   margin-left: 10px;
 }
 
+/* CONTACT GROUP */
+
+.contact-title {
+  margin-top: -200px;
+  font-size: 3em;
+  padding: 300px;
+}
 
 
 

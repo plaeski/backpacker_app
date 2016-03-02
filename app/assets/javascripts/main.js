@@ -5,7 +5,7 @@ var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(nav
 var scrollSensitivitySetting = 30; //Increase/decrease this number to change sensitivity to trackpad gestures (up = less sensitive; down = more sensitive) 
 var slideDurationSetting = 600; //Amount of time for which slide is "locked"
 var currentSlideNumber = 0;
-var totalSlideNumber = 4;
+var totalSlideNumber = 5;
 
 // ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
 function parallaxScroll(evt) {
@@ -79,13 +79,26 @@ function downTrigger() {
   }
 }
 
+function contactTrigger() {
+  // currentSlideNumber = 4
+  currentSlideNumber++; 
+  nextItem();   
+  currentSlideNumber++;
+  nextItem();  
+  currentSlideNumber++;
+  nextItem(); 
+}
+
 function signInUpTrigger() {
-    currentSlideNumber++;
-    nextItem(); 
-    currentSlideNumber++; 
-    nextItem();   
-    currentSlideNumber++;
-    nextItem();   
+  // currentSlideNumber = 5
+  currentSlideNumber++;
+  nextItem(); 
+  currentSlideNumber++; 
+  nextItem();   
+  currentSlideNumber++;
+  nextItem();  
+  currentSlideNumber++;
+  nextItem();    
 }
 
 // ------------- LAST PAGE SIGN-IN AND SIGN-UP FORM ------------- //
