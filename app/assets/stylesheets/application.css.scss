@@ -69,7 +69,7 @@
 	height: 20em;
 	background-size: 100%;
 	width: 100%;
-	background-image: url("trip-banner.png");
+	background-image: image-url("trip-banner.png");
 }
 
 .trip-banner-header {
@@ -115,7 +115,7 @@
 
 .itin-explorer {
 	top: -10px;
-	background-image: url("old.jpg");
+	background-image: image-url("old.jpg");
 	background-size: 100%;
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
@@ -239,7 +239,7 @@
 }
 
 .user-banner {
-	background-image: url('user-banner.jpg');
+	background-image: image-url('user-banner.jpg');
 	height: 25em;
 	background-size: 100%;
 	width: 100%;
