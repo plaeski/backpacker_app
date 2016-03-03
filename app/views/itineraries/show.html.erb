@@ -1,6 +1,1 @@
-<% @itineraries.each do |itinerary| %>
-	Trip Length : <%= itinerary.cities.length%>
-	<% itinerary.cities.each do |city| %>
-		<p> <%= city %> </p>
-	<% end %>
-<% end %>
+<%= react_component('ItineraryExplorer', {url: "/itineraries/#{@area}"}) %>

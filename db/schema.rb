@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160225210647) do
+ActiveRecord::Schema.define(version: 20160229213245) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,17 @@ ActiveRecord::Schema.define(version: 20160225210647) do
   end
 
   add_index "cities", ["country_id"], name: "index_cities_on_country_id", using: :btree
+
+  create_table "comments", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "trip_id"
+  end
+
+  add_index "comments", ["trip_id"], name: "index_comments_on_trip_id", using: :btree
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
 
   create_table "countries", force: :cascade do |t|
     t.string   "country"
@@ -93,6 +104,7 @@ ActiveRecord::Schema.define(version: 20160225210647) do
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "trip_code"
   end
 
   create_table "users", force: :cascade do |t|
@@ -116,5 +128,6 @@ ActiveRecord::Schema.define(version: 20160225210647) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "comments", "trips"
   add_foreign_key "identities", "users"
 end

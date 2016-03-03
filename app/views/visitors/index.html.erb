@@ -1,3 +1,222 @@
-<h3>Welcome</h3>
-<p>This will be a landing page for visitors.</p>
+<!-- Navigation -->
+<!-- <section id="nav-bar">
+  <div>
+    <h3>Welcome</h3>
+    <p>This will be a landing page for visitors.</p>
+    <p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p>
+  </div>
+</section> -->
+
+<!-- <!-- NAVIGATION SECTION -->
+<!-- <section>
+  <div class="logo">
+   <div class="text">Backpackers</div>
+  </div>
+  <div class="nav">
+    <nav role='navigation'>
+      <ul><div class="parent"><a href="#">Itinerary</a></div></ul>
+      <ul><div class="parent"><a href="#">Budget</a></div></ul>
+      <ul><div class="parent"><a href="http://localhost:3000/info_map">Country Daily Average</a></div></ul>
+      <ul><div class="parent"><a onclick="contactTrigger()">Contact</a></div></ul>
+      <ul><div class="parent"><a onclick="signInUpTrigger()">Sign-In / Sign-Up</a></div></ul>  
+      
+    </nav>
+  </div>
+  <div class="menu-button">
+    <div class="menu-icn"></div>
+    <div class="menu-icn"></div>
+    <div class="menu-icn"></div>
+  </div>
+</section> --> -->
+
+<!-- MAIN IMAGES SECTION -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<div class="container">
+  <!-- Image BG 1 -->
+  <section class="background">
+    <div class="content-wrapper">
+      <p class="content-title">"Once a Year...</p>
+      <p class="icon"><a onclick="downTrigger()">
+        <i class="fa fa-chevron-circle-down" 
+           style="font-size:3.2rem; 
+                  color: lightgray; 
+                  float: left;
+                  margin: -10px -30px;">
+        </i>
+      </a></p>
+    </div>
+  </section>
+  <!-- Image BG 2 -->
+  <section class="background" id="bg2">
+    <div class="content-wrapper">
+      <p class="content-title">Go someplace...</p>
+      <p class="icon"><a onclick="upTrigger()">
+        <i class="fa fa-chevron-circle-up" 
+           style="font-size:3.2rem;
+                 color: lightgray;
+                 float: left;
+                 margin: -30px -30px;">
+        </i>
+      </a></p>
+      <p class="icon"><a onclick="downTrigger()">
+        <i class="fa fa-chevron-circle-down" 
+           style="font-size:3.2rem; 
+                  color: lightgray; 
+                  float: left;
+                  margin: 10px -30px;">
+        </i>
+      </a></p>
+    </div>
+  </section>
+  <!-- Image BG 3 -->
+  <section class="background">
+    <div class="content-wrapper">
+      <p class="content-title">You've never been before."</p>
+      <p class="content-subtitle">Dalai Lama</p>
+      <p class="icon"><a onclick="upTrigger()">
+        <i class="fa fa-chevron-circle-up" 
+           style="font-size:3.2rem;
+                 color: lightgray;
+                 float: left;
+                 margin: -30px -30px;">
+        </i>
+      </a></p>
+      <p class="icon"><a onclick="downTrigger()">
+        <i class="fa fa-chevron-circle-down" 
+           style="font-size:3.2rem; 
+                  color: lightgray; 
+                  float: left;
+                  margin: 10px -30px;">
+        </i>
+      </a></p>
+    </div>
+  </section>
+  <!-- Image BG 4 -->
+  <section class="background">
+    <div class="content-wrapper">
+      <section id="hire" style="margin-top: 200px;">
+          <h1>We would love to hear from you</h1>
+          
+          <form>
+              <div class="field name-box">
+                  <input type="text" id="name" placeholder="Who Are You?"/>
+              </div>
+
+              <div class="field email-box">
+                  <input type="text" id="email" placeholder="name@email.com"/>
+              </div>
+
+              <div class="field msg-box">
+                  <textarea style="color: black" id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+              </div>
+
+              <input class="button" type="submit" value="Send" style="margin-top: 10px;" href=""/>
+        </form>
+      </section>
+      <p class="icon"><a onclick="upTrigger()">
+        <i class="fa fa-chevron-circle-up" 
+           style="font-size:3.2rem;
+                 color: lightgray;
+                 float: left;
+                 margin: 100px -30px;">
+        </i>
+      </a></p>
+      <p class="icon"><a onclick="downTrigger()">
+        <i class="fa fa-chevron-circle-down" 
+           style="font-size:3.2rem; 
+                  color: lightgray; 
+                  float: left;
+                  margin: -100px -30px;">
+        </i>
+      </a></p>
+    </div>
+  </section> 
+  <!-- Image BG 5 -->
+  <section class="background">     
+    <div class="content-wrapper">
+      <p class="icon"><a onclick="upTrigger()">
+          <i class="fa fa-chevron-circle-up" 
+             style="font-size:3.2rem;
+                   color: lightgray;
+                   float: left;
+                   margin: 10px -30px;">
+          </i>
+      </a></p>
+    <div class="about">
+      <h1 class="about-title">About</h1>
+      <p class="about-desc"><strong>Travel App for the Modern Day Backpacker</strong>. If you're planning to travel by yourself or with friends. You can plan your itinerary, routes, budget, find daily averages and even inspiration for your next trip. Invite your friends on social media to plan your next trip. Hurry! Your next adventure is waiting.</p>
+    </div>
+    <!-- LOGIN AND SIGN-UP FORM -->
+    <div class="form">        
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      <!-- SIGN UP FORM -->
+      <div class="tab-content">
+        <div id="signup">   
+          <!-- <h1>Sign Up for Free</h1>           -->
+          <form action="<%= user_registration_path %>" method="post">
+            <div class="social-group">
+              <div class="social-signin">
+                <a href="/users/auth/facebook">Sign Up with Facebook</a>
+              </div>
+              <div class="social-signin">
+                <a href="/users/auth/twitter">Sign Up with Twitter</a>
+              </div>
+            </div>
+            <!-- First Name -->
+              <div class="field-wrap">
+                <label>Name<span class="req"></span></label>
+                <input name="user[name]" type="text" placeholder="First Name" required autocomplete="off" />
+              </div>
+            <!-- Email Address -->
+            <div class="field-wrap">
+              <label>Email Address<span class="req"></span></label>
+              <input name="user[email]" type="email" placeholder="Email Address" required autocomplete="off"/>
+            </div>
+            <!-- Password -->
+            <div class="field-wrap">
+              <label>Set A Password<span class="req"></span></label>
+              <input name="user[password]" type="password" placeholder="Password" required autocomplete="off"/>
+            </div>      
+            <!-- Sign-Up Button -->
+            <button type="submit" class="button button-block"/>Get Started</button>          
+          </form>
+        </div>
+      <!-- SIGN IN FORM -->        
+        <div id="login">   
+          <h1>Welcome Back!</h1>          
+          <form action="<%= new_user_session_path %>" method="post">
+            <!-- Email Address -->
+            <div class="field-wrap">
+              <label>Email Address<span class="req"></span></label>
+              <input name="user[email]" type="email" placeholder="Email Address" required autocomplete="off"/>
+            </div>
+            <!-- Password -->
+            <div class="field-wrap">
+              <label>Password<span class="req"></span></label>
+              <input name="user[password]" type="password" placeholder="Password" required autocomplete="off"/>
+            </div>          
+            <p class="forgot"><a href="#">Forgot Password?</a></p>
+            <!-- Sign-In Button -->
+            <button class="button button-block"/>Log In</button>
+            <p class="notice"><%= notice %></p>
+            <p class="alert"><%= alert %></p>          
+          </form>
+        </div><!-- login -->            
+      </div><!-- tab-content -->   
+      <div class="copyright">&copy; LCSquared 2016</div> 
+      <div class="social-links">
+        <ul>
+          <li class="social-icon"><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+          <li class="social-icon"><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+          <li class="social-icon"><a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></li>
+          <li class="social-icon"><a href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>  
+    </div> <!-- /form -->   
+  </section>
+</div>
 

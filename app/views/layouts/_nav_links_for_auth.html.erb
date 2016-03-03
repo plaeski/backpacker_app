@@ -1,10 +1,6 @@
 <% if user_signed_in? %>
-  <li><%= link_to 'Edit account', edit_user_registration_path %></li>
-  <li><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
+  <ul><div class="parent"><%= link_to 'Edit account', edit_user_registration_path %></div></ul>
+  <ul><div class="parent"><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></div></ul>
 <% else %>
-  <li><%= link_to 'Sign in', new_user_session_path %></li>
-  <li><%= link_to 'Sign up', new_user_registration_path %></li>
-<% end %>
-<% if user_signed_in? %>
-  <li><%= link_to 'Home', user_path(current_user) %></li>
+  <ul><div class="parent"><%= link_to 'Sign-In / Sign-up', "#", :onclick=>"signInUpTrigger();" %></div></ul>
 <% end %>

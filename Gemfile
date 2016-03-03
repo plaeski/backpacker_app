@@ -29,12 +29,12 @@ gem 'omniauth-facebook'
 group :development do
   gem 'better_errors'
   gem 'quiet_assets'
+  gem 'faker'
   gem 'rails_layout'
   gem 'spring-commands-rspec'
 end
 group :development, :test do
   gem 'factory_girl_rails'
-  gem 'faker'
   gem 'rspec-rails'
 end
 group :test do

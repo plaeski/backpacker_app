@@ -1,5 +1,20 @@
 <div>
 	<h1>This is where the trip page is going to go!</h1>
-	<a href="/trip/<%=@trip.id%>/trip_route/<%=@route%>"> View Trip Route
+	
+	<div>
+	<a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/trip_preview/<%=@trip.trip_code %>" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i>Share on Facebook</a>
+	</div>
 
+	<a href="/trip/<%=@trip.id%>/trip_route/<%=@route%>"> View Trip Route
+	
+
+	<h4>Need Some Inspiration?</h4>
+
+	<%= link_to "Europe", itinerary_path("Europe") %>
+	<%= link_to "Asia", itinerary_path("Asia") %>
+	<%= link_to "Central / South America", itinerary_path("Central%2FSouth America") %>
+	<%= link_to "North America", itinerary_path("North America") %>
+	<%= link_to "Austraila / New Zealand", itinerary_path("Australia%2FNew Zealand") %>
 </div>
+
+<%= render :partial => "shared/comments", :locals => {:comments => @comments} %>
