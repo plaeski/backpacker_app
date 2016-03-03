@@ -2,8 +2,7 @@
 
 <%= form_for @trip, url: {action: "create"} do |f| %> 
   <div class="form-group">	
-    <%= f.label :name %>
-    <%= f.text_field :name, :autofocus => true, class: 'form-control' %>
+    <%= f.text_field :name, :autofocus => true, class: 'form-control', placeholder: 'enter trip name' %>
   </div>
 	<%= f.submit 'Get Started!', :class => 'button right' %>
   <% end %>
