@@ -19,6 +19,6 @@
 //= require react_ujs
 //= require components
 //= require_tree .
+//= require info_maps
 
-//= require_tree ./info_maps
 
