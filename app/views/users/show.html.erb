@@ -18,9 +18,13 @@
 		<h2>You don't have any existing trips.</h2>
 	<% end %>
 </div>
-<div class="large-4 columns">
-	<%= button_to "Start a new Trip", new_trip_path, :class => "new-trip-btn", :method => :get %>
+<div class="large-4 columns budgeting-links">
+	<h2>Not sure where to start?</h2> 
+	<p>Use our budgeting tools to see which destinations are a perfect fit!</p>
+	<%= link_to "World at a Glance", "/info_map", class: "button success user-page-button" %>
+	<%= link_to "Start an In Depth Budget", budgets_path, class: "button success user-page-button"%>
 </div>
 <div class="large-4 columns">
+	<%= link_to image_tag("new-trip.jpg"), new_trip_path, :class => "new-trip-btn", :method => :get %>
 </div>
     

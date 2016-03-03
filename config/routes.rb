@@ -27,7 +27,7 @@ Rails.application.routes.draw do
   match '/trip_route/stop/delete', to: 'trip_route#edit', via: [:post], constraints: { format: 'json' }
   match '/trip/:id', to: 'trip#update', via: [:patch], constraints: { format: 'json' }
   resources :comments
-  resources :info_map
+  resources :info_map, only: [:index]
 
   resource :budgets
   post '/budgets/compute' => 'budgets#compute'
