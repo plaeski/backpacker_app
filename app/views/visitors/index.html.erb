@@ -164,29 +164,37 @@
       <!-- SIGN UP FORM -->
       <div class="tab-content">
         <div id="signup">   
-          <h1>Sign Up for Free</h1>          
-          <form action="/users" method="post">
+          <!-- <h1>Sign Up for Free</h1>           -->
+          <form action="<%= user_registration_path %>" method="post">
+            <div class="social-group">
+              <div class="social-signin">
+                <a href="/users/auth/facebook">Sign Up with Facebook</a>
+              </div>
+              <div class="social-signin">
+                <a href="/users/auth/twitter">Sign Up with Twitter</a>
+              </div>
+            </div>
             <!-- First Name -->
             <div class="top-row">
               <div class="field-wrap">
                 <label>First Name<span class="req"></span></label>
-                <input type="text" required autocomplete="off" />
+                <input type="text" placeholder="First Name" required autocomplete="off" />
               </div>
               <!-- Last Name -->
               <div class="field-wrap">
-                <label>Last Name<span class="req"></span> </label>
-                <input type="text"required autocomplete="off"/>
+                <label>Last Name<span class="req"></span></label>
+                <input type="text" placeholder="Last Name" required autocomplete="off"/>
               </div>
             </div>
             <!-- Email Address -->
             <div class="field-wrap">
               <label>Email Address<span class="req"></span></label>
-              <input type="email"required autocomplete="off"/>
+              <input type="email" placeholder="Email Address" required autocomplete="off"/>
             </div>
             <!-- Password -->
             <div class="field-wrap">
               <label>Set A Password<span class="req"></span></label>
-              <input type="password"required autocomplete="off"/>
+              <input type="password" placeholder="Password" required autocomplete="off"/>
             </div>      
             <!-- Sign-Up Button -->
             <button type="submit" class="button button-block"/>Get Started</button>          
@@ -195,16 +203,16 @@
       <!-- SIGN IN FORM -->        
         <div id="login">   
           <h1>Welcome Back!</h1>          
-          <form action="/users/sign_in" method="post">
+          <form action="<%= new_user_session_path %>" method="post">
             <!-- Email Address -->
             <div class="field-wrap">
               <label>Email Address<span class="req"></span></label>
-              <input type="email"required autocomplete="off"/>
+              <input type="email" placeholder="Email Address" required autocomplete="off"/>
             </div>
             <!-- Password -->
             <div class="field-wrap">
               <label>Password<span class="req"></span></label>
-              <input type="password"required autocomplete="off"/>
+              <input type="password" placeholder="Password" required autocomplete="off"/>
             </div>          
             <p class="forgot"><a href="#">Forgot Password?</a></p>
             <!-- Sign-In Button -->

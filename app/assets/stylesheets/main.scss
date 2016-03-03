@@ -172,7 +172,7 @@ p.about-desc {
   border-radius: 4px;
 }
 
-/* FORM GROUP */
+/* FORM GROUP FOR SIGN-IN AND SIGN-UP */
 
 body {
   background:$body-bg;
@@ -255,6 +255,7 @@ label {
   transform:translateY(6px);
   left:13px;
   color:rgba(220,220,220,.7);
+  color:rgba($white,.1);
   transition:all 0.25s ease;
   -webkit-backface-visibility: hidden;
   pointer-events: none;
@@ -348,6 +349,24 @@ textarea {
 .forgot {
   margin-top:-20px;
   text-align:right;
+}
+
+.signup {
+  margin-top: 10px;
+}
+
+.social-group {
+  margin-top: -20px;
+  margin-bottom: 5px;
+}
+
+.social-signin a {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.social-signin {
+  margin-left: 10px;
 }
 
 /* NAVIGATION GROUP */
