@@ -10,6 +10,7 @@ gem 'pg'
 gem 'react-rails', '~> 1.6.0'
 gem 'gmaps-rails'
 gem 'babel-transpiler'
+gem 'puma'
 group :development, :test do
   gem 'byebug'
 end
