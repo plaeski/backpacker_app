@@ -29,7 +29,6 @@ gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 
 group :development do
-  gem 'pry'
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'faker'
