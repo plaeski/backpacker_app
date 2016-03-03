@@ -21,13 +21,6 @@ input#output1, input#output2 {
     margin-left: 230px;
 }
 
-.option {
-  color: black;
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold; 
-}
-
 p, pre {
     margin: 1em 0;
     font-size: 50px;
@@ -38,7 +31,7 @@ p, pre {
   border: 10px solid #f08e2b;
   margin: 150px 200px;
   width: 978px;
-  opacity: 0.7;
+  /*opacity: 0.7;*/
 }
 
 .preview-wrapper {
@@ -58,4 +51,17 @@ p, pre {
 
 .space {
   margin-top: 90px;
+}
+
+.transbox {
+  background-color: #ffffff;
+  opacity: 0.4;
+}
+
+.option {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 1;
 }
