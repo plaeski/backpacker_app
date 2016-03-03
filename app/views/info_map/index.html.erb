@@ -1064,8 +1064,8 @@
       var world = new Datamap({
         setProjection: function(element) {
           var projection = d3.geo.mercator()
-            .center([0, 40])
-            .scale(175)
+            .center([0, 45])
+            .scale(150)
             .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
           var path = d3.geo.path()
             .projection(projection);
