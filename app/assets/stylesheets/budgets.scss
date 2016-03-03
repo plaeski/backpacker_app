@@ -40,20 +40,20 @@ p, pre {
 
 .preview-wrapper {
   /*background-color: lightblue;*/
-  height: 928px;
+  height: 778px;
   background-image: url('https://pixabay.com/static/uploads/photo/2015/04/11/18/51/everest-718055_960_720.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
-  margin-top: -150px;
+  /*margin-top: -150px;*/
   overflow-x: hidden;
 }
 
-.space {
+/*.space {
   margin-top: 90px;
 }
-
+*/
 .transbox {
   background-color: #ffffff;
   opacity: 0.9;
