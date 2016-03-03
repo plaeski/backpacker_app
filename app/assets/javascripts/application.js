@@ -18,7 +18,11 @@
 //= require react
 //= require react_ujs
 //= require components
-//= require info_maps
+//= require info_maps/d3
+//= require info_maps/datamaps
+//= require info_maps/info_map
+//= require info_maps/topojson
+//= require info_maps/world
 //= require_tree .
 
 
