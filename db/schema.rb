@@ -72,15 +72,6 @@ ActiveRecord::Schema.define(version: 20160301190624) do
     t.datetime "updated_at",              null: false
   end
 
-  create_table "routes", force: :cascade do |t|
-    t.json     "route"
-    t.integer  "trip_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "routes", ["trip_id"], name: "index_routes_on_trip_id", using: :btree
-
   create_table "trip_memberships", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "trip_id"
