@@ -1,0 +1,193 @@
+<!-- getting country data from DB -->
+<% country_array = @countries.map { |c| [c.country, c.id] } %>
+
+
+<!-- for option 1 -->
+
+<section class="search">
+  <div class="row">
+    <div class="small-12 large-8 columns large-centered">
+      <hr /><br /><br />
+      <h1>Option 1: Country and Budget</h1>
+      <br /><br />
+
+      <%= form_tag(budgets_compute_path, method: :post, id: 'budgets_form1') do %>
+
+        <%= hidden_field_tag :option, 1 %>
+        <div class="row">
+          <div class="large-6 small-12 columns">
+            <%= label_tag :country %>
+            <%= select_tag "country", options_for_select(country_array, "Select Country") %>
+          </div>
+          <div class="large-6 small-12 columns">
+            <%= label_tag :budget, "Budget in CAD" %>
+            <%= number_field_tag :budget %>
+          </div>
+        </div>
+        <div class="row">
+          <%= submit_tag("Submit", :class => "button large-6 small-12 columns large-centered", :id => "output1") %>
+        </div>
+      <% end %>
+    </div>
+    <br /><br />
+  </div>
+
+  <div class="row">
+    <div class="large-6 small-12 columns large-centered">
+      <div id="outputbox1">
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="large-6 columns" id="mypie1">
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="large-6 columns">
+      <table id="myFunTable1" style="visibility:hidden;">
+        <thead>
+          <th>Type of Expenses</th>
+          <th>Daily Cost in CAD</th>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- for option 2 -->
+
+<section class="search">
+  <div class="row">
+    <div class="small-12 large-8 columns small-centered large-centered">
+      <hr /><br /><br />
+      <h1>Option 2: Country and Days</h1>
+      <br /><br />
+
+      <%= form_tag(budgets_compute_path, method: :post, id: 'budgets_form2') do %>
+
+        <%= hidden_field_tag :option, 2 %>
+        <div class="row">
+          <div class="large-6 small-12 columns">
+            <%= label_tag :country %>
+            <%= select_tag "country", options_for_select(country_array, "Select Country") %>
+          </div>
+          <div class="large-6 small-12 columns">
+            <%= label_tag :days, "Days" %>
+            <%= number_field_tag :days %>
+          </div>
+        </div>
+        <div class="row">
+          <%= submit_tag("Submit", :class => "button large-6 small-12 columns large-centered", :id => "output2") %>
+        </div>
+      <% end %>
+
+    </div>
+    <br /><br />
+  </div>
+
+  <div class="row">
+    <div class="large-6 small-12 columns large-centered">
+      <div id="outputbox2">
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-6 columns" id="mypie2">
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-6 columns">
+      <table id="myFunTable2" style="visibility:hidden;">
+        <thead>
+          <th>Type of Expenses</th>
+          <th>Daily Cost in CAD</th>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- for option 3 -->
+
+<!-- <section class="search">
+  <div class="row">
+    <div class="small-12 large-8 columns large-centered small-centered">
+      <hr /><br /><br />
+      <h1>Option 3: Budget and Days</h1>
+      <br /><br />
+
+      <%= form_tag(budgets_compute_path, method: :post, id: 'budgets_form3') do %>
+
+        <%= hidden_field_tag :option, 3 %>
+        <div class="row">
+        
+          <div class="large-6 small-12 columns">
+            <%= label_tag :budget, "Budget in CAD" %>
+            <%= number_field_tag :budget %>
+          </div>
+          <div class="large-6 small-12 columns">
+            <%= label_tag :days, "Days" %>
+            <%= number_field_tag :days %>
+          </div>
+        </div>
+        <div class="row">
+          <%= submit_tag("Submit", :class => "button large-6 small-12 columns large-centered", :id => "output3") %>
+        </div>
+      <% end %>
+
+    </div>
+    <br /><br />
+  </div>
+
+  <div class="row">
+    <div class="large-6 small-12 columns large-centered">
+      <div id="outputbox3">
+        hello
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-6 columns" id="mypie3">
+
+    </div>
+  </div>
+</section> -->
+
+
+<!-- examples below -->
+<!-- <div class="row">
+<div class="large-6 columns">
+<br /><br /><br /><br />
+  <canvas id="canvas" width="200" height="200"></canvas>
+  <table id="mydata">
+    <tr>       <th>Lang</th><th>Value</th> </tr>
+    <tr><td>JavaScript</td>  <td>100</td>  </tr>
+    <tr><td>       CSS</td>  <td>200</td>  </tr>
+    <tr><td>      HTML</td>  <td>300</td>  </tr>
+    <tr><td>       PHP</td>  <td> 50</td>  </tr>
+    <tr><td>     MySQL</td>  <td> 30</td>  </tr>
+    <tr><td>    Apache</td>  <td> 10</td>  </tr>
+    <tr><td>     Linux</td>  <td> 30</td>  </tr>
+  </table>
+</div>
+</div>

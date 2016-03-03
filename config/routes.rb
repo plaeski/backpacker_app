@@ -17,4 +17,7 @@ Rails.application.routes.draw do
   end
   match '/trip_route/update', to: 'trip_route#update', via: [:post], constraints: { format: 'json' }
   match '/trip_route/stop/delete', to: 'trip_route#edit', via: [:post], constraints: { format: 'json' }
+
+  resource :budgets
+  post '/budgets/compute' => 'budgets#compute'
 end
