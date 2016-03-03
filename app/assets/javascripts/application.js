@@ -18,11 +18,10 @@
 //= require react
 //= require react_ujs
 //= require components
-//= require info_maps/d3
-//= require info_maps/datamaps
-//= require info_maps/info_map
-//= require info_maps/topojson
-//= require info_maps/world
+//= require lib/d3.min
+//= require lib/datamaps.world.min
+//= require lib/topojson.min
+//= require lib/info_map
 //= require_tree .
 
 
