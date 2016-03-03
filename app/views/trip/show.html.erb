@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="large-4 columns">
 			<%= link_to image_tag('route-map.jpg', class: "route-link"), trip_trip_route_path(@trip.id, @route) %>
-			<a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/trip_preview/<%=@trip.trip_code %>" title="Share on Facebook" target="_blank" class="btn btn-facebook"><%= link_to image_tag('facebook.png', class: "facebook-share-link")%></a>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=http://backpackers.heroku.com/trip_preview/<%=@trip.trip_code %>" title="Share on Facebook" target="_blank" class="btn btn-facebook"><%= image_tag('facebook.png', class: "facebook-share-link")%></a>
 		</div>
 		<div class="large-4 columns">
 			<% if @trip.itinerary_id %>
