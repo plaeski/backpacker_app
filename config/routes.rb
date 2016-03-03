@@ -28,5 +28,9 @@ Rails.application.routes.draw do
   match '/trip/:id', to: 'trip#update', via: [:patch], constraints: { format: 'json' }
   resources :comments
   resources :info_map
+
+  resource :budgets
+  post '/budgets/compute' => 'budgets#compute'
+
 end
  

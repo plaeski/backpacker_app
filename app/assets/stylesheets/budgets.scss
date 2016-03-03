@@ -1,0 +1,69 @@
+// Place all the styles related to the Budgets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.search label {
+    color: black;
+}
+
+input#budget, input#days, select#country {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+input#output1, input#output2 {
+    margin: auto;
+    text-align: center;
+    height: 55px;
+    width: 150px;
+    font-size: 2em;
+    border-radius: 10px;
+    margin-left: 230px;
+}
+
+p, pre {
+    margin: 1em 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+.search {
+  border: 10px solid #f08e2b;
+  margin: 150px 200px;
+  width: 978px;
+  /*opacity: 0.7;*/
+}
+
+#outputbox1 p, #outputbox2 p {
+  color: black;
+}
+
+.preview-wrapper {
+  /*background-color: lightblue;*/
+  height: 803px;
+  background-image: url('https://pixabay.com/static/uploads/photo/2015/04/11/18/51/everest-718055_960_720.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   margin-top: -150px;
+
+   overflow-x: hidden;
+}
+
+.space {
+  margin-top: 90px;
+}
+
+.transbox {
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.option {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  /*opacity: 1;*/
+}
