@@ -80,6 +80,7 @@ function downTrigger() {
 }
 
 function contactTrigger() {
+  // e.preventDefault();
   // currentSlideNumber = 4
   currentSlideNumber++; 
   nextItem();   
@@ -90,6 +91,7 @@ function contactTrigger() {
 }
 
 function signInUpTrigger() {
+  // e.preventDefault();
   // currentSlideNumber = 5
   currentSlideNumber++;
   nextItem(); 
