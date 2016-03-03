@@ -153,7 +153,7 @@ function go(){
 
       // text
       $('#outputbox1').text('');
-      $('#outputbox1').append("<p>You can travel to <b>" + country_name + "</b> about " + result[0] + " ~ " + result[1] + " days!<br><br></p>");
+      $('#outputbox1').append("<p>You can travel to <b>" + country_name + "</b> about <b>" + result[0] + " ~ " + result[1] + "</b> days!<br><br></p>");
       
       // fun table
       removeTableRow($('#myFunTable1'));
@@ -167,7 +167,6 @@ function go(){
       // $('#mypie1').append("<canvas id='canvas1' width='200' height='200'></canvas>");
       $('#mypie1').append("<table id='mydata1'><tr><th>Type of Expenses</th><th>Percentage</th></tr><tr><td>Accomodation</td><td>" + percent[0] + "%</td></tr><tr><td>Food</td><td>" + percent[1] + "%</td></tr><tr><td>Local Transporation</td><td>" + percent[2] + "%</td></tr><tr><td>Alcohol</td><td>" + percent[3] + "%</td></tr></table>");
 
-
     });
 
   });
@@ -178,8 +177,6 @@ function go(){
   $('#output2').on('click',function(e){    
     e.preventDefault();
     e.stopPropagation();
-
-
 
     var values = {};
     $.each($("#budgets_form2").serializeArray(), function (i, field) {
@@ -197,8 +194,6 @@ function go(){
       days = $.parseJSON(data.result);
       percent = $.parseJSON(data.percent);
       others = $.parseJSON(data.fun_info);
-
-
 
       // text
       $('#outputbox2').text('');

@@ -2,55 +2,60 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
+.search label {
+    color: black;
+}
+
+input#budget, input#days, select#country {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+input#output1, input#output2 {
+    margin: auto;
+    text-align: center;
+    height: 55px;
+    width: 150px;
+    font-size: 2em;
+    border-radius: 10px;
+    margin-left: 230px;
+}
+
+.option {
+  color: black;
   text-align: center;
+  font-size: 40px;
+  font-weight: bold; 
 }
 
-.sub-nav {
-  background-color: #f2f2f2;
-  padding: 0.5rem 0.5rem 0.5rem 0;
-  
-  li {
-    color: #999999;
-    font-size: 0.77778rem;
-    padding-left: 0.88889rem;
-    
-    &.active a {
-      border-radius: 3px;
-      background: #008CBA;
-      color: #fff;
-      cursor: default;
-      font-weight: normal;
-      padding: 0.16667rem 0.88889rem;
-    }
-  }
+p, pre {
+    margin: 1em 0;
+    font-size: 50px;
+    text-align: center;
 }
 
+.search {
+  border: 10px solid #f08e2b;
+  margin: 150px 200px;
+  width: 978px;
+  opacity: 0.7;
+}
 
-/////////////////////////
+.preview-wrapper {
+  background-color: lightblue;
+  height: 810px;
+  background-image: url('https://pixabay.com/static/uploads/photo/2015/04/11/18/51/everest-718055_960_720.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   /*opacity: .7;*/
+   /*margin-top: -117px;*/
+   margin-top: -150px;
 
-.search{
- margin-top: 50px;
- h2{
-      text-align: center;
-    }
-    form.custom .custom.dropdown{
-      height: 45px;
-    }
-    label{
-      margin-bottom: 10px;
-    }
-    form.custom .custom.dropdown{
-      padding-top: 5px;
-    }
-    form.custom .custom.dropdown .selector{
-      top: 5px;
-    }
-    .button{
-      height: 45px;
-      margin-top:25px; 
-    }
-  }
+   overflow-x: hidden;
+}
 
-
-
+.space {
+  margin-top: 90px;
+}
