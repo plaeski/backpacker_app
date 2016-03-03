@@ -166,7 +166,7 @@ function go(){
       $('#mypie1').text('');
       // $('#mypie1').append("<canvas id='canvas1' width='200' height='200'></canvas>");
       $('#mypie1').append("<table id='mydata1'><tr><th>Type of Expenses</th><th>Percentage</th></tr><tr><td>Accomodation</td><td>" + percent[0] + "%</td></tr><tr><td>Food</td><td>" + percent[1] + "%</td></tr><tr><td>Local Transporation</td><td>" + percent[2] + "%</td></tr><tr><td>Alcohol</td><td>" + percent[3] + "%</td></tr></table>");
-
+      $('#mypie1').append("<br>* <b>" + result[0] + " ~ " + result[1] + "</b> days are calculated based on table above.");
     });
 
   });
@@ -191,18 +191,19 @@ function go(){
     }).done(function(data) {
 
       country_name = $.parseJSON(data.country_name);
-      days = $.parseJSON(data.result);
+      budget = $.parseJSON(data.result);
       percent = $.parseJSON(data.percent);
       others = $.parseJSON(data.fun_info);
 
       // text
       $('#outputbox2').text('');
-      $('#outputbox2').append("<p>To visit <b>" + country_name + "</b>, you need money at least <b>$" + days + "</b>.<br><br></p>");
+      $('#outputbox2').append("<p>To visit <b>" + country_name + "</b>, you need at least <b>$" + budget + "</b>.<br><br></p>");
 
       // table
       $('#mypie2').text('');
       // $('#mypie2').append("<canvas id='canvas2' width='200' height='200'></canvas>");
       $('#mypie2').append("<table id='mydata2'><tr><th>Type of Expenses</th><th>Percentage</th></tr><tr><td>Accomodation</td><td>" + percent[0] + "%</td></tr><tr><td>Food</td><td>" + percent[1] + "%</td></tr><tr><td>Local Transporation</td><td>" + percent[2] + "%</td></tr><tr><td>Alcohol</td><td>" + percent[3] + "%</td></tr></table>");
+      $('#mypie2').append("<br>* <b>$" + budget + "</b> is based on the table above.");
 
       // fun table
       removeTableRow($('#myFunTable2'));
