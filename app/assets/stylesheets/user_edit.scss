@@ -1,0 +1,46 @@
+$input_width: 50%;
+$input_margin: 5px auto;
+
+label {
+  color: black;
+}
+
+.user-title {
+  font-size: 2em;
+  margin-left: 670px;
+  margin-bottom: 10px;
+}
+
+.user-edit {
+    padding-top: 100px;
+}
+
+input#user_name {
+    width: $input_width;
+    margin: $input_margin;
+}
+
+input#user_email {
+    width: $input_width;
+    margin: $input_margin;
+}
+
+fieldset.change-password {
+  width: $input_width;
+  margin: $input_margin;
+}
+
+input.button.update,
+input.button.cancel {
+    width: 50%;
+    height: 50px;
+    margin-right: 360px;
+    display: inline;
+    clear: both;
+    font-size: 1.5em;
+}
+
+/*.authform.cancel-text {
+    margin-top: 70px;
+    margin-left: 360px;
+}*/

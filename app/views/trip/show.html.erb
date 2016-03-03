@@ -1,20 +1,54 @@
 <div>
-	<h1>This is where the trip page is going to go!</h1>
-	
-	<div>
-	<a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/trip_preview/<%=@trip.trip_code %>" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i>Share on Facebook</a>
+	<div class="row trip-banner-container">
+		<div class="xlarge-12 columns trip-banner">
+			<h1 class="trip-banner-header"><%= @trip.name.upcase %></h1>
+		</div>
 	</div>
-
-	<a href="/trip/<%=@trip.id%>/trip_route/<%=@route%>"> View Trip Route
+	<div>
 	
+	</div>
+	<div class="row">
+		<div class="large-4 columns">
+			<%= link_to image_tag('route-map.jpg', class: "route-link"), trip_trip_route_path(@trip.id, @route) %>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/trip_preview/<%=@trip.trip_code %>" title="Share on Facebook" target="_blank" class="btn btn-facebook"><%= link_to image_tag('facebook.png', class: "facebook-share-link")%></a>
+		</div>
+		<div class="large-4 columns">
+			<% if @trip.itinerary_id %>
+				<h2>Saved Itinerary</h2>
+				<ol>	
+					<% @trip.itinerary.cities.each do |stop| %>
+					<li> <%= stop %> </li>
+				<% end %>
+			</ol>
+			<% end %>
+		</div>
+		<div class="large-4 columns trip-chat-box">
+			<%= render :partial => "shared/comments", :locals => {:comments => @comments} %>
+		</div>
+	</div>
+	<div class = "row inspiration-header">
+		<div class = "large-12 columns">
+			<h2>Need Some Inspiration?</h2>
+			<h4>Have a look at some of our hand selected sample itineraries.</h4>
+		</div>
+	</div>
+<div class="row inspiration-countries">
 
-	<h4>Need Some Inspiration?</h4>
-
-	<%= link_to "Europe", itinerary_path("Europe") %>
-	<%= link_to "Asia", itinerary_path("Asia") %>
-	<%= link_to "Central / South America", itinerary_path("Central%2FSouth America") %>
-	<%= link_to "North America", itinerary_path("North America") %>
-	<%= link_to "Austraila / New Zealand", itinerary_path("Australia%2FNew Zealand") %>
+  <div class="small-12 large-2 large-offset-1 columns">   
+    <%= link_to image_tag('europe.png'), trip_itinerary_path(@trip.id, "Europe") %>
+  </div>
+  <div class="small-12 large-2 columns">   
+    <%= link_to image_tag('asia.png'), trip_itinerary_path(@trip.id, "Asia") %>
+  </div>
+  <div class="small-12 large-2 columns">   
+    <%= link_to image_tag('south-central-america.png'), trip_itinerary_path(@trip.id,"Central%2FSouth America") %>
+  </div>
+  <div class="small-12 large-2 columns">   
+    <%= link_to image_tag('north-america.png'), trip_itinerary_path(@trip.id,"North America") %>
+  </div>
+  <div class="small-12 large-2 columns end">   
+    <%= link_to image_tag('australia-nz.png'), trip_itinerary_path(@trip.id,"Australia%2FNew Zealand") %>
+  </div>
 </div>
 
-<%= render :partial => "shared/comments", :locals => {:comments => @comments} %>
+

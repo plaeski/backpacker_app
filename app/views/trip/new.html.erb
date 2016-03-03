@@ -1,9 +1,38 @@
-<h2>What is the name of your trip?</h2>
+<div class="new-trip-wrapper">
+  <h2 class="trip-name">What is the name of your trip?</h2>
 
-<%= form_for @trip, url: {action: "create"} do |f| %> 
-  <div class="form-group">	
-    <%= f.label :name %>
-    <%= f.text_field :name, :autofocus => true, class: 'form-control' %>
-  </div>
-	<%= f.submit 'Get Started!', :class => 'button right' %>
+  <%= form_for @trip, url: {action: "create"} do |f| %> 
+    <div class="form-group">	
+      <%= f.text_field :name, :autofocus => true, class: 'form-control', placeholder: 'enter trip name' %>
+    </div>
+  	<%= f.submit 'Get Started!', :class => 'button right new' %>
   <% end %>
+  <div class="content">
+    <div class="grid">
+      <figure class="effect-julia">
+        <img src="https://pixabay.com/static/uploads/photo/2016/01/19/17/45/hiker-1149877_960_720.jpg" alt="img21"/>
+        <figcaption>
+          <h2 class="img-caption">World of <span>Wanderlust</span></h2>
+          <div>
+            <p class="img-caption">"We travel some of us forever."</p>
+            <p class="img-caption">"We travel for fulfillment."</p>
+            <p class="img-caption">"Beauty, Charm and Adventure."</p>
+          </div>
+          <a href="#">View more</a>
+        </figcaption>     
+      </figure>
+      <figure class="effect-julia">
+        <img src="https://pixabay.com/static/uploads/photo/2015/09/02/12/50/hiker-918704_960_720.jpg" alt="img22"/>
+        <figcaption>
+          <h2 class="img-caption">Travel Bug <span>Bites</span></h2>
+          <div>
+            <p class="img-caption">"Travel to take a journey."</p>
+            <p class="img-caption">"Travel makes one modest."</p>
+            <p class="img-caption">"The world is a book"</p>
+          </div>
+          <a href="#">View more</a>
+        </figcaption>     
+      </figure>
+    </div>
+</div>  
+

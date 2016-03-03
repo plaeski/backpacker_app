@@ -186,7 +186,6 @@ body {
   padding: 0;
   font-size: 12px;
   font-family: 'Open Sans', sans-serif;
-  overflow-x: hidden;
 }
 
 a {
@@ -258,6 +257,7 @@ label {
   position:absolute;
   transform:translateY(6px);
   left:13px;
+  color:rgba(220,220,220,.7);
   color:rgba($white,.1);
   transition:all 0.25s ease;
   -webkit-backface-visibility: hidden;
@@ -291,7 +291,6 @@ input, textarea {
   background:none;
   background-image:none;
   border:1px solid $gray-light;
-  color:$white;
   border-radius:0;
   transition:border-color .25s ease, box-shadow .25s ease;
   &:focus {
@@ -381,7 +380,6 @@ textarea {
   padding: 0;
   font-size: 12px;
   font-family: 'Open Sans', sans-serif;
-  overflow-x: hidden;
 }*/
 
 .logo {
@@ -467,7 +465,8 @@ textarea {
 .displayblock {
   margin-left: 0;
   z-index: 5;
-} 
+  /*margin-top: 20px;*/
+}
 
 /* Button styling */
 .menu-button {
@@ -524,6 +523,12 @@ textarea {
   margin-top: -200px;
   font-size: 3em;
   padding: 300px;
+}
+
+input.button.send {
+    width: 50%;
+    height: 50px;
+    font-size: 1.2rem;
 }
 
 

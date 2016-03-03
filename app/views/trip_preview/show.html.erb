@@ -1,10 +1,24 @@
 <h1><%= @trip.name %></h1>
-You've been invited to join <%= @trip.users[0].name%>'s trip!
-Here's what they've got so far!
+<p>You've been invited to join <%= @trip.users[0].name%>'s trip!</p>
+<p>Here's what they've got so far!</p>
 
-# Stops
-# Days
-Countries List
+<%= @trip.users[0].name%> is planning to visit <%= @trip.itinerary.area %> for <%= @trip.itinerary.cities.length %> days!
+
+<% if @trip.itinerary_id %>
+		<h2>This is the sample itinerary they are thinking to follow!</h2>
+		<ol>	
+			<% @trip.itinerary.cities.each do |stop| %>
+			<li> <%= stop %> </li>
+			<% end %>
+		</ol>
+		<h2>Stops</h2>
+		<ol>
+			<% @trip.itinerary.countries.each do |country| %>
+			<li> <%= country %></li>
+			<% end %>
+		</ol>
+<% end %>
+
 Approx Budget
 
 <%= link_to "Join Backpackers Now!", trip_preview_join_path(@trip.trip_code) %>

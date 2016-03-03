@@ -1,16 +1,11 @@
-<div class="container">
-  <div class="row">
-    <h3>Users</h3>
-    <div class="column">
-      This is a landing page for users.
-    </div>
+<div class="container user_preview">
+  <div class="preview-wrapper">
+    <h1 class="trips-title">Your Trips</h1>
+    <% @trips.each do |trip| %>
+    <p><%= link_to trip.name, trip %></p>
+    <% end %>
+    <%= button_to "Start a new Trip", new_trip_path, :class => "new-trip-btn", :method => :get %>
+    <p>Name: <%= @user.name if @user.name %></p>
+    <p>Email: <%= @user.email if @user.email %></p>
   </div>
 </div>
-<h4>Your Trips</h4>
-<% @trips.each do |trip| %>
-<p><%= link_to trip.name, trip %></p>
-<% end %>
-<%= link_to "Start a new Trip", new_trip_path %>
-<h3>User</h3>
-<p>Name: <%= @user.name if @user.name %></p>
-<p>Email: <%= @user.email if @user.email %></p>

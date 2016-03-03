@@ -12,11 +12,31 @@ var ItineraryExplorer = React.createClass({
         this.setState({
           data: data,
           results: data,
+          current: data[0]
         });
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
       }.bind(this)
+    });
+  },
+  handleItinerarySave: function() {
+    var data = this.state.current
+    var itinId = this.state.current.id
+    data.trip_id = itinId
+    var tripId = this.props.trip
+    var url = "/trip/" + tripId 
+    $.ajax({
+      url: url,
+      dataType: 'json',
+      type: 'PATCH',
+      data: this.state.current,
+      success: function(data) {
+        window.location.href = data.redirect;
+      },
+      error: function(xhr, status, err) {
+        console.error(this.props.url,status,err,toString());
+      }
     });
   },
   getInitialState: function() {
@@ -54,7 +74,6 @@ var ItineraryExplorer = React.createClass({
     var newResults = this.state.data.filter(excludeCountry)
     var invalidDuration = this.state.excludedByDuration
     newResults = newResults.diff(invalidDuration)
-    debugger;
     changedState.results = newResults
     changedState.current = newResults[0]
     this.setState(changedState)
@@ -103,15 +122,15 @@ var ItineraryExplorer = React.createClass({
     return (
       <div className="tripPlanner">
         <h1>Itineraries</h1>
-        <div className="row">
-          <div className="large-3 columns">
+        <div className="row itineraries-row">
+          <div className="large-3 columns itin-filters">
             <ItinFilters data={this.state.data} filterCountries={this.filterCountries} filterDurations={this.filterDurations}/>
           </div>
-          <div className="large-3 columns itin-list">
+          <div className="large-4 columns itin-list">
             <ItinList data={this.state.results} changeCurrent={this.changeCurrent} />
           </div>
-          <div className="large-6 columns">
-            <ItinDetails data={this.state.current}/>
+          <div className="large-5 columns itin-display">
+            <ItinDetails data={this.state.current} handleItinerarySave={this.handleItinerarySave}/>
           </div>
         </div>
       </div>
@@ -129,7 +148,8 @@ var ItinList = React.createClass({
           <Itinerary key={itin.id}>
             <h4>{days} day itinerary</h4>
             <ItinCountryDetails data={itin}/>
-            <a href="#" id={i} onClick={that.props.changeCurrent} className="button info round">See Details</a>  
+            <a href="#" id={i} onClick={that.props.changeCurrent} className="button success round itin-change-button">See Details</a>
+            <hr />  
           </Itinerary>
         );
       });
@@ -151,12 +171,13 @@ var ItinDetails = React.createClass({
         <Itinerary key={itin.id}>
             <h2>Details</h2>
               <ItinCityDetails data={itin}/>
+              <a href="#" onClick={this.props.handleItinerarySave} className="button success round itin-save-button">Save Itinerary</a> 
           </Itinerary>
       );
     }
     return (
       <div className="cityList">
-        {itin} 
+        {itin}
       </div>
     );
   }
@@ -203,17 +224,13 @@ var ItinCountryDetails = React.createClass({
     if(this.props.data) {
       var details = this.props.data.countries.map(function(itin, i) {
         return(
-          <li>
-            {itin}
-          </li>
+          itin+" "
         )
       })
     }
     return (
       <div className="cityList">
-        <ul className="cities">
-          {details}
-        </ul> 
+          Countries: {details}
       </div>
     )
   }
@@ -221,7 +238,6 @@ var ItinCountryDetails = React.createClass({
 
 var ItinFilters = React.createClass({
   onChange: function(e, f, g) {
-    debugger;
     if (f){
       this.props.filterDurations(e, f, g);
     } else {
@@ -240,20 +256,20 @@ var ItinFilters = React.createClass({
     var country_list = unique.map(function(country){
       return (
         <div>
-          <input value={country} type="checkbox" onChange={that.onChange} defaultChecked /><label for={country}>{country}</label><br />
+          <input value={country} type="checkbox" className="checkbox-custom" onChange={that.onChange} defaultChecked /><label for={country} className="filter-label">{country}</label><br />
         </div>
       )
     })
     return (
       <div>
         <form>
-          <h3>Countries</h3>
+          <h2>Countries</h2>
           {country_list}
-          <h3>Duration</h3>
-          <input type="checkbox" onChange={this.onChange.bind(this, 1, 7)} defaultChecked /><label for="7">One Week</label><br />
-          <input type="checkbox"  onChange={this.onChange.bind(this, 8, 14)} defaultChecked/><label for="14">Two Weeks</label><br />
-          <input type="checkbox"  onChange={this.onChange.bind(this, 15, 21)} defaultChecked/><label for="21">Three Weeks</label><br />
-          <input type="checkbox" defaultChecked  onChange={this.onChange.bind(this, 22, 100)}/><label for="28">Four Weeks +</label>
+          <h2>Duration</h2>
+          <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 1, 7)} defaultChecked /><label for="7" className="filter-label">One Week</label><br />
+          <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 8, 14)} defaultChecked/><label for="14" className="filter-label">Two Weeks</label><br />
+          <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 15, 21)} defaultChecked/><label for="21" className="filter-label">Three Weeks</label><br />
+          <input type="checkbox" className="checkbox-custom" defaultChecked  onChange={this.onChange.bind(this, 22, 100)}/><label for="28" className="filter-label">Four Weeks +</label>
         </form>
       </div>
     )
