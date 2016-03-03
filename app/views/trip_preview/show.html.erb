@@ -1,24 +1,51 @@
-<h1><%= @trip.name %></h1>
-<p>You've been invited to join <%= @trip.users[0].name%>'s trip!</p>
-<p>Here's what they've got so far!</p>
+<div class="container invitation-page">
+	<div class="row spacer">
+	</div>
+	<div class="row invitation">
+		<div class="large-6 columns invitation-images">
+			<div class="invitation-round-image">
+				<%= image_tag('invitation-1.jpg') %>
+			</div>
+			<div class="invitation-round-image">
+				<%= image_tag('invitation-2.jpg') %>
+			</div>
+		</div>
+		<div class="large-6 columns invitation-content">
+			<div class="preview-header">
+				<h1><%= @trip.name %></h1>
+			</div>
+			<h2>You've been invited to join <%= @trip.users[0].name%>'s trip!</h2>
 
-<%= @trip.users[0].name%> is planning to visit <%= @trip.itinerary.area %> for <%= @trip.itinerary.cities.length %> days!
-
-<% if @trip.itinerary_id %>
-		<h2>This is the sample itinerary they are thinking to follow!</h2>
-		<ol>	
-			<% @trip.itinerary.cities.each do |stop| %>
-			<li> <%= stop %> </li>
+			<% if @trip.itinerary_id %>
+				<p>Here's what they've got so far!</p>
+				<p><%= @trip.users[0].name%> is planning to visit <%= @trip.itinerary.area %> for <%= @trip.itinerary.cities.length %> days!</p>
+				<p>This is a preview of the itinerary they are thinking to follow!</p>
+				<div class="row">
+					<div class="large-6 columns">
+						<h2>Stops</h2>
+						<ul>	
+							<% @trip.itinerary.cities.first(4).each do |stop| %>
+							<li> <%= stop %> </li>
+							<% end %>
+						</ul>
+					</div>
+					<div class="large-6 columns">
+						<h2>Countries</h2>
+						<ul>
+							<% @trip.itinerary.countries.first(4).each do |country| %>
+							<li> <%= country %></li>
+							<% end %>
+						</ul>
+					</div>
+				</div>	
 			<% end %>
-		</ol>
-		<h2>Stops</h2>
-		<ol>
-			<% @trip.itinerary.countries.each do |country| %>
-			<li> <%= country %></li>
-			<% end %>
-		</ol>
-<% end %>
 
-Approx Budget
-
-<%= link_to "Join Backpackers Now!", trip_preview_join_path(@trip.trip_code) %>
+			<h2>Interested in joining the fun?</h2>
+			<div class="social-link-images">
+			  <%= link_to image_tag('sign-in-with-facebook.png'), user_omniauth_authorize_path(:facebook, trip_id: params[:id])  %>
+    	  <%= link_to image_tag('sign-in-with-twitter.png'), user_omniauth_authorize_path(:twitter, trip_id: params[:id]) %>
+    	  <%= link_to image_tag('create-account.png'), trip_preview_join_path(@trip.trip_code) %>
+			</div>
+		</div>
+	</div>
+</div>

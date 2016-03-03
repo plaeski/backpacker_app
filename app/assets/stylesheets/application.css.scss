@@ -164,3 +164,64 @@
 	font-weight: 900;
 	text-align: center;
 }
+.invitation {
+	margin-bottom: 4em;
+	border-radius: 1em;
+	height: 60em;
+	background-color: #2270c0;
+	overflow: hidden;
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
+	font-family: 'Droid Serif', sans-serif;
+}
+
+.invitation-content {
+	background-color: white;
+	padding: 0;
+	text-align: center;
+	height: 80em;
+}
+
+.invitation-content ul {
+	padding-left:0;
+}
+
+.invitation-content li {
+	color: #959595;
+}
+
+.invitation-round-image {
+	border-radius: 100%;
+	border: 1em solid white;
+	overflow: hidden;
+	margin: 4em 7.5em 0 7.5em ;
+	box-shadow: -8px 5px rgba(0,0,0,0.6);
+}
+
+.invitation-page {
+	margin: 0;
+}
+
+.spacer {
+	height: 8em;
+}
+
+.preview-header {
+	background-color: #70C022;
+	height: 5em;
+}
+
+.preview-header h1 {
+	margin: 0;
+	padding-top: 0.5em;
+	font-family: 'Droid Serif', sans-serif;
+}
+
+.invitation-content h2,h3,h4, p {
+	font-family: 'Droid Serif', sans-serif;
+	color: black;
+}
+
+.social-link-images {
+	width: 50%;
+	margin: 0 auto;
+}
