@@ -34,16 +34,18 @@ p, pre {
   /*opacity: 0.7;*/
 }
 
+#outputbox1 p, #outputbox2 p {
+  color: black;
+}
+
 .preview-wrapper {
-  background-color: lightblue;
-  height: 810px;
+  /*background-color: lightblue;*/
+  height: 803px;
   background-image: url('https://pixabay.com/static/uploads/photo/2015/04/11/18/51/everest-718055_960_720.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-   /*opacity: .7;*/
-   /*margin-top: -117px;*/
    margin-top: -150px;
 
    overflow-x: hidden;
@@ -55,7 +57,7 @@ p, pre {
 
 .transbox {
   background-color: #ffffff;
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 .option {
@@ -63,5 +65,5 @@ p, pre {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
-  opacity: 1;
+  /*opacity: 1;*/
 }
