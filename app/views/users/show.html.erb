@@ -1,16 +1,29 @@
- <div class="container">
-  <div class="row">
-    <h3>Users</h3>
-    <div class="column">
-      This is a landing page for users.
-    </div>
+<div class="user-banner">
+<h1> Welcome <%= @user.name if @user.name %> !</h1>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h2>"We travel not to escape life, but for life not to escape us" - Anonymous</h2>
+    <p>Thank you for choosing Backpacker to plan your next big adventure! We understand the importance of pre-trip planning and you'll find some great tools on this site to make sure you're prepared. Click on the Start a New Trip button below to get started!</p>
   </div>
 </div>
-<h4>Your Trips</h4>
-<% @trips.each do |trip| %>
-<p><%= link_to trip.name, trip %></p>
-<% end %>
-<%= link_to "Start a new Trip", new_trip_path %>
+<div class="row">
+<div class="large-4 columns">
+	<h1>Your Trips</h1>
+	<% if @trips.length > 0 %>
+		<% @trips.each do |trip| %>
+			<p><%= link_to trip.name, trip %></p>
+		<% end %>
+	<% else %>
+		<h2>You don't have any existing trips.</h2>
+	<% end %>
+</div>
+<div class="large-4 columns">
+</div>
+<div class="large-4 columns">
+</div>
+
+<%= link_to "Start a New Trip", new_trip_path %>
 <h3>User</h3>
 <p>Name: <%= @user.name if @user.name %></p>
 <p>Email: <%= @user.email if @user.email %></p>

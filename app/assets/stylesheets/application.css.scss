@@ -65,21 +65,19 @@
 	max-width: 90em;
 }
 
-.trip-banner {
-	background-image: url("trip-banner.png");
-	background-size: 100%;
-	height: 16em;
-}
-
 .trip-banner-container {
-	max-width: 84em;
+	height: 20em;
+	background-size: 100%;
+	width: 100%;
+	background-image: url("trip-banner.png");
 }
 
 .trip-banner-header {
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
-	font-size: 8em
+	font-size: 8em;
+	margin: 0;
 }
 
 .checkbox-custom {
@@ -238,4 +236,17 @@
 .social-link-images {
 	width: 50%;
 	margin: 0 auto;
+}
+
+.user-banner {
+	background-image: url('user-banner.jpg');
+	height: 25em;
+	background-size: 100%;
+	width: 100%;
+}
+
+.user-banner h1 {
+	margin: 0;
+	font-size: 6em;
+	color: lightslategrey;
 }
