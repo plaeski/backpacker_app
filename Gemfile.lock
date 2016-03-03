@@ -93,8 +93,6 @@ GEM
       activesupport (>= 4.1.0)
     gmaps-rails (0.0.2)
       rails
-    google_currency (3.3.0)
-      money (~> 6.7)
     hashie (3.4.3)
     high_voltage (2.4.0)
     i18n (0.7.0)
@@ -113,15 +111,9 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    method_source (0.8.2)
     mime-types (2.99.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
-    monetize (1.4.0)
-      money (~> 6.7)
-    money (6.7.0)
-      i18n (>= 0.6.4, <= 0.7.0)
-      sixarm_ruby_unaccent (>= 1.1.1, < 2)
     multi_json (1.11.2)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
@@ -150,10 +142,6 @@ GEM
       omniauth-oauth (~> 1.1)
     orm_adapter (0.5.0)
     pg (0.18.4)
-    pry (0.10.3)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
     puma (2.15.3)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
@@ -233,8 +221,6 @@ GEM
       multi_json (~> 1.0)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
-    sixarm_ruby_unaccent (1.1.1)
-    slop (3.6.0)
     spring (1.6.4)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
@@ -281,17 +267,14 @@ DEPENDENCIES
   faker
   foundation-rails (~> 5.5)
   gmaps-rails
-  google_currency
   high_voltage
   jbuilder (~> 2.0)
   jquery-rails
   launchy
-  monetize
   omniauth
   omniauth-facebook
   omniauth-twitter
   pg
-  pry
   puma
   quiet_assets
   rails (= 4.2.5)
