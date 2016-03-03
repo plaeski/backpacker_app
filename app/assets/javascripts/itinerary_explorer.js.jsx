@@ -148,7 +148,8 @@ var ItinList = React.createClass({
           <Itinerary key={itin.id}>
             <h4>{days} day itinerary</h4>
             <ItinCountryDetails data={itin}/>
-            <a href="#" id={i} onClick={that.props.changeCurrent} className="button success round itin-change-button">See Details</a>  
+            <a href="#" id={i} onClick={that.props.changeCurrent} className="button success round itin-change-button">See Details</a>
+            <hr />  
           </Itinerary>
         );
       });
@@ -170,7 +171,7 @@ var ItinDetails = React.createClass({
         <Itinerary key={itin.id}>
             <h2>Details</h2>
               <ItinCityDetails data={itin}/>
-              <a href="#" onClick={this.props.handleItinerarySave} className="button success round">Save Itinerary</a> 
+              <a href="#" onClick={this.props.handleItinerarySave} className="button success round itin-save-button">Save Itinerary</a> 
           </Itinerary>
       );
     }
@@ -262,9 +263,9 @@ var ItinFilters = React.createClass({
     return (
       <div>
         <form>
-          <h3>Countries</h3>
+          <h2>Countries</h2>
           {country_list}
-          <h3>Duration</h3>
+          <h2>Duration</h2>
           <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 1, 7)} defaultChecked /><label for="7" className="filter-label">One Week</label><br />
           <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 8, 14)} defaultChecked/><label for="14" className="filter-label">Two Weeks</label><br />
           <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 15, 21)} defaultChecked/><label for="21" className="filter-label">Three Weeks</label><br />

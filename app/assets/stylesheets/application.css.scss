@@ -14,20 +14,27 @@
  //= require_tree .
  //= require_self
 
- 
-
  */
 
 .tripPlanner {
  	text-align: center;
 }
 
+.tripPlanner h1{
+ 	margin: 0;
+ 	padding: 1em;
+}
+
 .cities {
 	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
 .itin-body {
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .itin-list {
@@ -35,6 +42,10 @@
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background-color: rgba(255,255,255,0.5);
+}
+
+.itin-list h4 {
+	margin: .5em 0 0 0;
 }
 
 .itin-filters {
@@ -47,6 +58,7 @@
 	height: 40em;
 	overflow-y: scroll;
 	background-color: rgba(255,255,255,0.5);
+	color: black;
 }
 
 .inspiration-countries {
@@ -86,6 +98,7 @@
 	display: inline-block;
 	position: relative;
 	transform: none;
+	color: black;
 }
 
 .itin-change-button {
@@ -94,10 +107,19 @@
 	padding: 5px;
 }
 
+.itin-save-button {
+	font-size: 1.5em;
+	display: inline-block;
+	padding: 5px;
+	margin-top: .5em;
+}
+
 .itin-explorer {
+	top: -10px;
 	background-image: url("old.jpg");
 	background-size: 100%;
 	height: 100%;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .route-link {
@@ -124,4 +146,14 @@
 }
 .itin-explorer div::-webkit-scrollbar-thumb:hover {
     background-color: #aaa;
+}
+
+.cityList li {
+	color: black;
+}
+
+.itin-list hr {
+	border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
