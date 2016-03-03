@@ -91,6 +91,10 @@ html {
     }
 }
 
+.container {
+  margin-top: -20px;
+}
+
 .content {
   &-wrapper {
   height: 100vh;
@@ -422,13 +426,13 @@ textarea {
 }
 
 .nav nav {
-  margin-left: 150px;
+  margin-left: 200px;
   /*margin-top: 5px;*/
 }
 
 .nav ul {
   float: left;
-  padding-left: 100px;
+  padding-left: 60px;
 }
 
 .parent {
