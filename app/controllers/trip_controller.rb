@@ -20,7 +20,6 @@ class TripController < ApplicationController
 		if @trip.save
   		TripMembership.create(user_id: current_user.id, trip_id: @trip.id)
   		TripRoute.create(trip_id: @trip.id)
-  		flash[:success] = "Trip created successfully!"
   		redirect_to trip_path(@trip.id)
 		else
 			flash[:failure] = "Please enter a name!"
