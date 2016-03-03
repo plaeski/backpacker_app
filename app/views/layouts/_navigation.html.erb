@@ -5,7 +5,13 @@
   </div>
   <div class="nav">
     <nav role='navigation'>
-      <ul><div class="parent"><a href="users/<%=current_user.id%>">Home</a></div></ul>
+      <ul><div class="parent">
+      <% if current_user %>
+        <a href="users/<%= current_user.id %>">Home</a>
+      <% else %>
+        <a href="/">Home</a>
+      <% end %>
+      </div></ul>
       <ul><div class="parent"><a href="#">Budget</a></div></ul>
       <ul><div class="parent"><a href="info_map">Country Daily Average</a></div></ul>
       <ul><div class="parent"><a onclick="contactTrigger()">Contact</a></div></ul>
