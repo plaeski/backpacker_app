@@ -12,7 +12,7 @@
       <% end %>
     </div>
     <fieldset class="change-password">
-      <p>Leave these fields blank if you don't want to change your password.</p>
+      <p style="color: black">Leave these fields blank if you don't want to change your password.</p>
       <div class="form-group">
         <%= f.password_field :password, :autocomplete => 'off', class: 'form-control', placeholder: 'password' %>
       </div>
@@ -21,7 +21,7 @@
       </div>
     </fieldset>
     <fieldset class="change-password">
-      <p>You must enter your current password to make changes.</p>
+      <p style="color: black">You must enter your current password to make changes.</p>
       <div class="form-group">
         <%= f.password_field :current_password, class: 'form-control', placeholder: 'current password' %>
       </div>
