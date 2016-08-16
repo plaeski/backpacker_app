@@ -1,6 +1,6 @@
 <% if user_signed_in? %>
-  <ul><div class="parent"><%= link_to 'Edit account', edit_user_registration_path %></div></ul>
-  <ul><div class="parent"><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></div></ul>
+  <div class="nav-item"><%= link_to 'Edit account', edit_user_registration_path %></div>
+  <div class="nav-item"><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></div>
 <% else %>
-  <ul><div class="parent"><%= link_to 'Sign-In / Sign-up', "#", :onclick=>"signInUpTrigger();" %></div></ul>
+  <div class="nav-item"><%= link_to 'Sign-In / Sign-up', "#", :onclick=>"signInUpTrigger();" %></div>
 <% end %>

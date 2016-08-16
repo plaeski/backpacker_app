@@ -1,0 +1,50 @@
+/* line 4, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/user_edit.scss */
+label {
+  color: black;
+}
+
+/* line 8, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/user_edit.scss */
+.user-title {
+  font-size: 2em;
+  margin-left: 670px;
+  margin-bottom: 10px;
+}
+
+/* line 14, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/user_edit.scss */
+.user-edit {
+  padding-top: 100px;
+}
+
+/* line 18, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/user_edit.scss */
+input#user_name {
+  width: 50%;
+  margin: 5px auto;
+}
+
+/* line 23, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/user_edit.scss */
+input#user_email {
+  width: 50%;
+  margin: 5px auto;
+}
+
+/* line 28, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/user_edit.scss */
+fieldset.change-password {
+  width: 50%;
+  margin: 5px auto;
+}
+
+/* line 33, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/user_edit.scss */
+input.button.update,
+input.button.cancel {
+  width: 50%;
+  height: 50px;
+  margin-right: 360px;
+  display: inline;
+  clear: both;
+  font-size: 1.5em;
+}
+
+/*.authform.cancel-text {
+    margin-top: 70px;
+    margin-left: 360px;
+}*/

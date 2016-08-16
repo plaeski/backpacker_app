@@ -1,0 +1,247 @@
+/* line 4, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+div.new-trip-wrapper {
+  padding-top: 100px;
+}
+
+/* line 8, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+h2.trip-name {
+  margin-top: 10px;
+  margin-left: 360px;
+}
+
+/* line 13, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+input#trip_name {
+  width: 50%;
+  margin: 5px auto;
+}
+
+/* line 18, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+input.button.new {
+  width: 20%;
+  height: 50px;
+  margin-right: 570px;
+  display: inline;
+  clear: both;
+  font-size: 1.5em;
+}
+
+/* IMAGE GROUP */
+/* line 29, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+p {
+  /*background: #2f3238; */
+  color: #fff;
+  font-weight: 400;
+  font-size: 2em;
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+/* line 37, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+.content {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* line 42, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+h2.img-caption {
+  color: white;
+}
+
+@media screen and (max-width: 25em) {
+  /* line 47, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+  .codrops-header {
+    font-size: 75%;
+  }
+
+  /* line 50, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+  .codrops-icon span {
+    display: none;
+  }
+}
+/* line 54, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+.grid {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+
+/* Common style */
+/* line 65, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 80, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+/* line 88, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 97, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+/* line 102, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+/* line 113, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+/* line 121, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+/* line 126, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+/* line 130, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+/* line 135, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/* line 140, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+figure.effect-julia {
+  background: #2f3238;
+}
+
+/* line 144, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+figure.effect-julia img {
+  max-width: none;
+  height: 400px;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 153, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+figure.effect-julia figcaption {
+  text-align: left;
+}
+
+/* line 157, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+figure.effect-julia h2 {
+  position: relative;
+  padding: 0.5em 0;
+}
+
+/* line 162, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+figure.effect-julia p {
+  display: inline-block;
+  margin: 0 0 0.25em;
+  padding: 0.4em 3em;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2f3238;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 85%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-360px, 0, 0);
+  transform: translate3d(-360px, 0, 0);
+}
+
+/* line 177, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+figure.effect-julia p:first-child {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+/* line 182, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+figure.effect-julia p:nth-of-type(2) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 187, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+figure.effect-julia p:nth-of-type(3) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+/* line 192, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+figure.effect-julia:hover p:first-child {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+/* line 197, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+figure.effect-julia:hover p:nth-of-type(2) {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+/* line 202, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+figure.effect-julia:hover p:nth-of-type(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* line 207, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+figure.effect-julia:hover img {
+  opacity: 0.4;
+  -webkit-transform: scale3d(1.1, 1.1, 1);
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+/* line 213, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/new_trip.scss */
+figure.effect-julia:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}

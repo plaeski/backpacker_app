@@ -1,24 +1,24 @@
 <!-- NAVIGATION SECTION -->
 <section>
-  <a href="/">
+  <div class="nav">
+    <div class="nav-list">
     <div class="logo">
      <div class="text">Backpackers</div>
     </div>
-  </a>
-  <div class="nav">
-    <nav role='navigation'>
-      <ul><div class="parent">
-      <% if current_user %>
-        <a href="/users/<%= current_user.id %>">Home</a>
-      <% else %>
-        <a href="/">Home</a>
-      <% end %>
-      </div></ul>
-      <ul><div class="parent"><a href="/budgets">Budget</a></div></ul>
-      <ul><div class="parent"><a href="/info_map">Country Daily Average</a></div></ul>
-      <ul><div class="parent"><a onclick="contactTrigger()">Contact</a></div></ul>
-        <%= render 'layouts/nav_links_for_auth' %>      
-    </nav>
+    <div class="nav-menu">
+        <div class="nav-item">
+        <% if current_user %>
+          <a href="/users/<%= current_user.id %>">Home</a>
+        <% else %>
+          <a href="/">Home</a>
+        <% end %>
+        </div>
+        <div class="nav-item"><a href="/budgets">Budget</a></div>
+        <div class="nav-item"><a href="/info_map">Country Daily Average</a></div>
+        <div class="nav-item"><a onclick="contactTrigger()">Contact</a></div>
+          <%= render 'layouts/nav_links_for_auth' %>
+        </div>
+      </div>
   </div>
   <div class="menu-button">
     <div class="menu-icn"></div>

@@ -2,7 +2,7 @@
 var ticking = false;
 var isFirefox = (/Firefox/i.test(navigator.userAgent));
 var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(navigator.userAgent));
-var scrollSensitivitySetting = 30; //Increase/decrease this number to change sensitivity to trackpad gestures (up = less sensitive; down = more sensitive)
+var scrollSensitivitySetting = 30; //Increase/decrease this number to change sensitivity to trackpad gestures (up = less sensitive; down = more sensitive) 
 var slideDurationSetting = 600; //Amount of time for which slide is "locked"
 var currentSlideNumber = 0;
 var totalSlideNumber = 5;
@@ -82,31 +82,31 @@ function downTrigger() {
 function contactTrigger() {
   // e.preventDefault();
   // currentSlideNumber = 4
+  currentSlideNumber++; 
+  nextItem();   
   currentSlideNumber++;
-  nextItem();
+  nextItem();  
   currentSlideNumber++;
-  nextItem();
-  currentSlideNumber++;
-  nextItem();
+  nextItem(); 
 }
 
 function signInUpTrigger() {
   // e.preventDefault();
   // currentSlideNumber = 5
   currentSlideNumber++;
-  nextItem();
+  nextItem(); 
+  currentSlideNumber++; 
+  nextItem();   
   currentSlideNumber++;
-  nextItem();
+  nextItem();  
   currentSlideNumber++;
-  nextItem();
-  currentSlideNumber++;
-  nextItem();
+  nextItem();    
 }
 
 // ------------- LAST PAGE SIGN-IN AND SIGN-UP FORM ------------- //
 $(function(){
   $('.form').find('input, textarea').on('keyup blur focus', function (e) {
-
+    
     var $this = $(this),
         label = $this.prev('label');
 
@@ -118,15 +118,15 @@ $(function(){
           }
       } else if (e.type === 'blur') {
         if( $this.val() === '' ) {
-          label.removeClass('active highlight');
+          label.removeClass('active highlight'); 
         } else {
-          label.removeClass('highlight');
-        }
+          label.removeClass('highlight');   
+        }   
       } else if (e.type === 'focus') {
-
+        
         if( $this.val() === '' ) {
-          label.removeClass('highlight');
-        }
+          label.removeClass('highlight'); 
+        } 
         else if( $this.val() !== '' ) {
           label.addClass('highlight');
         }
@@ -134,26 +134,31 @@ $(function(){
 
   });
 
-  $('.tab a').on('click', function (e) {
+  $('.tab a').on('click', function (e) { 
     e.preventDefault();
-
+    
     $(this).parent().addClass('active');
     $(this).parent().siblings().removeClass('active');
-
+    
     target = $(this).attr('href');
 
     $('.tab-content > div').not(target).hide();
-
+    
     $(target).fadeIn(600);
-
+    
   });
 })
 
-// NAVIGATION GROUP
+// NAVIGATION GROUP 
 $(function(){
-  $(".menu-button").click(function(e) {
+  $(".menu-button").click(function(e) { 
     e.preventDefault();
     e.stopPropagation();
-    $(".nav").toggleClass("nav-open", 1000);
+    $(".nav").toggleClass("displayblock", 1000);
   });
 })
+
+
+
+
+

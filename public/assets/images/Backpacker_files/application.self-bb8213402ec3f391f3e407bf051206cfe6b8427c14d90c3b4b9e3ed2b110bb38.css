@@ -1,0 +1,354 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ * require foundation
+ * require foundation_and_overrides
+
+
+
+ */
+/* line 20, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.tripPlanner {
+  text-align: center;
+}
+
+/* line 24, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.tripPlanner h1 {
+  margin: 0;
+  padding: 1em;
+}
+
+/* line 29, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.cities {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 35, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itin-body {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 41, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itin-list {
+  height: 40em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 48, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itin-list h4 {
+  margin: .5em 0 0 0;
+}
+
+/* line 52, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itin-filters {
+  height: 40em;
+  overflow-y: scroll;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 58, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itin-display {
+  height: 40em;
+  overflow-y: scroll;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+/* line 65, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.inspiration-countries {
+  max-width: 90em;
+}
+
+/* line 69, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.trip-banner-container {
+  height: 20em;
+  background-size: 100%;
+  width: 100%;
+  background-image: url(/assets/trip-banner-4f643413323fd9bd7ca0e9dbcf276b2980f735635bd73dad69a0155a9db3f097.png);
+}
+
+/* line 76, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.trip-banner-header {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 8em;
+  margin: 0;
+}
+
+/* line 84, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.checkbox-custom {
+  height: 20px;
+  width: 20px;
+  color: black;
+  text-align: left;
+  display: inline-block;
+}
+
+/* line 92, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itineraries-row {
+  max-width: 90em;
+}
+
+/* line 96, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.filter-label {
+  display: inline-block;
+  position: relative;
+  transform: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+/* line 104, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itin-change-button {
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 5px;
+}
+
+/* line 110, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itin-save-button {
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 5px;
+  margin-top: .5em;
+}
+
+/* line 117, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itin-explorer {
+  top: -10px;
+  background-image: url(/assets/old-4a7a5cc6a92a4b59da31995f26c3928c6bcd44d4f24874bba643517ed54d1209.jpg);
+  background-size: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 125, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.route-link {
+  margin: 3em 0;
+}
+
+/* line 129, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.trip-chat-box {
+  padding-top: 3em;
+}
+
+/* line 133, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.trip-chat-box textarea {
+  color: black;
+}
+
+/* line 137, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itin-explorer div::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* line 140, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itin-explorer div::-webkit-scrollbar-track {
+  background-color: #eaeaea;
+  border-left: 1px solid #ccc;
+}
+
+/* line 144, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itin-explorer div::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+/* line 147, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itin-explorer div::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+/* line 151, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.cityList li {
+  color: black;
+}
+
+/* line 155, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.itin-list hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+/* line 161, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.inspiration-header h2, h4 {
+  font-family: 'Droid Serif', sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* line 166, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.invitation {
+  margin-bottom: 4em;
+  border-radius: 1em;
+  height: 60em;
+  background-color: #2270c0;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+  font-family: 'Droid Serif', sans-serif;
+}
+
+/* line 176, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.invitation-content {
+  background-color: white;
+  padding: 0;
+  text-align: center;
+  height: 80em;
+}
+
+/* line 183, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.invitation-content ul {
+  padding-left: 0;
+}
+
+/* line 187, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.invitation-content li {
+  color: #959595;
+}
+
+/* line 191, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.invitation-round-image {
+  border-radius: 100%;
+  border: 1em solid white;
+  overflow: hidden;
+  margin: 4em 7.5em 0 7.5em;
+  box-shadow: -8px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* line 199, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.invitation-page {
+  margin: 0;
+}
+
+/* line 203, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.spacer {
+  height: 8em;
+}
+
+/* line 207, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.preview-header {
+  background-color: #70C022;
+  height: 5em;
+}
+
+/* line 212, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.preview-header h1 {
+  margin: 0;
+  padding-top: 0.5em;
+  font-family: 'Droid Serif', sans-serif;
+}
+
+/* line 218, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.invitation-content h2 {
+  font-family: 'Droid Serif', sans-serif;
+  color: black;
+}
+
+/* line 223, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.invitation-content h3 {
+  font-family: 'Droid Serif', sans-serif;
+  color: black;
+}
+
+/* line 228, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.invitation-content h4 {
+  font-family: 'Droid Serif', sans-serif;
+  color: black;
+}
+
+/* line 233, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.invitation-content p {
+  font-family: 'Droid Serif', sans-serif;
+  color: black;
+}
+
+/* line 237, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.social-link-images {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* line 242, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.user-banner {
+  background-image: url(/assets/user-banner-7256707012b34aa6acdff087c0c31fc42d6eca2805698479da81811bbf3fce23.jpg);
+  height: 25em;
+  background-size: 100%;
+  width: 100%;
+}
+
+/* line 249, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.user-banner h1 {
+  margin: 0;
+  font-size: 6em;
+  color: lightslategrey;
+}
+
+/* line 255, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.user-area h1 {
+  color: lightslategrey;
+  font-family: 'Droid Serif', sans-serif;
+}
+
+/* line 260, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.user-intro p {
+  color: grey;
+  font-family: 'Droid Serif', sans-serif;
+}
+
+/* line 265, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.user-trips h1 {
+  color: grey;
+  font-family: 'Droid Serif', sans-serif;
+}
+
+/* line 270, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.user-trips {
+  text-align: center;
+  font-family: 'Droid Serif', sans-serif;
+}
+
+/* line 275, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.header-quote {
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* line 281, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.user-page-button {
+  font-size: 1.5em;
+  padding: 0.5em;
+  width: 10em;
+}
+
+/* line 287, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.budgeting-links h2 {
+  font-family: 'Droid Serif', sans-serif;
+}
+
+/* line 291, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.budgeting-links p {
+  color: grey;
+  font-size: 1.5em;
+  font-family: 'Droid Serif', sans-serif;
+}
+
+/* line 297, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/application.css.scss */
+.budgeting-links {
+  text-align: center;
+}
