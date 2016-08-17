@@ -128,6 +128,10 @@ html {
   .content-title {
     font-size: 8vh;
   }
+
+  #bg2 p.content-title {
+    font-size: 3.5em;
+  }
 }
 
 .up-trigger {
@@ -136,6 +140,14 @@ html {
  float: left;
  position: fixed;
  bottom: 100px;
+}
+
+.final-up-trigger{
+  font-size:3.2rem;
+ color: lightgray;
+ float: left;
+ position: fixed;
+ bottom: 0px;
 }
 
 .down-trigger {
@@ -178,6 +190,7 @@ html {
 
 div.about {
   width: 50%;
+  margin-top: 75px;
 }
 h1.about-title {
   font-weight: bold;
@@ -222,7 +235,7 @@ a {
 .form {
   background:rgba($form-bg,.7);
   padding: 40px;
-  width:600px;
+  width:45%;
   height: 605px;
   margin-top: -250px;
   align-self: flex-end;
@@ -394,6 +407,62 @@ textarea {
   margin-left: 10px;
 }
 
+@media (max-width: 675px) {
+  div.about {
+    width: 100%;
+    display: block;
+    margin-top: 100px;
+  }
+
+  div.form {
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+  }
+  div.about-desc {
+    font-size: 1em;
+  }
+
+  p.about-desc {
+    font-size: 1em;
+  }
+
+  .form.tab-group.tab {
+    line-height: 1em;
+  }
+
+  .tab-group li a {
+    font-size: 1em;
+    padding: 0px;
+  }
+
+  .about-wrapper {
+    padding: 20px;
+  }
+
+  .about-form {
+    padding: 20px;
+  }
+
+  .about-group {
+    margin: 0;
+  }
+
+  .about .form .tab-group {
+    height: 50px;
+  }
+  .login-button{
+      font-size: 1.5em;
+      padding: 0px;
+      margin: 0;
+  }
+
+  .field-wrap {
+    margin-bottom: 20px;
+  }
+
+}
+
 /* NAVIGATION GROUP */
 
 /*body {
@@ -410,6 +479,7 @@ textarea {
   position: fixed;
   height: 100px;
   z-index: 6;
+  top: 0;
   display: table-cell;
   font-weight: 700;
   font-size: 1.5em;
@@ -445,6 +515,7 @@ textarea {
   position: fixed;
   z-index: 5;
   transition: all 1s ease-in-out;
+  top: 0;
 }
 
 .nav-list {
@@ -462,7 +533,6 @@ textarea {
   font-weight: 700;
   font-size: 1.5em;
   vertical-align: middle;
-  padding-top: 20px;
   text-align: center;
 }
 

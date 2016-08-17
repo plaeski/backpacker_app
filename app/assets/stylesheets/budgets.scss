@@ -11,16 +11,6 @@ input#budget, input#days, select#country {
     font-weight: bold;
 }
 
-input#output1, input#output2 {
-    margin: auto;
-    text-align: center;
-    height: 55px;
-    width: 150px;
-    font-size: 2em;
-    border-radius: 10px;
-    margin-left: 230px;
-}
-
 p, pre {
     margin: 1em 0;
     font-size: 50px;
@@ -40,12 +30,11 @@ p, pre {
 
 .preview-wrapper {
   /*background-color: lightblue;*/
-  height: 778px;
-  background-image: url('https://pixabay.com/static/uploads/photo/2015/04/11/18/51/everest-718055_960_720.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: repeat;
   background-size: cover;
+  background-image: url('images/everest-718055_960_720.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: repeat;
   /*margin-top: -150px;*/
   overflow-x: hidden;
 }
@@ -55,8 +44,11 @@ p, pre {
 }
 */
 .transbox {
+  border: 10px solid #f08e2b;
   background-color: #ffffff;
   opacity: 0.9;
+  width: 90%;
+  margin: 100px auto;
 }
 
 .option {

@@ -151,9 +151,17 @@ $(function(){
 
 // NAVIGATION GROUP
 $(function(){
+  var navOpen = false;
+
   $(".menu-button").click(function(e) {
+    (navOpen === true) ? navOpen = false : navOpen = true;
     e.preventDefault();
     e.stopPropagation();
     $(".nav").toggleClass("nav-open", 1000);
   });
-})
+
+  $(document).on("click", function() {
+    $(".nav").removeClass("nav-open", 1000);
+  })
+  
+});

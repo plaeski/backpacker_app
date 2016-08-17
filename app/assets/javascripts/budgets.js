@@ -27,14 +27,14 @@ function go(){
   //     var trs = data_table.getElementsByTagName('tr'); // all TRs
   //     for (var i = 0; i < trs.length; i++) {
   //       tds = trs[i].getElementsByTagName('td'); // all TDs
- 
+
   //       if (tds.length === 0) continue; //  no TDs here, move on
- 
+
   //       // get the value, update total
   //       value  = parseFloat(tds[td_index].innerHTML);
   //       data[data.length] = value;
   //       total += value;
- 
+
   //       // random color
   //       color = getColor();
   //       colors[colors.length] = color; // save for later
@@ -57,9 +57,9 @@ function go(){
   //     var sofar = 0; // keep track of progress
   //     // loop the data[]
   //     for (var piece in data) {
- 
+
   //       var thisvalue = data[piece] / total;
- 
+
   //       ctx.beginPath();
   //       ctx.moveTo(center[0], center[1]); // center of the pie
   //       ctx.arc(  // draw next arc
@@ -70,12 +70,12 @@ function go(){
   //         Math.PI * (- 0.5 + 2 * (sofar + thisvalue)),
   //         false
   //       );
- 
+
   //       ctx.lineTo(center[0], center[1]); // line back to the center
   //       ctx.closePath();
   //       ctx.fillStyle = colors[piece];    // color
   //       ctx.fill();
- 
+
   //       sofar += thisvalue; // increment progress tracker
   //     }
 
@@ -97,12 +97,12 @@ function go(){
 
 
   function addTableRow(jQtable, rowData) {
- 
+
     jQtable.each(function () {
- 
+
       var $table = $(this);
       var tds = '<tr>';
- 
+
       rowData.forEach(function(item) {
         tds += '<td>';
         tds += item;
@@ -130,7 +130,7 @@ function go(){
 
   // output for option 1
 
-  $('#output1').on('click',function(e){      
+  $('#output1').on('click',function(e){
     e.preventDefault();
     e.stopPropagation();
 
@@ -154,13 +154,13 @@ function go(){
       // text
       $('#outputbox1').text('');
       $('#outputbox1').append("<p>You can travel to <b>" + country_name + "</b> about <b>" + result[0] + " ~ " + result[1] + "</b> days!<br><br></p>");
-      
+
       // fun table
       removeTableRow($('#myFunTable1'));
       others.forEach(function(i){
         addTableRow($('#myFunTable1'), i);
       });
-      $('#myFunTable1').css("visibility", "visible");
+      $('#myFunTable1').css("display", "block");
 
       // table
       $('#mypie1').text('');
@@ -174,10 +174,10 @@ function go(){
 
   // output for option 2
 
-  $('#output2').on('click',function(e){    
+  $('#output2').on('click',function(e){
     e.preventDefault();
     e.stopPropagation();
-
+    $('#myFunTable2').css("display", "block");
     var values = {};
     $.each($("#budgets_form2").serializeArray(), function (i, field) {
         values[field.name] = field.value;
@@ -210,7 +210,7 @@ function go(){
       others.forEach(function(i){
         addTableRow($('#myFunTable2'), i);
       });
-      $('#myFunTable2').css("visibility", "visible");
+
 
     });
 
@@ -220,7 +220,7 @@ function go(){
   // output for option 3
   // this takes some times due to google_currency method
 
-  // $('#output3').on('click',function(e){      
+  // $('#output3').on('click',function(e){
   //   e.preventDefault();
   //   e.stopPropagation();
 

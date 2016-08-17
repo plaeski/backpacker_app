@@ -8,13 +8,11 @@
 
     <div class="space"><br /></div>
 
-    <section class="search">
+    <section>
     <div class="transbox">
       <div class="row">
         <div class="small-12 large-8 columns large-centered">
-          <br /><br /><br /><br />
           <h1 class="option">Option 1: Country and Budget</h1>
-          <br /><br />
 
           <%= form_tag(budgets_compute_path, method: :post, id: 'budgets_form1') do %>
 
@@ -33,13 +31,12 @@
             <%= submit_tag("Submit", :class => "button", :id => "output1") %>
           <% end %>
         </div>
-        <br /><br />
       </div>
 
       <div class="row">
         <div class="large-12 columns">
           <div id="outputbox1">
-          
+
           </div>
         </div>
       </div>
@@ -52,13 +49,13 @@
           </div>
 
           <div class="large-6 end columns">
-            <table id="myFunTable1" style="visibility:hidden;">
+            <table id="myFunTable1" style="display:none;">
               <thead>
                 <th>Type of Expenses</th>
                 <th>Daily Cost in CAD</th>
               </thead>
               <tbody>
-            
+
               </tbody>
             </table>
           </div>
@@ -71,14 +68,12 @@
 
     <!-- for option 2 -->
 
-    <section class="search">
+    <section">
 
       <div class="transbox">
         <div class="row">
           <div class="small-12 large-8 columns small-centered large-centered">
-            <br /><br /><br /><br />
             <h1 class="option">Option 2: Country and Days</h1>
-            <br /><br />
 
             <%= form_tag(budgets_compute_path, method: :post, id: 'budgets_form2') do %>
 
@@ -96,42 +91,33 @@
               <br />
               <%= submit_tag("Submit", :class => "button", :id => "output2") %>
             <% end %>
-
           </div>
           <br /><br />
         </div>
-
       <div class="row">
         <div class="large-12 columns">
           <div id="outputbox2">
-          
           </div>
         </div>
       </div>
-
       <div class="row">
         <div class="large-1 columns"><br /></div>
           <div class="large-4 columns" id="mypie2">
-
           </div>
-
           <div class="large-6 end columns">
-            <table id="myFunTable2" style="visibility:hidden;">
+            <table id="myFunTable2" style="display: none;">
               <thead>
                 <th>Type of Expenses</th>
                 <th>Daily Cost in CAD</th>
               </thead>
               <tbody>
-            
               </tbody>
             </table>
           </div>
         </div>
         <br /><br />
-
       </div>
     </section>
-
   </div>
 </div>
 <!-- for option 3 -->
@@ -147,7 +133,7 @@
 
         <%= hidden_field_tag :option, 3 %>
         <div class="row">
-        
+
           <div class="large-6 small-12 columns">
             <%= label_tag :budget, "Budget in CAD" %>
             <%= number_field_tag :budget %>
