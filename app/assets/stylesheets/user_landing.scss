@@ -15,18 +15,22 @@
     padding-top: 100px;
 }
 
-.new-trip-btn {
-    width: 50%;
-    height: 50px;
-    margin-right: 360px;
-    display: inline;
+.new-trip-btn  img{
+    width: 90%;
+    display: block;
     clear: both;
     font-size: 1.5em;
     background: #f08e2b;
     color: #fff;
+    margin: 0 auto;
 }
 
 
+@media (max-width: 600px) {
+  .new-trip-btn  img {
+    width: 65%;
+  }
+}
 /*border: 1px solid #c0c0c0;
 margin: 0 2px;
 padding: 0.35em 0.625em 0.75em;*/

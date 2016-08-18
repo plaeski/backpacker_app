@@ -1,0 +1,772 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,800,700,600);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+/*@import "compass/css3";*/
+/* line 32, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 36, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+html {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/* line 41, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  will-change: transform;
+  backface-visibility: hidden;
+  height: 130vh;
+  position: fixed;
+  width: 100%;
+  transform: translateY(30vh);
+  transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+}
+/* line 53, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 64, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background:first-child {
+  background-image: url(images/hiker-918473_960_720.jpg);
+  transform: translateY(-15vh);
+}
+/* line 67, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background:first-child .content-wrapper {
+  transform: translateY(15vh);
+}
+/* line 71, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background:nth-child(2) {
+  background-image: url(images/mountain-lake-984482_960_720.jpg);
+}
+/* line 74, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background:nth-child(3) {
+  background-image: url(images/environment-724904_960_720.jpg);
+}
+/* line 77, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background:nth-child(4) {
+  background-image: url(images/yosemite-922757_960_720.jpg);
+  /*opacity: 0.7;*/
+}
+/* line 81, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background:nth-child(5) {
+  background-image: url(images/hiking-691738_960_720.jpg);
+  /*opacity: 0.7;*/
+}
+
+/* Set stacking context of slides */
+/* line 89, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background:nth-child(1) {
+  z-index: 4;
+}
+
+/* line 89, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background:nth-child(2) {
+  z-index: 3;
+}
+
+/* line 89, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background:nth-child(3) {
+  z-index: 2;
+}
+
+/* line 89, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background:nth-child(4) {
+  z-index: 1;
+}
+
+/* line 94, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.container {
+  margin-top: -20px;
+}
+
+/* line 99, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.content-wrapper {
+  height: 100vh;
+  display: flex;
+  padding: 0 50px;
+  justify-content: center;
+  text-align: center;
+  flex-flow: column nowrap;
+  color: #fff;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  transform: translateY(40vh);
+  will-change: transform;
+  backface-visibility: hidden;
+  transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
+}
+/* line 114, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.content-title {
+  font-size: 12vh;
+  line-height: 1.1;
+  padding: 150px 0;
+  word-wrap: break-word;
+}
+
+/* line 122, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.content-subtitle {
+  font-size: 2rem;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 700px) {
+  /* line 128, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .content-title {
+    font-size: 8vh;
+  }
+
+  /* line 132, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  #bg2 p.content-title {
+    font-size: 3.5em;
+  }
+}
+/* line 137, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.up-trigger {
+  font-size: 3.2rem;
+  color: lightgray;
+  float: left;
+  position: fixed;
+  bottom: 100px;
+}
+
+/* line 145, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.final-up-trigger {
+  font-size: 3.2rem;
+  color: lightgray;
+  float: left;
+  position: fixed;
+  bottom: 0px;
+}
+
+/* line 153, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.down-trigger {
+  font-size: 3.2rem;
+  color: lightgray;
+  float: left;
+  position: fixed;
+  bottom: 50px;
+}
+
+/* line 162, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background.up-scroll {
+  transform: translate3d(0, -15vh, 0);
+}
+/* line 164, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background.up-scroll .content-wrapper {
+  transform: translateY(15vh);
+}
+/* line 167, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background.up-scroll + .background {
+  transform: translate3d(0, 30vh, 0);
+}
+/* line 169, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background.up-scroll + .background .content-wrapper {
+  transform: translateY(30vh);
+}
+
+/* line 175, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background.down-scroll {
+  transform: translate3d(0, -130vh, 0);
+}
+/* line 177, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background.down-scroll .content-wrapper {
+  transform: translateY(40vh);
+}
+/* line 180, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background.down-scroll + .background:not(.down-scroll) {
+  transform: translate3d(0, -15vh, 0);
+}
+/* line 182, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.background.down-scroll + .background:not(.down-scroll) .content-wrapper {
+  transform: translateY(15vh);
+}
+
+/* ABOUT GROUP */
+/* line 191, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+div.about {
+  width: 50%;
+  margin-top: 75px;
+}
+
+/* line 195, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+h1.about-title {
+  font-weight: bold;
+  font-size: 2.2em;
+  text-align: left;
+  text-transform: uppercase;
+  margin: auto;
+  display: inline-block;
+  float: left;
+}
+
+/* line 204, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+p.about-desc {
+  float: left;
+  font-size: 1.5em;
+  text-transform: lowercase;
+  clear: left;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* FORM GROUP FOR SIGN-IN AND SIGN-UP */
+/* line 216, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+body {
+  background: #c1bdba;
+  font-family: 'Titillium Web', sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 226, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+a {
+  text-decoration: none;
+  color: #f08e2b;
+  transition: .5s ease;
+}
+/* line 230, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+a:hover {
+  color: #ee8113;
+}
+
+/* line 235, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.form {
+  background: rgba(13, 25, 33, 0.7);
+  padding: 40px;
+  width: 45%;
+  height: 605px;
+  margin-top: -250px;
+  align-self: flex-end;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(13, 25, 33, 0.3);
+  clear: right;
+}
+
+/* line 247, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+/* line 251, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 256, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+}
+/* line 268, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.tab-group li a:hover {
+  background: #ee8113;
+  color: #ffffff;
+}
+/* line 273, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.tab-group .active a {
+  background: #f08e2b;
+  color: #ffffff;
+}
+
+/* line 279, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.tab-content > div:last-child {
+  display: none;
+}
+
+/* line 284, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+/* line 291, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+label {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(220, 220, 220, 0.7);
+  color: rgba(255, 255, 255, 0.1);
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+/* line 301, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+label .req {
+  margin: 2px;
+  color: #f08e2b;
+}
+
+/* line 307, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+label.active {
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+/* line 311, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+label.active .req {
+  opacity: 0;
+}
+
+/* line 316, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+label.highlight {
+  color: #ffffff;
+}
+
+/* line 320, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+input, textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  border-radius: 0;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+/* line 331, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #f08e2b;
+}
+
+/* line 337, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+/* line 342, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* line 348, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 354, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.top-row > div {
+  float: left;
+  width: 100%;
+  margin-right: 4%;
+}
+/* line 358, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.top-row > div:last-child {
+  margin: 0;
+}
+
+/* line 364, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #f08e2b;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+/* line 377, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.button:hover, .button:focus {
+  background: #ee8113;
+}
+
+/* line 382, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+/* line 387, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+
+/* line 392, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.signup {
+  margin-top: 10px;
+}
+
+/* line 396, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.social-group {
+  margin-top: -20px;
+  margin-bottom: 5px;
+}
+
+/* line 401, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.social-signin a {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+/* line 406, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.social-signin {
+  margin-left: 10px;
+}
+
+@media (max-width: 675px) {
+  /* line 411, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  div.about {
+    width: 100%;
+    display: block;
+    margin-top: 100px;
+  }
+
+  /* line 417, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  div.form {
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+  }
+
+  /* line 422, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  div.about-desc {
+    font-size: 1em;
+  }
+
+  /* line 426, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  p.about-desc {
+    font-size: 1em;
+  }
+
+  /* line 430, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .form.tab-group.tab {
+    line-height: 1em;
+  }
+
+  /* line 434, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .tab-group li a {
+    font-size: 1em;
+    padding: 0px;
+  }
+
+  /* line 439, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .about-wrapper {
+    padding: 20px;
+  }
+
+  /* line 443, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .about-form {
+    padding: 20px;
+  }
+
+  /* line 447, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .about-group {
+    margin: 0;
+  }
+
+  /* line 451, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .about .form .tab-group {
+    height: 50px;
+  }
+
+  /* line 454, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .login-button {
+    font-size: 1.5em;
+    padding: 0px;
+    margin: 0;
+  }
+
+  /* line 460, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .field-wrap {
+    margin-bottom: 20px;
+  }
+}
+/* NAVIGATION GROUP */
+/*body {
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}*/
+/* line 476, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.logo {
+  background: #f08e2b;
+  float: left;
+  position: fixed;
+  height: 100px;
+  z-index: 6;
+  top: 0;
+  display: table-cell;
+  font-weight: 700;
+  font-size: 1.5em;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 490, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.logo .text {
+  margin-top: 20px;
+  line-height: 75px;
+  padding: 0 15px;
+  font-family: 'Droid Serif', sans-serif;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  cursor: default;
+  vertical-align: middle;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Navigation styling */
+/* line 510, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.nav {
+  width: 100%;
+  height: 99px;
+  background: #0d1921;
+  float: right;
+  position: fixed;
+  z-index: 5;
+  transition: all 1s ease-in-out;
+  top: 0;
+}
+
+/* line 521, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.nav-list {
+  float: right;
+  height: 100px;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+/* line 529, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.nav-item {
+  min-width: 150px;
+  z-index: 6;
+  display: table-cell;
+  font-weight: 700;
+  font-size: 1.5em;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 539, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.nav-menu {
+  display: table;
+  width: 80%;
+  float: right;
+  vertical-align: middle;
+  height: 100px;
+  text-align: center;
+}
+
+/* line 547, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.nav nav {
+  margin-left: 200px;
+  /*margin-top: 5px;*/
+}
+
+/* line 552, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.nav ul {
+  padding-left: 60px;
+}
+
+/* line 556, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.parent {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+/* line 562, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.nav ul, li, a {
+  color: #a6a6a6;
+  list-style-type: none;
+  text-decoration: none;
+  line-height: 2em;
+}
+
+/* line 568, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.nav a {
+  -webkit-transition: .1s;
+}
+
+/* line 572, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.nav a:hover {
+  color: #ffffff;
+  -webkit-transition: .1s;
+}
+
+/* line 577, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.nav a:active {
+  color: #8f8f8f;
+  -webkit-transition: .05s;
+}
+
+@media (max-width: 1210px) {
+  /* line 583, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .logo .text {
+    padding: 0 5px;
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 590, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .menu-button {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  /* line 596, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .logo .text {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 10px;
+    line-height: 100px;
+  }
+
+  /* line 603, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .nav {
+    height: 100vh;
+    width: 0px;
+    margin-top: 20px;
+  }
+
+  /* line 609, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .nav-item {
+    float: right;
+    display: block;
+    width: 100%;
+  }
+
+  /* line 615, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .nav-menu {
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  /* line 620, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+  .nav-open {
+    width: 225px;
+  }
+}
+/* Display state */
+/* line 627, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.displayblock {
+  margin-left: 0;
+  z-index: 5;
+  /*margin-top: 20px;*/
+}
+
+/* Button styling */
+/* line 634, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.menu-button {
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  float: right;
+  cursor: pointer;
+  z-index: 5;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+/* line 646, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.menu-button:after .nav:after .logo:after {
+  clear: both;
+}
+
+/* line 650, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.menu-icn {
+  width: 50px;
+  height: 6px;
+  background: #f08e2b;
+  border-radius: 2px;
+  margin: 5px auto;
+  -webkit-transition: 0.2s;
+}
+
+/* line 659, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.menu-icn:nth-child(1) {
+  margin-top: 35px;
+}
+
+/* line 663, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.menu-button:hover .menu-icn {
+  background: #0d1921;
+  -webkit-transition: 0.2s;
+}
+
+/* COPYRIGHT GROUP AND SOCIAL LINKS */
+/* line 669, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.copyright {
+  font-size: 1.3em;
+}
+
+/* line 672, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.social-links {
+  margin-right: 55px;
+  margin-top: -15px;
+}
+
+/* line 676, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.social-icon {
+  display: inline-block;
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+/* CONTACT GROUP */
+/* line 684, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+.contact-title {
+  margin-top: -200px;
+  font-size: 3em;
+  padding: 300px;
+}
+
+/* line 690, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/main.scss */
+input.button.send {
+  width: 50%;
+  height: 50px;
+  font-size: 1.2rem;
+}

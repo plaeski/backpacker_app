@@ -1,0 +1,38 @@
+/*.preview-wrapper {
+    background-color: lightblue;
+    height: 800px;
+    background-image: url('https://pixabay.com/static/uploads/photo/2015/04/11/18/51/everest-718055_960_720.jpg');
+    background-size: cover;
+    opacity: .7;
+    margin-top: -117px;
+}*/
+/* line 11, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/user_landing.scss */
+.trips-title {
+  color: black;
+}
+
+/* line 15, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/user_landing.scss */
+.container.user_preview {
+  padding-top: 100px;
+}
+
+/* line 19, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/user_landing.scss */
+.new-trip-btn img {
+  width: 90%;
+  display: block;
+  clear: both;
+  font-size: 1.5em;
+  background: #f08e2b;
+  color: #fff;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  /* line 31, /home/ms_twigs/projects/backpacker_app/app/assets/stylesheets/user_landing.scss */
+  .new-trip-btn img {
+    width: 65%;
+  }
+}
+/*border: 1px solid #c0c0c0;
+margin: 0 2px;
+padding: 0.35em 0.625em 0.75em;*/
