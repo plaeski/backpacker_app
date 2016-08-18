@@ -25,7 +25,7 @@ var ItineraryExplorer = React.createClass({
     var itinId = this.state.current.id
     data.trip_id = itinId
     var tripId = this.props.trip
-    var url = "/trip/" + tripId 
+    var url = "/trip/" + tripId
     $.ajax({
       url: url,
       dataType: 'json',
@@ -40,7 +40,7 @@ var ItineraryExplorer = React.createClass({
     });
   },
   getInitialState: function() {
-    return {results: [], data: [], excluded:[], excludedByDuration: []};
+    return {results: [], data: [], excluded:[], excludedByDuration: [], "itin-list": false, "itin-display": false, "itin-filters": false};
   },
   componentWillMount: function() {
     this.loadCitiesFromServer();
@@ -69,7 +69,7 @@ var ItineraryExplorer = React.createClass({
           result = false
         }
       }
-      return result 
+      return result
     }
     var newResults = this.state.data.filter(excludeCountry)
     var invalidDuration = this.state.excludedByDuration
@@ -84,7 +84,7 @@ var ItineraryExplorer = React.createClass({
         return true
       } else {
         return false
-      } 
+      }
     }
     if (element.target.checked == false) {
       var itineraries = this.state.results
@@ -96,7 +96,7 @@ var ItineraryExplorer = React.createClass({
       }
       var excludedItineraries = itineraries.filter(durationCheck)
       var currentResults = itineraries.diff(excludedItineraries)
-    } 
+    }
     else if (element.target.checked == true){
       var currentResults = this.state.results
       var excludedItineraries = this.state.excludedByDuration
@@ -115,23 +115,38 @@ var ItineraryExplorer = React.createClass({
     var num = e.target.id
     var chosenItin = this.state.results[num]
     this.setState({
-      current: chosenItin
+      current: chosenItin,
+      "itin-list": true
     });
+  },
+  collapse: function(area) {
+    var status = this.state[area];
+    return function() {
+      console.log(this.state)
+      var newStatus = (status===true) ? false : true
+      var obj = {}
+      obj[area] = newStatus;
+      this.setState(obj)
+    }.bind(this)
   },
   render: function() {
     return (
       <div className="tripPlanner">
+        <div className="trip-planner-container">
         <h1>Itineraries</h1>
         <div className="row itineraries-row">
-          <div className="large-3 columns itin-filters">
-            <ItinFilters data={this.state.data} filterCountries={this.filterCountries} filterDurations={this.filterDurations}/>
+          <div id="itin-filters" className={"large-3 columns itin-filters " + (this.state["itin-filters"] ? "itin-section-closed" : "")}>
+            <ItinFilters sectionClosed={this.state["itin-filters"]} data={this.state.data} filterCountries={this.filterCountries} filterDurations={this.filterDurations}/>
           </div>
-          <div className="large-4 columns itin-list">
-            <ItinList data={this.state.results} changeCurrent={this.changeCurrent} />
+          <div className="collapse-itin" onClick={this.collapse("itin-filters")}><i className={(this.state["itin-filters"] ? "fa fa-angle-double-down" : "fa fa-angle-double-up")}></i></div>
+          <div className={"large-4 columns itin-list " + (this.state["itin-list"] ? "itin-section-closed" : "")} id="itin-list">
+            <ItinList sectionClosed={this.state["itin-list"]} data={this.state.results} changeCurrent={this.changeCurrent} />
           </div>
-          <div className="large-5 columns itin-display">
-            <ItinDetails data={this.state.current} handleItinerarySave={this.handleItinerarySave}/>
+          <div className="collapse-itin" onClick={this.collapse("itin-list")}><i className={(this.state["itin-list"] ? "fa fa-angle-double-down" : "fa fa-angle-double-up")}></i></div>
+          <div className={"large-5 columns itin-display " + (this.state["itin-display"] ? "itin-section-closed" : "")} id="itin-display">
+            <ItinDetails sectionClosed={this.state["itin-display"]} data={this.state.current} handleItinerarySave={this.handleItinerarySave}/>
           </div>
+        </div>
         </div>
       </div>
     );
@@ -149,14 +164,14 @@ var ItinList = React.createClass({
             <h4>{days} day itinerary</h4>
             <ItinCountryDetails data={itin}/>
             <a href="#" id={i} onClick={that.props.changeCurrent} className="button success round itin-change-button">See Details</a>
-            <hr />  
+            <hr />
           </Itinerary>
         );
       });
     }
     return (
-      <div className="cityList">
-        {itinNodes} 
+      <div className={"cityList " + (this.props.sectionClosed ? "itin-section-closed" : "")}>
+        {itinNodes}
       </div>
     );
   }
@@ -171,12 +186,12 @@ var ItinDetails = React.createClass({
         <Itinerary key={itin.id}>
             <h2>Details</h2>
               <ItinCityDetails data={itin}/>
-              <a href="#" onClick={this.props.handleItinerarySave} className="button success round itin-save-button">Save Itinerary</a> 
+              <a href="#" onClick={this.props.handleItinerarySave} className="button success round itin-save-button">Save Itinerary</a>
           </Itinerary>
       );
     }
     return (
-      <div className="cityList">
+      <div className={"cityList " + (this.props.sectionClosed ? "itin-section-closed" : "")}>
         {itin}
       </div>
     );
@@ -203,7 +218,7 @@ var ItinCityDetails = React.createClass({
       var details = this.props.data.cities.map(function(itin, i) {
         var date = i+1
         return(
-          <li>
+          <li key={i}>
             Day {date} - {itin}
           </li>
         )
@@ -213,7 +228,7 @@ var ItinCityDetails = React.createClass({
       <div className="cityList">
         <ul className = "cities">
           {details}
-        </ul> 
+        </ul>
       </div>
     )
   }
@@ -255,21 +270,29 @@ var ItinFilters = React.createClass({
     var that = this
     var country_list = unique.map(function(country){
       return (
-        <div>
+        <div key={country}>
           <input value={country} type="checkbox" className="checkbox-custom" onChange={that.onChange} defaultChecked /><label for={country} className="filter-label">{country}</label><br />
         </div>
       )
     })
     return (
-      <div>
+      <div className={(this.props.sectionClosed ? "itin-section-closed" : "")}>
         <form>
-          <h2>Countries</h2>
-          {country_list}
-          <h2>Duration</h2>
-          <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 1, 7)} defaultChecked /><label for="7" className="filter-label">One Week</label><br />
-          <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 8, 14)} defaultChecked/><label for="14" className="filter-label">Two Weeks</label><br />
-          <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 15, 21)} defaultChecked/><label for="21" className="filter-label">Three Weeks</label><br />
-          <input type="checkbox" className="checkbox-custom" defaultChecked  onChange={this.onChange.bind(this, 22, 100)}/><label for="28" className="filter-label">Four Weeks +</label>
+          <div className="row">
+            <div className="filter-block"><a href="#countries">Countries</a></div>
+            <div className="filter-block"><a href="#duration">Duration</a></div>
+          </div>
+          <h2 className="filter-section">Countries</h2>
+            <div id="countries">
+              {country_list}
+            </div>
+          <h2 className="filter-section">Duration</h2>
+            <div id="duration">
+              <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 1, 7)} defaultChecked /><label for="7" className="filter-label">One Week</label><br />
+              <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 8, 14)} defaultChecked/><label for="14" className="filter-label">Two Weeks</label><br />
+              <input type="checkbox" className="checkbox-custom" onChange={this.onChange.bind(this, 15, 21)} defaultChecked/><label for="21" className="filter-label">Three Weeks</label><br />
+              <input type="checkbox" className="checkbox-custom" defaultChecked  onChange={this.onChange.bind(this, 22, 100)}/><label for="28" className="filter-label">Four Weeks +</label>
+              </div>
         </form>
       </div>
     )
