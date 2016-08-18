@@ -66,8 +66,9 @@
 }
 
 .trip-banner-container {
-	height: 20em;
-	background-size: 100%;
+	height: 40em;
+	background-size: cover;
+  background-position: center center;
 	width: 100%;
 	background-image: image-url("trip-banner.png");
 }
@@ -78,6 +79,7 @@
 	text-align: center;
 	font-size: 8em;
 	margin: 0;
+  padding-top: 100px;
 }
 
 .checkbox-custom {
@@ -318,5 +320,19 @@
       font-size: 1.5em;
     }
 
+    .trip-banner-header {
+    	font-size: 4em;
+      word-wrap: break-word;
+    }
 
+    .trip-banner-container {
+      height: 30em;
+      padding-top: 100px;
+    }
+
+    .route-link{
+      width: 75%;
+      display: block;
+      margin: 30px auto;
+    }
 }

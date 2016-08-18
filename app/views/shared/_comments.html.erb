@@ -1,9 +1,11 @@
 <!-- being passed in from comments_controller -->
 <div class="row">
-	<h2>Leave a message for the group!</h2>
-  <%= react_component('Comments', { comments: @comments }) %>
-  <%= form_for Comment.new, url: trip_comments_path(@trip) do |f| %>
-    <%= f.text_field :content , placeholder: "Add Your Comment Here..."%>
-    <%= f.submit("Post comment") %>
-  <% end %>
+	<div class="comment-section">
+		<h2>Leave a message for the group!</h2>
+	  <%= react_component('Comments', { comments: @comments }) %>
+	  <%= form_for Comment.new, url: trip_comments_path(@trip) do |f| %>
+	    <%= f.text_field :content , placeholder: "Add Your Comment Here..."%>
+	    <%= f.submit("Post comment") %>
+	  <% end %>
+	</div>
 </div>

@@ -1,4 +1,4 @@
-$input_width: 50%;
+$input_width: 65%;
 $input_margin: 5px auto;
 
 div.new-trip-wrapper {
@@ -22,7 +22,7 @@ input.button.new {
     width:50%;
     height: 50px;
     display: block;
-    margin: 0 auto;
+    margin: 50px auto;
     clear: both;
     font-size: 1.5em;
 }
@@ -217,4 +217,15 @@ figure.effect-julia:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+
+@media (max-width: 600px) {
+  .new-trip-img-2 {
+    display: none;
+  }
+
+  .new-trip-img-1 figure {
+    width: 98%;
+    min-height: 50vh;
+  }
 }

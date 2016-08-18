@@ -378,4 +378,9 @@
   .user-intro p {
     font-size: 1.5em;
   }
+
+  .trip-banner-header{
+    font-size: 5em;
+    word-wrap: break-word;
+  }
 }

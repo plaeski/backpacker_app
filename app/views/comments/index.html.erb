@@ -1,10 +1,12 @@
 <!-- being passed in from comments_controller -->
 <div class="row">
-  <%= react_component('Comments', { comments: @comments }) %>
-  <%= form_for @comment, url: comments_path do |f| %>
-    <%= f.hidden_field :trip_id, :value => @trip_id.id %>
-    <%= f.label  :content, "Post comment here:"%>
-    <%= f.text_field :content %>
-    <%= f.submit("Post comment") %>
-  <% end %>
+    <div class="comment-section">
+      <%= react_component('Comments', { comments: @comments }) %>
+        <%= form_for @comment, url: comments_path do |f| %>
+        <%= f.hidden_field :trip_id, :value => @trip_id.id %>
+        <%= f.label  :content, "Post comment here:"%>
+        <%= f.text_field :content %>
+        <%= f.submit("Post comment") %>
+      <% end %>
+  </div>
 </div>
